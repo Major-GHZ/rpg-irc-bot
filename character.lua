@@ -6,6 +6,19 @@ local function new()
     return setmetatable({}, Create_mt)
 end
 
+local function setNumber(prompt)
+    while true do
+        io.write(prompt)
+        local input = io.read("*l")
+        local number = tonumber(input)
+        if number ~= nil then
+            return number
+        else
+            print("Erreur : veuillez entrer un nombre valide.")
+        end
+    end
+end
+
 function Create:newCharacter()
     local character = {
         name = "",
@@ -32,7 +45,8 @@ function Create:newCharacter()
     for i, class in ipairs(classes) do
         print(i .. ". " .. class)
     end
-    local classChoice = tonumber(io.read())
+
+    local classChoice = setNumber("Votre choix : ")
     character.class = classes[classChoice] or "human"
 
     character.spells = {
@@ -46,18 +60,15 @@ function Create:newCharacter()
         jedi = {"lightsaber", "force push", "mind trick"},
         sith = {"dark saber", "force choke", "dark lightning"}
     }
+    character.spells = character.spells[character.class] or {}
 
     local pointsRestants = 10
     repeat
         print("\nPoints restants : " .. pointsRestants)
-        print("Intelligence :")
-        character.attributes.intelligence = tonumber(io.read()) or 0
-        print("Strength :")
-        character.attributes.strength = tonumber(io.read()) or 0
-        print("Dexterity :")
-        character.attributes.dexterity = tonumber(io.read()) or 0
-        print("Endurance :")
-        character.attributes.endurance = tonumber(io.read()) or 0
+        character.attributes.intelligence = setNumber("Intelligence : ")
+        character.attributes.strength = setNumber("Strength : ")
+        character.attributes.dexterity = setNumber("Dexterity : ")
+        character.attributes.endurance = setNumber("Endurance : ")
 
         pointsRestants = 10 - (character.attributes.intelligence +
                               character.attributes.strength +

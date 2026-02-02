@@ -3,18 +3,20 @@ local game = Stage.new()
 
 local CreateCharacter = require("character")
 local creator = CreateCharacter.new()
-local monPerso = creator:newCharacter()
+local character = creator:newCharacter()
 
+-- Puis, à la fin de la fonction, pour afficher le récapitulatif :
 print("\n--- Récapitulatif ---")
-print("Nom : " .. monPerso.name)
-print("Classe : " .. monPerso.class)
-print("Niveau : " .. monPerso.level)
+print("Nom : " .. character.name)
+print("Classe : " .. character.class)
+print("Niveau : " .. character.level)
 print("Attributs :")
-print("- Intelligence : " .. monPerso.attributes.intelligence)
-print("- Strength : " .. monPerso.attributes.strength)
-print("- Dexterity : " .. monPerso.attributes.dexterity)
-print("- Endurance : " .. monPerso.attributes.endurance)
-print("Sorts : " .. table.concat(monPerso.spells[monPerso.class], ", "))
+print("- Intelligence : " .. character.attributes.intelligence)
+print("- Strength : " .. character.attributes.strength)
+print("- Dexterity : " .. character.attributes.dexterity)
+print("- Endurance : " .. character.attributes.endurance)
+print("Sorts : " .. table.concat(character.spells, ", "))
+
 
 local hero = { energy = 100, energieMax = 100 }
 local boss = { energy = 1000, energieMax = 1000 }
