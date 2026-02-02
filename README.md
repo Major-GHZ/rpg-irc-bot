@@ -17,4 +17,4 @@ This is a **team-based RPG game** played with a bot. The game is written in **Lu
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ton-utilisateur/lua-bot.git
+   git clone https://github.com/Major-GHZ/rpg-irc-bot.git
