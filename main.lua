@@ -1,24 +1,39 @@
-local Partie = require("module")
-local jeu = Partie.nouveau()
+local Stage = require("module")
+local game = Stage.new()
 
-local heros = { energie = 100, energieMax = 100 }
-local boss = { energie = 1000, energieMax = 1000 }
+local CreateCharacter = require("character")
+local creator = CreateCharacter.new()
+local monPerso = creator:newCharacter()
 
-jeu:nouveauDegats(heros, 5)
-print("Énergie Heros", heros.energie)
+print("\n--- Récapitulatif ---")
+print("Nom : " .. monPerso.name)
+print("Classe : " .. monPerso.class)
+print("Niveau : " .. monPerso.level)
+print("Attributs :")
+print("- Intelligence : " .. monPerso.attributes.intelligence)
+print("- Strength : " .. monPerso.attributes.strength)
+print("- Dexterity : " .. monPerso.attributes.dexterity)
+print("- Endurance : " .. monPerso.attributes.endurance)
+print("Sorts : " .. table.concat(monPerso.spells[monPerso.class], ", "))
 
-jeu:nouveauDegats(boss, 45)
-print("Énergie Boss", boss.energie)
+local hero = { energy = 100, energieMax = 100 }
+local boss = { energy = 1000, energieMax = 1000 }
 
-jeu:nouveauDegats(heros, 5)
-print("Énergie Heros", heros.energie)
+game:newDamage(hero, 5)
+print("Hero Energy", hero.energy)
 
-jeu:nouveauDegats(boss, 45)
-print("Énergie Boss", boss.energie)
+game:newDamage(boss, 45)
+print("Boss Energy", boss.energy)
 
-jeu:nouveauDegats(heros, 5)
-print("Énergie Heros", heros.energie)
+game:newDamage(hero, 5)
+print("Hero Energy", hero.energy)
 
-jeu:nouveauDegats(boss, 45)
-print("Énergie Boss", boss.energie)
+game:newDamage(boss, 45)
+print("Boss Energy", boss.energy)
+
+game:newDamage(hero, 5)
+print("Hero Energy", hero.energy)
+
+game:newDamage(boss, 45)
+print("Boss Energy", boss.energy)
 

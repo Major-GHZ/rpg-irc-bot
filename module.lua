@@ -1,15 +1,15 @@
-local ModuleJeu = {}
-local Jeu = {}
-local Jeu_mt = { __index = Jeu }
+local GameModule = {}
+local Game = {}
+local Game_mt = { __index = Game }
 
-function ModuleJeu.nouveau()
-    print("Début de la Partie !")
-    return setmetatable({}, Jeu_mt)
+function GameModule.new()
+    print("Start of the game !")
+    return setmetatable({}, Game_mt)
 end
 
-function Jeu:nouveauDegats(personnage, degats)
-    personnage.energie = personnage.energie - degats
+function Game:newDamage(character, damage)
+    character.energy = character.energy - damage
 end
 
-return ModuleJeu
+return GameModule
 
