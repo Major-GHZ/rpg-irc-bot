@@ -23,7 +23,7 @@ config.game = {
     max_monster_name_length = 50,            -- Maximum monster name length
     max_level = 100,                         -- Maximum level for characters and monsters
     starting_energy = 100,                   -- Starting energy for new characters
-    max_dice_roll = 10                       -- Maximum number of dice that can be rolled at once
+    max_dice_roll = 30                       -- Maximum number of dice that can be rolled at once
 }
 
 -- Character Classes Configuration
