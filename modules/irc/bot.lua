@@ -35,7 +35,7 @@ end
 -- IRC Configuration from config file
 local irc_server = config.irc.server
 local irc_port = config.irc.port
-local nickname = "RPG_Bot_GameMaster"
+local nickname = config.irc.nickname
 local default_channel = config.irc.default_channel
 local reconnect_delay = config.irc.reconnect_delay
 local connection_timeout = config.irc.connection_timeout
