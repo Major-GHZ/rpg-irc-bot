@@ -315,11 +315,11 @@ end
 
 -- IRC command handling
 local function handle_irc_command(irc, sender_nick, channel, msg)
-    if msg:lower():match("^!createplayer") or msg:lower():match("^!createjoueur") then
+    if msg:lower():match("^!createplayer") then
         start_character_creation(irc, sender_nick, channel)
-    elseif msg:lower():match("^!stats") or msg:lower():match("^!recap") then
+    elseif msg:lower():match("^!stats") then
         show_character_stats(irc, sender_nick, channel)
-    elseif msg:lower():match("^!listplayer") or msg:lower():match("^!listjoueur") then
+    elseif msg:lower():match("^!listplayer") then
         -- List all saved characters
         local characters = xml.getAllCharactersFromXML()
         
@@ -335,9 +335,9 @@ local function handle_irc_command(irc, sender_nick, channel, msg)
             
             irc:PRIVMSG(channel, "Use !getplayer <name> to load a specific character.")
         end
-    elseif msg:lower():match("^!getplayer") or msg:lower():match("^!getjoueur") then
+    elseif msg:lower():match("^!getplayer") then
         -- Extract the character name to load
-        local player_name = msg:match("^!getplayer (%S+)") or msg:match("^!getjoueur (%S+)")
+        local player_name = msg:match("^!getplayer (%S+)")
         if not player_name then
             irc:PRIVMSG(channel, sender_nick .. ", usage: !getplayer <name>")
             irc:PRIVMSG(channel, "Example: !getplayer Gandalf")
@@ -376,7 +376,7 @@ local function handle_irc_command(irc, sender_nick, channel, msg)
         handle_list_monsters_command(irc, sender_nick, channel)
     elseif msg:lower():match("^!ping") then
         irc:PRIVMSG(channel, "Pong!")
-    elseif msg:lower():match("^!hello") or msg:lower():match("^!salut") then
+    elseif msg:lower():match("^!hello") then
         irc:PRIVMSG(channel, "Hello, " .. sender_nick .. "!")
     elseif msg:lower():match("^!help") then
         irc:PRIVMSG(channel, "===== RPG BOT HELP =====")
