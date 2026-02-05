@@ -49,7 +49,6 @@ local function run()
             irc:load_module(mod_message)
             irc:load_module(mod_channel)
 
-            -- Fonction d'envoi
             irc:set_send_func(function(_, message)
                 local success, err = irc_client:send(message .. "\r\n")
                 if not success then
@@ -66,13 +65,16 @@ local function run()
                     current_channel = origin
                 end
 
-                -- Commandes IRC
                 if msg:lower() == "!salut" then
                     irc:PRIVMSG(current_channel, "Salut, je suis un bot Lua!")
                 elseif msg:lower() == "!ping" then
                     irc:PRIVMSG(current_channel, "Pong!")
                 elseif msg:lower() == "!create" then
                     handlers.start_character_creation(irc, sender[1], current_channel)
+                elseif msg:lower() == "!recap" then
+                    handlers.show_character_recap(irc, sender[1], current_channel)
+                elseif msg:lower() == "!help" then
+                    handlers.show_help(irc, sender[1], current_channel)
                 elseif handlers.handle_character_creation(irc, sender[1], current_channel, msg) then
                     -- Géré par le handler
                 end
@@ -87,7 +89,6 @@ local function run()
                 log("Erreur IRC: " .. tostring(err))
             end)
 
-            -- Identification
             irc:NICK(nickname)
             irc:USER(nickname, "0", "*", ":Lua Bot")
             irc:JOIN(default_channel)
@@ -107,7 +108,6 @@ local function run()
                     irc:process(line)
                 end
 
-                -- Ping périodique pour maintenir la connexion
                 if socket.gettime() - last_ping_time > 60 then
                     irc:PING(irc_server)
                     last_ping_time = socket.gettime()
