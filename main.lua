@@ -1,72 +1,58 @@
--- Ajoute le chemin des modules au package.path
+-- Ajoute le chemin des modules Lua
 package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
 
--- Import des modules de jeu
+-- Charge les modules nécessaires
 local Character = require("character")
-local Level = require("level")
-local Stage = require("stage")
 local xml = require("character_xml")
-
-package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
-
 local bot = require("irc.bot")
-bot.run()
 
-
--- =============================================
--- Logique de démonstration locale (optionnelle)
--- =============================================
-local function run_local_demo()
-    -- Création d'un personnage par défaut
-    local character = Character.new()
-    local hero = character:newCharacter()
-
-    -- Affichage des informations du personnage
-    print("\n--- Résumé du personnage ---")
-    print("Nom: " .. hero.name)
-    print("Classe: " .. hero.class)
-    print("Niveau: " .. hero.level)
-    print("Attributs:")
-    print("- Intelligence: " .. hero.attributes.intelligence)
-    print("- Force: " .. hero.attributes.strength)
-    print("- Dextérité: " .. hero.attributes.dexterity)
-    print("- Endurance: " .. hero.attributes.endurance)
-    print("Sorts: " .. table.concat(hero.spells, ", "))
-
-    -- Sauvegarde du personnage
-    xml.sauvegarder_personnage(hero)
-
-    -- Simulation de combat
-    local hero_combat = { energy = 100, energieMax = 100 }
-    local boss = { energy = 1000, energieMax = 1000 }
-    local level = Level.new()
-
-    print("\n--- Simulation de combat ---")
-    level:newDamage(hero_combat, 5)
-    print("Énergie du héros :", hero_combat.energy)
-
-    level:newDamage(boss, 45)
-    print("Énergie du boss :", boss.energy)
-
-    level:newDamage(hero_combat, 5)
-    print("Énergie du héros :", hero_combat.energy)
-
-    level:newDamage(boss, 45)
-    print("Énergie du boss :", boss.energy)
-
-    level:newDamage(hero_combat, 5)
-    print("Énergie du héros :", hero_combat.energy)
-
-    level:newDamage(boss, 45)
-    print("Énergie du boss :", boss.energy)
+-- Crée un dossier pour les sauvegardes XML si nécessaire
+local function ensure_saves_directory_exists()
+    local lfs = require("lfs")
+    local path = "saves"
+    if not lfs.attributes(path) then
+        os.execute("mkdir -p " .. path)
+    end
 end
 
--- Exécute la démonstration locale (optionnel)
-run_local_demo()
+-- Teste la création de personnage localement
+local function test_character_creation()
+    print("=== Test de création de personnage local ===")
 
--- =============================================
--- Lancement du bot IRC
--- =============================================
-local bot = require("irc.bot")
-bot.run()
+    -- Crée un personnage personnalisé
+    local customCharacter = Character:createCharacterWithAttributes(
+        "Narwen",
+        "mage",
+        5,
+        {intelligence = 20, strength = 0, dexterity = 0, endurance = 0, magic = 10}
+    )
+    print("\nPersonnage personnalisé :")
+    print("Nom : " .. customCharacter.name)
+    print("Classe : " .. customCharacter.class)
+    print("Niveau : " .. customCharacter.level)
+    print("Attributs :")
+    print("- Intelligence : " .. customCharacter.attributes.intelligence)
+    print("- Force : " .. customCharacter.attributes.strength)
+    print("- Dextérité : " .. customCharacter.attributes.dexterity)
+    print("- Endurance : " .. customCharacter.attributes.endurance)
+    print("- Magie : " .. customCharacter.attributes.magic)
+    print("Sorts : " .. table.concat(customCharacter.spells, ", "))
+    print("Énergie : " .. customCharacter.energy .. "/" .. customCharacter.energieMax)
 
+    -- Sauvegarde le personnage personnalisé
+    xml.sauvegarder_personnage(customCharacter)
+    print("\nPersonnage sauvegardé en XML.")
+end
+
+-- Fonction principale
+local function main()
+    ensure_saves_directory_exists()
+    test_character_creation()
+
+    -- Lance le bot IRC
+    print("\n=== Lancement du bot IRC ===")
+    bot.run_irc_bot()
+end
+
+-- Exécute la fonction principale
+main()
