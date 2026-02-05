@@ -1,0 +1,16 @@
+<personnage>
+    <nom>corlaie</nom>
+    <niveau>1</niveau>
+    <classe>mage</classe>
+    <attributs>
+        <intelligence>0</intelligence>
+        <strength>0</strength>
+        <dexterity>5</dexterity>
+        <endurance>5</endurance>
+    </attributs>
+    <sorts>
+        <sort>fireball</sort>
+        <sort>lightning</sort>
+        <sort>ice storm</sort>
+    </sorts>
+</personnage>

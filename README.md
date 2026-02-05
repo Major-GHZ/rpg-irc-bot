@@ -3,6 +3,10 @@
 [Français](#en-français) | [English](#in-english)
 
 ---
+## Depends
+https://github.com/mirrexagon/lua-irc-engine.git
+https://github.com/lunarmodules/luasocket.git
+
 
 ## In English
 

@@ -1,0 +1,2721 @@
+[32maegean[0m/stable 0.16.0+dfsg-4 amd64
+  integrated genome analysis toolkit
+
+[32mafterstep[0m/stable 2.2.12-18 amd64
+  window manager with the NEXTSTEP look and feel
+
+[32maodh-evaluator[0m/stable 20.0.0-2 all
+  OpenStack Telemetry (Ceilometer) Alarming - alarm evaluator
+
+[32mapbs[0m/stable 3.4.1-6+b3 amd64
+  Adaptive Poisson Boltzmann Solver
+
+[32mapbs-doc[0m/stable 3.4.1-6 all
+  Adaptive Poisson Boltzmann Solver
+
+[32mapel[0m/stable 10.8+0.20220720-1 all
+  portable library for emacsen
+
+[32mapertium-eval-translator[0m/stable 1.2.1-3 all
+  Evaluate machine translation output against reference
+
+[32mart-nextgen-simulation-tools[0m/stable 20160605+dfsg-5+b1 amd64
+  simulation tools to generate synthetic next-generation sequencing reads
+
+[32mart-nextgen-simulation-tools-profiles[0m/stable 20160605+dfsg-5 all
+  profiles for art simulation tools
+
+[32martfastqgenerator[0m/stable 0.0.20150519-5 all
+  outputs artificial FASTQ files derived from a reference genome
+
+[32martfastqgenerator-doc[0m/stable 0.0.20150519-5 all
+  outputs artificial FASTQ files derived from a reference genome (doc)
+
+[32martfastqgenerator-examples[0m/stable 0.0.20150519-5 all
+  outputs artificial FASTQ files derived from a reference genome (examples)
+
+[32mautogen[0m/stable 1:5.18.16-7 amd64
+  automated text file generator
+
+[32mautogen-doc[0m/stable 1:5.18.16-7 all
+  automated text file generator - documentation
+
+[32mawesome[0m/stable 4.3-7+b2 amd64
+  highly configurable X window manager
+
+[32mawesome-doc[0m/stable 4.3-7 all
+  highly configurable X window manager - documentation
+
+[32mbam[0m/stable 0.5.1-3+b1 amd64
+  fast and flexible build system
+
+[32mbio-vcf[0m/stable 0.9.5-3 all
+  domain specific language (DSL) for processing the VCF format
+
+[32mbleachbit[0m/stable 4.6.2-2 all
+  delete unnecessary files from the system
+
+[32mblkreplay[0m/stable 1.0-3.1 amd64
+  block device testing and benchmarking toolkit
+
+[32mblkreplay-examples[0m/stable 1.0-3.1 all
+  block device testing and benchmarking toolkit (examples)
+
+[32mbmt[0m/stable 0.6-1.1 all
+  software analysis benchmarking toolkit
+
+[32mbpfcc-lua[0m/stable 0.31.0+ds-7 amd64
+  Standalone tool to run BCC tracers written in Lua
+
+[32mbpython[0m/stable 0.25-2 all
+  fancy interface to the Python 3 interpreter
+
+[32mbumps-private-libs[0m/stable 1.0.0b2-2 amd64
+  data fitting and Bayesian uncertainty modeling for inverse problems (libraries)
+
+[32mcantor[0m/stable 4:25.04.2-3 amd64
+  interface for mathematical applications
+
+[32mcantor-backend-lua[0m/stable 4:25.04.2-3 amd64
+  Lua backend for Cantor
+
+[32mcare[0m/stable 2.2.1-1+b3 amd64
+  make linux programs reproducible on all linux systems
+
+[32mcc-tool[0m/stable 0.27-1+b5 amd64
+  support for Texas Instruments CC Debugger
+
+[32mcgit[0m/stable 1.2.3+git20240802.70.09d24d7+git2.46.0-1 amd64
+  hyperfast web frontend for git repositories written in C
+
+[32mcivetweb[0m/stable 1.16+dfsg-2+b2 amd64
+  embeddable web server with optional CGI, SSL and Lua support
+
+[32mcl-launch[0m/stable 4.1.4-1.1 all
+  uniform frontend to running Common Lisp code from the shell
+
+[32mcl-lparallel[0m/stable 20160825-1.1 all
+  parallel programming in Common Lisp
+
+[32mcmuscheme48-el[0m/stable 1.9.2-4 all
+  Emacs mode specialized for Scheme48
+
+[32mcodelite[0m/stable 17.0.0+dfsg-4 amd64
+  Powerful and lightweight IDE
+
+[32mcodelite-plugins[0m/stable 17.0.0+dfsg-4 amd64
+  Powerful and lightweight IDE - plugins
+
+[32mcollectd-core[0m/stable 5.12.0-26 amd64
+  statistics collection and monitoring daemon (core system)
+
+[32mconky-all[0m/stable 1.22.1-1 amd64
+  highly configurable system monitor (all features enabled)
+
+[32mconky-cli[0m/stable 1.22.1-1 amd64
+  highly configurable system monitor (basic version)
+
+[32mconky-std[0m/stable 1.22.1-1 amd64
+  highly configurable system monitor (default version)
+
+[32mcontext[0m/stable 2024.04.01.20240428+dfsg-2 all
+  powerful TeX format
+
+[32mcoredhcp-client[0m/stable 0.0.0+git.20220602.a2552c5-2+b1 amd64
+  multithreaded, modular and extensible DHCP server - client
+
+[32mcoredhcp-server[0m/stable 0.0.0+git.20220602.a2552c5-2+b1 amd64
+  multithreaded, modular and extensible DHCP server - server
+
+[32mcp2k[0m/stable 2025.1-1.1 amd64
+  Ab Initio Molecular Dynamics
+
+[32mcpu-checker[0m/stable 0.7-1.4 amd64
+  tools to help evaluate certain CPU (or BIOS) features
+
+[32mcpuset[0m/stable 1.6.2-2 all
+  Allows manipluation of cpusets and provides higher level fun
+
+[32mcrafty-books-medium[0m/stable 1.0.debian1-5 all
+  Medium size opening books for the crafty chess engine
+
+[32mcrafty-books-medtosmall[0m/stable 1.0.debian1-5 all
+  Medium-to-small size opening books for crafty chess engine
+
+[32mcrafty-books-small[0m/stable 1.0.debian1-5 all
+  Small-size opening books for crafty chess engine
+
+[32mcrm114[0m/stable 20100106-11 amd64
+  versatile classifier for e-mail and other data
+
+[32mcrowdsec[0m/stable 1.4.6-10+b4 amd64
+  lightweight and collaborative security engine
+
+[32mcrystal[0m/stable 1.14.0+dfsg-1 amd64
+  compiler of the Crystal object-oriented programming language
+
+[32mcvsps[0m/stable 2.1-9 amd64
+  Tool to generate CVS patch set information
+
+[32mcwl-utils[0m/stable 0.37-1 all
+  Utilities for using CWL documents
+
+[32mdeets[0m/stable 0.3.2-1+b10 amd64
+  decentralized model-based administration tool
+
+[32mdelve[0m/stable 1.24.0-4+b4 amd64
+  debugger for the Go programming language
+
+[32mdevilspie2[0m/stable 0.43-5+b1 amd64
+  Lua-based window matching utility
+
+[32mdh-lua[0m/stable 33 all
+  helper tools for maintaining Lua-related packages
+
+[32mdhall[0m/stable 1.42.1-1+b1 amd64
+  configuration language guaranteed to terminate
+
+[32mdicelab[0m/stable 0.7-7 amd64
+  tool to compute the statistical distribution of dice rolls
+
+[32mdmarcts-report-parser[0m/stable 1.0+git20230715.9dd92cf-3 all
+  Perl based tool to parse DMARC reports
+
+[32mdnsdiag[0m/stable 2.6.0-1 all
+  DNS request auditing toolset
+
+[32mdnsdist[0m/stable 1.9.10-1+deb13u1 amd64
+  DNS loadbalancer
+
+[32mdnsjit[0m/stable 1.5.0-2 amd64
+  Engine for capturing, parsing and replaying DNS
+
+[32mdnsmasq-base-lua[0m/stable 2.91-1 amd64
+  Small caching DNS proxy and DHCP/TFTP server - executable, Lua-enabled
+
+[32mdolfin-bin[0m/stable 2019.2.0~legacy20240219.1c52e83-18 all
+  Executable scripts for DOLFIN
+
+[32mdolfin-doc[0m/stable 2019.2.0~legacy20240219.1c52e83-18 all
+  Documentation and demo programs for DOLFIN
+
+[32mdolfinx-doc[0m/stable 1:0.9.0-7 all
+  Documentation and demo programs for DOLFIN
+
+[32mdovecot-auth-lua[0m/stable 1:2.4.1+dfsg1-6+deb13u2 amd64
+  secure POP3/IMAP server - Lua authentication plugin
+
+[32mdrs4eb[0m/stable 5.0.6+git20211217+ds-4 amd64
+  DRS4 Evaluation Board software
+
+[32mdwgsim[0m/stable 0.1.14-3 amd64
+  short sequencing read simulator
+
+[32meatmydata[0m/stable 131-2 all
+  Library and utilities designed to disable fsync and friends
+
+[32mecj[0m/stable 3.35.0+eclipse4.29-2 all
+  Eclipse Compiler for Java (command line tool)
+
+[32melinks[0m/stable 0.18.0-1+b1 amd64
+  advanced text-mode WWW browser
+
+[32melinks-data[0m/stable 0.18.0-1 all
+  advanced text-mode WWW browser - data files
+
+[32melinks-doc[0m/stable 0.18.0-1 all
+  advanced text-mode WWW browser - documentation
+
+[32melki[0m/stable 0.7.1-10.1 all
+  Data mining algorithm development framework
+
+[32melki-dev[0m/stable 0.7.1-10.1 all
+  Data mining algorithm development framework - development files
+
+[32melpa-ediprolog[0m/stable 2.3-1 all
+  Emacs Does Interactive Prolog
+
+[32melpa-ess[0m/stable 24.01.1-5 all
+  Emacs mode for statistical programming and data analysis
+
+[32melpa-format-all[0m/stable 0.6.0-2 all
+  Auto-format C, C++, JS, Python, Ruby and 50 other languages
+
+[32melpa-geiser[0m/stable 0.31.1-1 all
+  Generic Emacs/Scheme interaction mode
+
+[32melpa-lua-mode[0m/stable 20250310~git.2f6b8d7-1 all
+  Emacs major-mode for editing Lua programs
+
+[32melpa-with-simulated-input[0m/stable 3.0-4 all
+  macro to simulate user input non-interactively
+
+[32melpa-yasnippet-snippets[0m/stable 1.1+dfsg-2 all
+  Andrea Crotti's official YASnippet snippets
+
+[32ment[0m/stable 1.2debian-3 amd64
+  pseudorandom number sequence test program
+
+[32meperl[0m/stable 2.2.15-1+deb13u1 amd64
+  Embedded Perl 5 Language
+
+[32mepiphany[0m/stable 0.7.0+0-7 amd64
+  clone of Boulder Dash game
+
+[32merlang-luerl[0m/stable 1:1.2.3-1+b1 amd64
+  implementation of Lua in Erlang
+
+[32mesh[0m/stable 0.3.2-2 all
+  templating engine for evaluating shell commands embedded in arbitrary templates
+
+[32meslint[0m/stable 6.4.0~dfsg+~6.1.9-12 all
+  AST-based pattern checker for JavaScript
+
+[32mexuberant-ctags[0m/stable 1:5.9~svn20110310-19 amd64
+  build tag file indexes of source code definitions
+
+[32mfcc[0m/stable 2.16-1 amd64
+  Script to compile C/C++ programs and link to Fortran libraries
+
+[32mfceux[0m/stable 2.6.5+dfsg1-2+b2 amd64
+  all-in-one NES/Famicom Emulator
+
+[32mfcitx-module-lua[0m/stable,now 1:4.2.9.9-2+b1 amd64 [installed,automatic]
+  Flexible Input Method Framework - Lua module
+
+[32mfcitx5-module-lua[0m/stable,now 5.0.14-1 amd64 [installed,automatic]
+  Lua support for fcitx5
+
+[32mfcitx5-module-lua-common[0m/stable,now 5.0.14-1 all [installed,automatic]
+  Lua support for fcitx5 (common files)
+
+[32mfcitx5-module-lua-dev[0m/stable 5.0.14-1 amd64
+  Lua support for fcitx5 (development files)
+
+[32mfennel[0m/stable 1.5.3+dfsg-2 all
+  Lisp-based programming language for the Lua runtime
+
+[32mfoxeye[0m/stable 0.12.1-5.1 amd64
+  Universal modular network agent - binary package
+
+[32mgalvani[0m/stable 0.38-2 amd64
+  reads data from a device with graphical plots and evaluation
+
+[32mgbonds[0m/stable 2.0.3-17+b1 amd64
+  U.S. Savings Bond inventory program for GNOME
+
+[32mgeany-plugin-lua[0m/stable 2.0-6+b1 amd64
+  Lua scripting plugin for Geany
+
+[32mgmastermind.app[0m/stable 0.6-3 amd64
+  GNUstep implementation of the Mastermind game
+
+[32mgoaccess[0m/stable 1:1.9.3-1 amd64
+  log analyzer and interactive viewer for the Apache Webserver
+
+[32mgolang-bitbucket-creachadair-shell-dev[0m/stable 0.0.8-2 all
+  implements basic shell command-line splitting for Go (library)
+
+[32mgolang-github-antchfx-htmlquery-dev[0m/stable 1.3.4-1 all
+  XPath package for HTML query (library)
+
+[32mgolang-github-antchfx-xmlquery-dev[0m/stable 1.4.3-1 all
+  Go XPath package for XML query
+
+[32mgolang-github-antonmedv-expr-dev[0m/stable 1.8.9-2 all
+  expression evaluation engine for Go
+
+[32mgolang-github-benbjohnson-immutable-dev[0m/stable 0.2.0-2 all
+  Immutable collections for Go (library)
+
+[32mgolang-github-brentp-goluaez-dev[0m/stable 0.0~git20160116.dd35d08-2 all
+  Easy embedding Lua in go
+
+[32mgolang-github-casbin-govaluate-dev[0m/stable 1.3.0-1 all
+  Arbitrary expression evaluation for golang (library)
+
+[32mgolang-github-cjoudrey-gluaurl-dev[0m/stable 0.0~git20161028.31cbb9b-3 all
+  url parser and builder module for gopher-lua (library)
+
+[32mgolang-github-coredhcp-coredhcp-dev[0m/stable 0.0.0+git.20220602.a2552c5-2 all
+  multithreaded, modular and extensible DHCP server - library
+
+[32mgolang-github-dgraph-io-ristretto-dev[0m/stable 0.0.3-2 all
+  high performance memory-bound Go cache
+
+[32mgolang-github-dropbox-dropbox-sdk-go-unofficial-dev[0m/stable 6.0.5-1 all
+  Unofficial Go SDK for integrating with the Dropbox API v2
+
+[32mgolang-github-google-cel-go-dev[0m/stable 0.18.2+ds-5 all
+  Common Expression Language (go runtime)
+
+[32mgolang-github-hashicorp-go-bexpr-dev[0m/stable 0.1.2-3 all
+  generic boolean expression evaluation in Golang
+
+[32mgolang-github-hashicorp-go-sockaddr-dev[0m/stable 1.0.2-3 all
+  IP address/UNIX socket convenience functions for Go
+
+[32mgolang-github-ryanuber-columnize-dev[0m/stable 2.1.1-2 all
+  Easy column formatted output for golang
+
+[32mgolang-github-sourcegraph-annotate-dev[0m/stable 0.0~git20160123.f4cad6c-1 all
+  Apply multiple sets of annotations to a region of text
+
+[32mgolang-github-viant-assertly-dev[0m/stable 0.5.4-1 all
+  Arbitraty datastructure validation golang library
+
+[32mgolang-github-yuin-gluare-dev[0m/stable 0.0~git20170607.d7c94f1-2 all
+  Regular expression library for the GopherLua
+
+[32mgolang-github-yuin-gopher-lua-dev[0m/stable 0.0~git20170915.0.eb1c729-5 all
+  virtual machine and compiler for Lua in Go
+
+[32mgolang-layeh-gopher-luar-dev[0m/stable 1.0.4-1.1 all
+  Simplifies data passing between Go and GopherLua
+
+[32mgpsshogi-data[0m/stable 0.7.0-3.2 all
+  data files for gpsshogi
+
+[32mgrilo-plugins-0.3[0m/stable,now 0.3.16-5 amd64 [installed,automatic]
+  Framework for discovering and browsing media - Plugins
+
+[32mhaserl[0m/stable 0.9.36-2.1 amd64
+  CGI scripting program for embedded environments
+
+[32mherisvm[0m/stable 0.9.0-2 all
+  machine learning tools for classification algorithms
+
+[32mhexchat[0m/stable 2.16.2-1+b6 amd64
+  IRC client for X based on X-Chat 2
+
+[32mhexchat-lua[0m/stable 2.16.2-1+b6 amd64
+  Lua plugin for HexChat
+
+[32mhexec[0m/stable 0.2.1-4+b1 amd64
+  Command line tool to hook into exec calls
+
+[32minkscape-textext[0m/stable 1.11.1-1 all
+  Re-editable LaTeX graphics for Inkscape
+
+[32minkscape-textext-doc[0m/stable 1.11.1-1 all
+  Re-editable LaTeX graphics for Inkscape (documentation)
+
+[32minstead[0m/stable 3.5.2+dfsg-0.2 amd64
+  Simple text adventures/visual novels engine
+
+[32minstead-data[0m/stable 3.5.2+dfsg-0.2 all
+  Data files for INSTEAD
+
+[32minstead-doc-common[0m/stable 3.5.2+dfsg-0.2 all
+  Common documentation for INSTEAD
+
+[32minstead-doc-en[0m/stable 3.5.2+dfsg-0.2 all
+  English documentation for INSTEAD
+
+[32minstead-doc-ru[0m/stable 3.5.2+dfsg-0.2 all
+  Russian documentation for INSTEAD
+
+[32mipe[0m/stable 7.2.30-1+b2 amd64
+  drawing editor for creating figures in PDF or PS formats
+
+[32misc-dhcp-common[0m/stable 4.4.3-P1-8 amd64
+  common manpages relevant to all of the isc-dhcp packages (deprecated)
+
+[32mjanino[0m/stable 3.1.12+dfsg-1 all
+  runtime compiler for Java expressions - binary
+
+[32mjapa[0m/stable 0.9.4-1+b1 amd64
+  JACK and ALSA Perceptual Analyser
+
+[32mjel-java[0m/stable 2.1.2-2 all
+  Library for evaluating algebraic expressions in Java
+
+[32mjel-java-doc[0m/stable 2.1.2-2 all
+  Java Expressions Library (documentation)
+
+[32mjester[0m/stable 1.0-16 amd64
+  board game similar to Othello
+
+[32mjube[0m/stable 2.7.1-3 all
+  JUBE Benchmarking Environment
+
+[32mkamailio[0m/stable 6.0.1-1+deb13u1 amd64
+  very fast, dynamic and configurable SIP server
+
+[32mkamailio-lua-modules[0m/stable 6.0.1-1+deb13u1 amd64
+  app_lua module for Kamailio Lua support
+
+[32mking-probe[0m/stable 02.21-1 amd64
+  Evaluate and visualize protein interatomic packing
+
+[32mklatexformula[0m/stable 4.1.0-1.1+b2 amd64
+  GUI to easily get an image from a LaTeX formula or equation
+
+[32mknot-resolver[0m/stable 5.7.5-1 amd64
+  caching, DNSSEC-validating DNS resolver
+
+[32mknot-resolver-doc[0m/stable 5.7.5-1 all
+  Documentation for Knot Resolver
+
+[32mknot-resolver-module-http[0m/stable 5.7.5-1 amd64
+  HTTP module for Knot Resolver
+
+[32mlaby[0m/stable 0.7.0-2+b6 amd64
+  Learn how to program with ants and spider webs
+
+[32mledger2beancount[0m/stable 2.7-1 all
+  Convert Ledger-based textual ledgers to Beancount ones
+
+[32mlibaudiomask-dev[0m/stable 1.0-3.1 amd64
+  Audio masking threshold estimation lib headers, docs and examples
+
+[32mlibaudiomask1[0m/stable 1.0-3.1 amd64
+  Audio masking threshold estimation library
+
+[32mlibbiojava-java[0m/stable 1:1.9.7+dfsg-2 all
+  Java API to biological data and applications (default version)
+
+[32mlibbiojava4-java[0m/stable 4.2.12+dfsg-8 all
+  Java API to biological data and applications (default version)
+
+[32mlibcamp-dev[0m/stable 0.8.4-4.1+b1 amd64
+  C++ multi-purpose reflection library (development files)
+
+[32mlibcamp0.8t64[0m/stable 0.8.4-4.1+b1 amd64
+  C++ multi-purpose reflection library
+
+[32mlibcapstone5[0m/stable 5.0.6-1 amd64
+  lightweight multi-architecture disassembly framework - library
+
+[32mlibcatmandu-cmd-repl-perl[0m/stable 0.01-2 all
+  interactive shell for Catmandu
+
+[32mlibcivetweb-dev[0m/stable 1.16+dfsg-2+b2 amd64
+  embeddable web server with optional CGI, SSL and Lua support (devel)
+
+[32mlibcivetweb1[0m/stable 1.16+dfsg-2+b2 amd64
+  embeddable web server with optional CGI, SSL and Lua support (lib)
+
+[32mlibclasslojure-clojure[0m/stable 0.7.1-4 all
+  Advanced classloading for Clojure
+
+[32mlibcommons-el-java[0m/stable 1.0-10 all
+  Implementation of the JSP 2.0 Expression Language interpreter
+
+[32mlibcpan-reporter-perl[0m/stable 1.2020-1 all
+  module which adds CPAN Testers reporting to CPAN.pm
+
+[32mlibcsnd-dev[0m/stable 1:6.18.1+dfsg-4 amd64
+  development files for Csound -- C++ API
+
+[32mlibcubature-dev[0m/stable 1.0.4+ds-2 amd64
+  Multi-dimensional adaptive integration (cubature) in C
+
+[32mlibcubature0[0m/stable 1.0.4+ds-2 amd64
+  Multi-dimensional adaptive integration (cubature) in C (shared lib)
+
+[32mlibcucumber-tagexpressions-perl[0m/stable 6.1.0-1 all
+  library for parsing and evaluating cucumber tag expressions
+
+[32mlibdata-rmap-perl[0m/stable 0.65-3 all
+  Perl module implementing a recursive map, applying a block to a data structure
+
+[32mlibdbix-simple-perl[0m/stable 1.37-3 all
+  Perl module implementing an simpler interface to DBI
+
+[32mlibdevel-repl-perl[0m/stable 1.003029-1 all
+  module for building a modern Perl interactive shell
+
+[32mlibdolfin-dev[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Shared links and development files for DOLFIN
+
+[32mlibdolfin-dev-common[0m/stable 2019.2.0~legacy20240219.1c52e83-18 all
+  Common header files for DOLFIN
+
+[32mlibdolfin2019.2t64[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Shared libraries for DOLFIN
+
+[32mlibdolfin64-2019.2t64[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Shared libraries for DOLFIN (64-bit indexing)
+
+[32mlibdolfin64-dev[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Shared links and dev files for DOLFIN (64-bit indexing)
+
+[32mlibdolfinx-complex-dev[0m/stable 1:0.9.0-7 amd64
+  Shared links and header files for DOLFIN (complex numbers)
+
+[32mlibdolfinx-complex0.9[0m/stable 1:0.9.0-7 amd64
+  Shared libraries for DOLFIN
+
+[32mlibdolfinx-dev[0m/stable 1:0.9.0-7 amd64
+  Shared links and header files for DOLFIN
+
+[32mlibdolfinx-real-dev[0m/stable 1:0.9.0-7 amd64
+  Shared links and header files for DOLFIN (real numbers)
+
+[32mlibdolfinx-real0.9[0m/stable 1:0.9.0-7 amd64
+  Shared libraries for DOLFIN
+
+[32mlibeclipse-jdt-annotation-java[0m/stable 2.2.700+eclipse4.29-2 all
+  Eclipse JDT Annotations for Enhanced Null Analysis
+
+[32mlibeclipse-jdt-apt-core-java[0m/stable 3.8.100+eclipse4.29-2 all
+  Eclipse Java Annotation Processing Core
+
+[32mlibeclipse-jdt-apt-pluggable-core-java[0m/stable 1.4.100+eclipse4.29-2 all
+  Eclipse Java Compiler Apt IDE
+
+[32mlibeclipse-jdt-core-compiler-batch-java[0m/stable 3.35.0+eclipse4.29-2 all
+  Eclipse Java Compiler Batch
+
+[32mlibeclipse-jdt-core-java[0m/stable 3.35.0+eclipse4.29-2 all
+  Eclipse Java Development Tools Core
+
+[32mlibecpint-dev[0m/stable 1.0.7-4+b1 amd64
+  Effective Core Potentials integration library (development files)
+
+[32mlibel-api-java[0m/stable 3.0.0-3 all
+  Expression Language API
+
+[32mlibescapevelocity-java[0m/stable 0.9.1-2 all
+  Subset reimplementation of Apache Velocity with a much simpler API
+
+[32mlibeval-context-perl[0m/stable 0.09.11-7 all
+  evaluate perl code in context wrapper
+
+[32mlibexprtk-dev[0m/stable 0.0.3-3 all
+  C++ Mathematical Expression Toolkit Library
+
+[32mlibfaiss-dev[0m/stable 1.11.0-3 amd64
+  efficient similarity search and clustering of dense vectors
+
+[32mlibfizmo-dev[0m/stable 0.7.15-2.1 amd64
+  Z-Machine interpreter developer library
+
+[32mlibfparser-dev[0m/stable 4.5.2-2+b2 amd64
+  Function Parser for C++ - development files
+
+[32mlibfparser4[0m/stable 4.5.2-2+b2 amd64
+  Function Parser for C++
+
+[32mlibfungw-lua1[0m/stable 1.2.1-3.1+b2 amd64
+  Scripting support for fungw: lua
+
+[32mlibgedit-gtksourceview-300-common[0m/stable,now 299.5.0-1 all [installed,automatic]
+  common files for the GTK+ syntax highlighting widget
+
+[32mlibghc-dhall-dev[0m/stable 1.42.1-1+b1 amd64
+  configuration language guaranteed to terminate
+
+[32mlibghc-dhall-doc[0m/stable 1.42.1-1 all
+  configuration language guaranteed to terminate; documentation
+
+[32mlibghc-dhall-prof[0m/stable 1.42.1-1+b1 amd64
+  configuration language guaranteed to terminate; profiling libraries
+
+[32mlibghc-hint-dev[0m/stable 0.9.0.8-1+b2 amd64
+  runtime Haskell interpreter (GHC API wrapper)
+
+[32mlibghc-hint-doc[0m/stable 0.9.0.8-1 all
+  runtime Haskell interpreter (GHC API wrapper); documentation
+
+[32mlibghc-hint-prof[0m/stable 0.9.0.8-1+b2 amd64
+  runtime Haskell interpreter (GHC API wrapper); profiling libraries
+
+[32mlibghc-hslua-aeson-dev[0m/stable 2.3.1.1-1+b2 amd64
+  Allow aeson data types to be used with Lua.
+
+[32mlibghc-hslua-aeson-doc[0m/stable 2.3.1.1-1 all
+  Allow aeson data types to be used with Lua.; documentation
+
+[32mlibghc-hslua-aeson-prof[0m/stable 2.3.1.1-1+b2 amd64
+  Allow aeson data types to be used with Lua.; profiling libraries
+
+[32mlibghc-hslua-classes-dev[0m/stable 2.3.1-1+b2 amd64
+  Type classes for HsLua
+
+[32mlibghc-hslua-classes-doc[0m/stable 2.3.1-1 all
+  Type classes for HsLua; documentation
+
+[32mlibghc-hslua-classes-prof[0m/stable 2.3.1-1+b2 amd64
+  Type classes for HsLua; profiling libraries
+
+[32mlibghc-hslua-cli-dev[0m/stable 1.4.3-1+b2 amd64
+  command-line interface for Lua
+
+[32mlibghc-hslua-cli-doc[0m/stable 1.4.3-1 all
+  command-line interface for Lua; documentation
+
+[32mlibghc-hslua-cli-prof[0m/stable 1.4.3-1+b2 amd64
+  command-line interface for Lua; profiling libraries
+
+[32mlibghc-hslua-core-dev[0m/stable 2.3.2-1+b2 amd64
+  Lua bindings for Haskell
+
+[32mlibghc-hslua-core-doc[0m/stable 2.3.2-1 all
+  Lua bindings for Haskell; documentation
+
+[32mlibghc-hslua-core-prof[0m/stable 2.3.2-1+b2 amd64
+  Lua bindings for Haskell; profiling libraries
+
+[32mlibghc-hslua-dev[0m/stable 2.3.1-1+b2 amd64
+  Lua language interpreter embedding in Haskell
+
+[32mlibghc-hslua-doc[0m/stable 2.3.1-1 all
+  Lua language interpreter embedding in Haskell; documentation
+
+[32mlibghc-hslua-list-dev[0m/stable 1.1.4-1+b1 amd64
+  Opinionated, but extensible Lua list type.
+
+[32mlibghc-hslua-list-doc[0m/stable 1.1.4-1 all
+  Opinionated, but extensible Lua list type.; documentation
+
+[32mlibghc-hslua-list-prof[0m/stable 1.1.4-1+b1 amd64
+  Opinionated, but extensible Lua list type.; profiling libraries
+
+[32mlibghc-hslua-marshalling-dev[0m/stable 2.3.1-1+b2 amd64
+  Marshalling of values between Haskell and Lua
+
+[32mlibghc-hslua-marshalling-doc[0m/stable 2.3.1-1 all
+  Marshalling of values between Haskell and Lua; documentation
+
+[32mlibghc-hslua-marshalling-prof[0m/stable 2.3.1-1+b2 amd64
+  Marshalling of values between Haskell and Lua; profiling libraries
+
+[32mlibghc-hslua-module-doclayout-dev[0m/stable 1.1.1.2-1+b2 amd64
+  Lua module wrapping Text.DocLayout
+
+[32mlibghc-hslua-module-doclayout-doc[0m/stable 1.1.1.2-1 all
+  Lua module wrapping Text.DocLayout; documentation
+
+[32mlibghc-hslua-module-doclayout-prof[0m/stable 1.1.1.2-1+b2 amd64
+  Lua module wrapping Text.DocLayout; profiling libraries
+
+[32mlibghc-hslua-module-path-dev[0m/stable 1.1.1-1+b4 amd64
+  Lua module to work with file paths.
+
+[32mlibghc-hslua-module-path-doc[0m/stable 1.1.1-1 all
+  Lua module to work with file paths.; documentation
+
+[32mlibghc-hslua-module-path-prof[0m/stable 1.1.1-1+b4 amd64
+  Lua module to work with file paths.; profiling libraries
+
+[32mlibghc-hslua-module-system-dev[0m/stable 1.1.2-1+b4 amd64
+  Lua module wrapper around Haskell's System module
+
+[32mlibghc-hslua-module-system-doc[0m/stable 1.1.2-1 all
+  Lua module wrapper around Haskell's System module; documentation
+
+[32mlibghc-hslua-module-system-prof[0m/stable 1.1.2-1+b4 amd64
+  Lua module wrapper around Haskell's System module; profiling libraries
+
+[32mlibghc-hslua-module-text-dev[0m/stable 1.1.1-1+b4 amd64
+  Lua module for text
+
+[32mlibghc-hslua-module-text-doc[0m/stable 1.1.1-1 all
+  Lua module for text; documentation
+
+[32mlibghc-hslua-module-text-prof[0m/stable 1.1.1-1+b4 amd64
+  Lua module for text; profiling libraries
+
+[32mlibghc-hslua-module-version-dev[0m/stable 1.1.1-1+b2 amd64
+  Lua module to work with version specifiers.
+
+[32mlibghc-hslua-module-version-doc[0m/stable 1.1.1-1 all
+  Lua module to work with version specifiers.; documentation
+
+[32mlibghc-hslua-module-version-prof[0m/stable 1.1.1-1+b2 amd64
+  Lua module to work with version specifiers.; profiling libraries
+
+[32mlibghc-hslua-module-zip-dev[0m/stable 1.1.3-1+b2 amd64
+  Lua module to work with file zips
+
+[32mlibghc-hslua-module-zip-doc[0m/stable 1.1.3-1 all
+  Lua module to work with file zips; documentation
+
+[32mlibghc-hslua-module-zip-prof[0m/stable 1.1.3-1+b2 amd64
+  Lua module to work with file zips; profiling libraries
+
+[32mlibghc-hslua-objectorientation-dev[0m/stable 2.3.1-1+b2 amd64
+  Object orientation tools for HsLua
+
+[32mlibghc-hslua-objectorientation-doc[0m/stable 2.3.1-1 all
+  Object orientation tools for HsLua; documentation
+
+[32mlibghc-hslua-objectorientation-prof[0m/stable 2.3.1-1+b2 amd64
+  Object orientation tools for HsLua; profiling libraries
+
+[32mlibghc-hslua-packaging-dev[0m/stable 2.3.1-1+b2 amd64
+  Utilities to build Lua modules.
+
+[32mlibghc-hslua-packaging-doc[0m/stable 2.3.1-1 all
+  Utilities to build Lua modules.; documentation
+
+[32mlibghc-hslua-packaging-prof[0m/stable 2.3.1-1+b2 amd64
+  Utilities to build Lua modules.; profiling libraries
+
+[32mlibghc-hslua-prof[0m/stable 2.3.1-1+b2 amd64
+  Lua language interpreter embedding in Haskell; profiling libraries
+
+[32mlibghc-hslua-repl-dev[0m/stable 0.1.2-1+b2 amd64
+  Isocline-based Lua REPL
+
+[32mlibghc-hslua-repl-doc[0m/stable 0.1.2-1 all
+  Isocline-based Lua REPL; documentation
+
+[32mlibghc-hslua-repl-prof[0m/stable 0.1.2-1+b2 amd64
+  Isocline-based Lua REPL; profiling libraries
+
+[32mlibghc-hslua-typing-dev[0m/stable 0.1.1-1+b2 amd64
+  type specifiers for Lua in Haskell
+
+[32mlibghc-hslua-typing-doc[0m/stable 0.1.1-1 all
+  type specifiers for Lua in Haskell; documentation
+
+[32mlibghc-hslua-typing-prof[0m/stable 0.1.1-1+b2 amd64
+  type specifiers for Lua in Haskell; profiling libraries
+
+[32mlibghc-hxt-dev[0m/stable 9.3.1.22-3+b1 amd64
+  collection of tools for processing XML with Haskell
+
+[32mlibghc-hxt-doc[0m/stable 9.3.1.22-3 all
+  collection of tools for processing XML with Haskell; documentation
+
+[32mlibghc-hxt-prof[0m/stable 9.3.1.22-3+b1 amd64
+  collection of tools for processing XML with Haskell; profiling libraries
+
+[32mlibghc-lpeg-dev[0m/stable 1.0.4-2+b2 amd64
+  LPeg – Parsing Expression Grammars For Lua
+
+[32mlibghc-lpeg-doc[0m/stable 1.0.4-2 all
+  LPeg – Parsing Expression Grammars For Lua; documentation
+
+[32mlibghc-lpeg-prof[0m/stable 1.0.4-2+b2 amd64
+  LPeg – Parsing Expression Grammars For Lua; profiling libraries
+
+[32mlibghc-lua-arbitrary-dev[0m/stable 1.0.1.1-2+b2 amd64
+  Arbitrary instances for Lua types
+
+[32mlibghc-lua-arbitrary-doc[0m/stable 1.0.1.1-2 all
+  Arbitrary instances for Lua types; documentation
+
+[32mlibghc-lua-arbitrary-prof[0m/stable 1.0.1.1-2+b2 amd64
+  Arbitrary instances for Lua types; profiling libraries
+
+[32mlibghc-lua-dev[0m/stable 2.3.3+ds1-1+b1 amd64
+  Lua bindings for Haskell
+
+[32mlibghc-lua-doc[0m/stable 2.3.3+ds1-1 all
+  Lua bindings for Haskell; documentation
+
+[32mlibghc-lua-prof[0m/stable 2.3.3+ds1-1+b1 amd64
+  Lua bindings for Haskell; profiling libraries
+
+[32mlibghc-mueval-dev[0m/stable 0.9.4-1+b1 amd64
+  safely evaluate pure Haskell expressions
+
+[32mlibghc-mueval-doc[0m/stable 0.9.4-1 all
+  safely evaluate pure Haskell expressions; documentation
+
+[32mlibghc-mueval-prof[0m/stable 0.9.4-1+b1 amd64
+  safely evaluate pure Haskell expressions; profiling libraries
+
+[32mlibghc-nothunks-dev[0m/stable 0.1.5-1+b1 amd64
+  Examine values for unexpected thunks
+
+[32mlibghc-nothunks-doc[0m/stable 0.1.5-1 all
+  Examine values for unexpected thunks; documentation
+
+[32mlibghc-nothunks-prof[0m/stable 0.1.5-1+b1 amd64
+  Examine values for unexpected thunks; profiling libraries
+
+[32mlibghc-pandoc-dev[0m/stable 3.1.11.1-3+b1 amd64
+  Conversion between markup formats
+
+[32mlibghc-pandoc-doc[0m/stable 3.1.11.1-3 all
+  Conversion between markup formats; documentation
+
+[32mlibghc-pandoc-lua-engine-dev[0m/stable 0.2.1.2-1+b2 amd64
+  Lua engine to power custom pandoc conversions
+
+[32mlibghc-pandoc-lua-engine-doc[0m/stable 0.2.1.2-1 all
+  Lua engine to power custom pandoc conversions; documentation
+
+[32mlibghc-pandoc-lua-engine-prof[0m/stable 0.2.1.2-1+b2 amd64
+  Lua engine to power custom pandoc conversions; profiling libraries
+
+[32mlibghc-pandoc-lua-marshal-dev[0m/stable 0.2.9-1+b1 amd64
+  Use pandoc types in Lua
+
+[32mlibghc-pandoc-lua-marshal-doc[0m/stable 0.2.9-1 all
+  Use pandoc types in Lua; documentation
+
+[32mlibghc-pandoc-lua-marshal-prof[0m/stable 0.2.9-1+b1 amd64
+  Use pandoc types in Lua; profiling libraries
+
+[32mlibghc-pandoc-prof[0m/stable 3.1.11.1-3+b1 amd64
+  Conversion between markup formats; profiling libraries
+
+[32mlibghc-tasty-hslua-dev[0m/stable 1.1.1-1+b1 amd64
+  Tasty helpers to test HsLua.
+
+[32mlibghc-tasty-hslua-doc[0m/stable 1.1.1-1 all
+  Tasty helpers to test HsLua.; documentation
+
+[32mlibghc-tasty-hslua-prof[0m/stable 1.1.1-1+b1 amd64
+  Tasty helpers to test HsLua.; profiling libraries
+
+[32mlibghc-tasty-lua-dev[0m/stable 1.1.1-1+b1 amd64
+  Write tests in Lua, integrate into tasty
+
+[32mlibghc-tasty-lua-doc[0m/stable 1.1.1-1 all
+  Write tests in Lua, integrate into tasty; documentation
+
+[32mlibghc-tasty-lua-prof[0m/stable 1.1.1-1+b1 amd64
+  Write tests in Lua, integrate into tasty; profiling libraries
+
+[32mlibghc-typst-dev[0m/stable 0.5.0.1-1+b1 amd64
+  Parsing and evaluating typst syntax.
+
+[32mlibghc-typst-doc[0m/stable 0.5.0.1-1 all
+  Parsing and evaluating typst syntax.; documentation
+
+[32mlibghc-typst-prof[0m/stable 0.5.0.1-1+b1 amd64
+  Parsing and evaluating typst syntax.; profiling libraries
+
+[32mlibgraph-grammar-perl[0m/stable 0.2.0-1 all
+  Grammar for graphs
+
+[32mlibgtksourceview-3.0-common[0m/stable 3.24.11-3 all
+  common files for the GTK+ syntax highlighting widget
+
+[32mlibgtksourceview-4-common[0m/stable,now 4.8.4-6 all [installed,automatic]
+  common files for the GTK+ syntax highlighting widget
+
+[32mlibgtksourceview-5-common[0m/stable,now 5.16.0-1 all [installed,automatic]
+  common files for the GTK 4 syntax highlighting widget
+
+[32mlibgv-lua[0m/stable 2.42.4-3 amd64
+  Lua bindings for graphviz
+
+[32mlibhmsbeagle-dev[0m/stable 4.0.1+dfsg-3 amd64
+  High-performance lib for Bayesian and Maximum Likelihood phylogenetics (devel)
+
+[32mlibhmsbeagle-java[0m/stable 4.0.1+dfsg-3 amd64
+  High-performance lib for Bayesian and Maximum Likelihood phylogenetics (java)
+
+[32mlibhmsbeagle1v5[0m/stable 4.0.1+dfsg-3 amd64
+  High-performance lib for Bayesian and Maximum Likelihood phylogenetics
+
+[32mlibhtml-dashboard-perl[0m/stable 0.03-5 all
+  module that tries to achieve spreadsheet-like formatting for HTML tables
+
+[32mlibint-dev[0m/stable 1.2.1-6 amd64
+  Evaluate the integrals in modern atomic and molecular theory (devel)
+
+[32mlibint1[0m/stable 1.2.1-6 amd64
+  Evaluate the integrals in modern atomic and molecular theory
+
+[32mlibint2-2t64[0m/stable 2.7.2-1.1 amd64
+  Computation Chemistry Integral Evaluation Library
+
+[32mlibint2-dev[0m/stable 2.7.2-1.1 amd64
+  Computation Chemistry Integral Evaluation Library (development files)
+
+[32mlibipa-hbac-dev[0m/stable 2.10.1-2+b1 amd64
+  FreeIPA HBAC Evaluator library -- development files
+
+[32mlibipa-hbac0t64[0m/stable 2.10.1-2+b1 amd64
+  FreeIPA HBAC Evaluator library
+
+[32mlibips4o-dev[0m/stable 0.0+git20190618.2206938-2 all
+  In-place Parallel Super Scalar Samplesort
+
+[32mlibjakarta-el-api-java[0m/stable 5.0.1-1 all
+  Jakarta Expression Language API
+
+[32mlibjanino-java[0m/stable 3.1.12+dfsg-1 all
+  runtime compiler for Java expressions - library
+
+[32mlibjanino-java-doc[0m/stable 3.1.12+dfsg-1 all
+  runtime compiler for Java expressions - documentation
+
+[32mlibjaxen-java[0m/stable 1.1.6-5 all
+  Java XPath engine
+
+[32mlibjep-java[0m/stable 2.4.1+ds-4 all
+  Java Expression Parser
+
+[32mlibjs-coffeescript[0m/stable 2.7.0+dfsg1-2 all
+  client-side interpreter for the CoffeeScript language
+
+[32mlibjson-schema-modern-perl[0m/stable 0.611-1 all
+  module to validate JSON data against a schema
+
+[32mlibklatexformula4[0m/stable 4.1.0-1.1+b2 amd64
+  Runtime libraries for klatexformula
+
+[32mlibklatexformula4-dev[0m/stable 4.1.0-1.1+b2 amd64
+  Runtime libraries for klatexformula, development files
+
+[32mlibklatexformula4-doc[0m/stable 4.1.0-1.1 all
+  Runtime libraries for klatexformula, API documentation
+
+[32mlibkopeninghours-dev[0m/stable 25.04.2-1 amd64
+  OSM opening hours expressions library (development files)
+
+[32mlibkopeninghours1[0m/stable 25.04.2-1 amd64
+  OSM opening hours expressions library
+
+[32mlibkseexpr-data[0m/stable 4.0.4.0-7 all
+  embeddable expression evaluation engine - shared data
+
+[32mlibkseexpr4[0m/stable 4.0.4.0-7 amd64
+  embeddable expression evaluation engine - shared library
+
+[32mlibkseexprui4[0m/stable 4.0.4.0-7 amd64
+  embeddable expression evaluation engine - UI shared library
+
+[32mliblazymap-clojure[0m/stable 3.1.1-3 all
+  transparent wrapper around Clojure's map types
+
+[32mliblip-dev[0m/stable 2.0.0-4 amd64
+  reliable interpolation of multivariate scattered data
+
+[32mliblip2t64[0m/stable 2.0.0-4 amd64
+  reliable interpolation of multivariate scattered data
+
+[32mliblua5.1-0[0m/stable,now 5.1.5-11 amd64 [installed]
+  Shared library for the Lua interpreter version 5.1
+
+[32mliblua5.1-0-dev[0m/stable,now 5.1.5-11 amd64 [installed]
+  Development files for the Lua language version 5.1
+
+[32mliblua5.1-luacsnd[0m/stable 1:6.18.1+dfsg-4 amd64
+  Lua bindings for the Csound API (transitional package)
+
+[32mliblua5.2-0[0m/stable,now 5.2.4-3+b3 amd64 [installed,automatic]
+  Shared library for the Lua interpreter version 5.2
+
+[32mliblua5.2-dev[0m/stable 5.2.4-3+b3 amd64
+  Development files for the Lua language version 5.2
+
+[32mliblua5.3-0[0m/stable,now 5.3.6-2+b4 amd64 [installed,automatic]
+  Shared library for the Lua interpreter version 5.3
+
+[32mliblua5.3-0-dbg[0m/stable 5.3.6-2+b4 amd64
+  Debug symbols for the Lua shared library interpreter
+
+[32mliblua5.3-dev[0m/stable 5.3.6-2+b4 amd64
+  Development files for the Lua language version 5.3
+
+[32mliblua5.4-0[0m/stable,now 5.4.7-1+b2 amd64 [installed,automatic]
+  Shared library for the Lua interpreter version 5.4
+
+[32mliblua5.4-dev[0m/stable 5.4.7-1+b2 amd64
+  Development files for the Lua language version 5.4
+
+[32mlibluabind-dev[0m/stable 0.9.1+git20150823+dfsg-3.1+b2 amd64
+  luabind c++ binding for Lua: static library and headers
+
+[32mlibluabind-doc[0m/stable 0.9.1+git20150823+dfsg-3.1 all
+  luabind c++ binding for Lua: documentation files
+
+[32mlibluabind-examples[0m/stable 0.9.1+git20150823+dfsg-3.1 all
+  luabind c++ binding for Lua: example files
+
+[32mlibluabind0.9.1d1[0m/stable 0.9.1+git20150823+dfsg-3.1+b2 amd64
+  luabind c++ binding for Lua: runtime library
+
+[32mlibluajit-5.1-2[0m/stable,now 2.1.0+openresty20250117-2 amd64 [installed,automatic]
+  OpenResty-maintained branch of LuaJIT (shared objects)
+
+[32mlibluajit-5.1-common[0m/stable,now 2.1.0+openresty20250117-2 all [installed,automatic]
+  OpenResty-maintained branch of LuaJIT (common files)
+
+[32mlibluajit-5.1-dev[0m/stable 2.1.0+openresty20250117-2 amd64
+  OpenResty-maintained branch of LuaJIT (development files)
+
+[32mliblutok-dev[0m/stable 0.4+dfsg-4.1+b2 amd64
+  lightweight C++ API library for Lua -- development files
+
+[32mliblutok-doc[0m/stable 0.4+dfsg-4.1 all
+  lightweight C++ API library for Lua -- documentation
+
+[32mliblutok3[0m/stable 0.4+dfsg-4.1+b2 amd64
+  lightweight C++ API library for Lua -- shared object
+
+[32mlibmapbox-variant-dev[0m/stable 1.2.0-3 all
+  Alternative to boost::variant for C++11
+
+[32mlibmath-calculus-expression-perl[0m/stable 0.2.2.ds-4 all
+  Algebraic Calculus Tools Expression Class
+
+[32mlibmath-calculus-newtonraphson-perl[0m/stable 0.1-4 all
+  Algebraic Newton Raphson Implementation
+
+[32mlibmatheval-dev[0m/stable 1.1.11+dfsg-5+b2 amd64
+  GNU library for evaluating symbolic mathematical expressions (development)
+
+[32mlibmatheval1[0m/stable 1.1.11+dfsg-5+b2 amd64
+  GNU library for evaluating symbolic mathematical expressions (runtime)
+
+[32mlibmaven-enforcer-plugin-java[0m/stable 3.5.0-1 all
+  Maven build rule execution framework
+
+[32mlibmodule-depends-perl[0m/stable 0.16-5 all
+  Perl module to identify the dependencies of a distribution
+
+[32mlibmrpt-expr-dev[0m/stable 1:2.14.7+ds-1+b3 amd64
+  Mobile Robot Programming Toolkit - expr development package
+
+[32mlibmrpt-expr2.14[0m/stable 1:2.14.7+ds-1+b3 amd64
+  Mobile Robot Programming Toolkit - expr library
+
+[32mlibmstch-dev[0m/stable 1.0.2-7 amd64
+  Mustache implementation in C++11
+
+[32mlibmujs-dev[0m/stable 1.3.6-1 amd64
+  Lightweight JavaScript interpreter (development package)
+
+[32mlibmuparserx-dev[0m/stable 4.0.12-2 amd64
+  mathematical expression parser library (development files)
+
+[32mlibmuparserx4.0.12[0m/stable 4.0.12-2 amd64
+  mathematical expression parser library
+
+[32mlibnginx-mod-http-lua[0m/stable 1:0.10.28-2 amd64
+  Lua module for Nginx
+
+[32mlibnrepl-clojure[0m/stable 1.0.0-5 amd64
+  Clojure network REPL
+
+[32mlibobject-lazy-perl[0m/stable 0.16-2 all
+  create objects late from non-owned classes
+
+[32mlibonnx-dev[0m/stable 1.17.0-3+b1 amd64
+  Open Neural Network Exchange (ONNX) (dev)
+
+[32mlibonnx-testdata[0m/stable 1.17.0-3 all
+  Open Neural Network Exchange (ONNX) (test data)
+
+[32mlibonnx1t64[0m/stable,now 1.17.0-3+b1 amd64 [installed,automatic]
+  Open Neural Network Exchange (ONNX) (libs)
+
+[32mlibooptools-dev[0m/stable 2.16-1 amd64
+  Development files of LoopTools
+
+[32mlibopaque-bin[0m/stable 1.0.1-2 amd64
+  Language bindings for establishing a shared secret using the OPAQUE protocol
+
+[32mlibosd-dev[0m/stable 3.6.0-3 amd64
+  high performance subdivision surface (subdiv) library - development
+
+[32mlibosd-doc[0m/stable 3.6.0-3 all
+  high performance subdivision surface (subdiv) library - documentation
+
+[32mlibosdcpu3.6.0[0m/stable 3.6.0-3 amd64
+  high performance subdivision surface (subdiv) library - CPU runtime
+
+[32mlibosdgpu3.6.0[0m/stable 3.6.0-3 amd64
+  high performance subdivision surface (subdiv) library - GPU runtime
+
+[32mlibosl-dev[0m/stable 0.8.0-4+b3 amd64
+  library for Shogi playing programs
+
+[32mlibosl-doc[0m/stable 0.8.0-4 all
+  library for Shogi playing programs
+
+[32mlibosl1v5[0m/stable 0.8.0-4+b3 amd64
+  library for Shogi playing programs
+
+[32mlibpll-dev[0m/stable 0.3.2-5+b1 amd64
+  Phylogenetic Likelihood Library (development)
+
+[32mlibpll0[0m/stable 0.3.2-5+b1 amd64
+  Phylogenetic Likelihood Library
+
+[32mlibplplot-dev[0m/stable 5.15.0+dfsg2-15+b1 amd64
+  Scientific plotting library (development files)
+
+[32mlibplplot-lua[0m/stable 5.15.0+dfsg2-15+b1 amd64
+  Scientific plotting library (Lua bindings)
+
+[32mlibquvi-scripts-0.9[0m/stable 0.9.20131130-3 all
+  library for parsing video download links (Lua scripts)
+
+[32mlibrg-blast-parser-perl[0m/stable 0.03-9+b4 amd64
+  very fast NCBI BLAST parser - binding for Perl
+
+[32mlibrime-plugin-lua[0m/stable 1.13.1+dfsg1~git20241221-1 amd64
+  Rime Input Method Engine - Lua extension plugin
+
+[32mlibrust-bet-dev[0m/stable 1.0.4-1 amd64
+  Helps parsing and evaluating binary expression trees - Rust source code
+
+[32mlibrust-cexpr-dev[0m/stable,now 0.6.0-2+b2 amd64 [installed,automatic]
+  C expression parser and evaluator - Rust source code
+
+[32mlibrust-cfg-expr-dev[0m/stable 0.15.8-1 amd64
+  Parser and evaluator for Rust `cfg()` expressions - Rust source code
+
+[32mlibrust-fasteval-dev[0m/stable 0.2.4-5+b2 amd64
+  Fast evaluation of algebraic expressions - Rust source code
+
+[32mlibrust-lazy-static-dev[0m/stable 1.5.0-1 amd64
+  Macro for declaring lazily evaluated statics - Rust source code
+
+[32mlibrust-lua52-sys-dev[0m/stable 0.1.2-1+b2 amd64
+  Bindings for Lua 5.2 - Rust source code
+
+[32mlibrust-matches-dev[0m/stable 0.1.8-1+b2 amd64
+  Macro to evaluate, as a boolean, whether an expression matches a pattern - Rust source code
+
+[32mlibrust-semver-dev[0m/stable,now 1.0.23-1 amd64 [installed,automatic]
+  Parser and evaluator for Cargo's flavor of Semantic Versioning - Rust source code
+
+[32mlibrust-tree-sitter-lua-dev[0m/now 0.4.0-3~bpo13+1 amd64 [installed,local]
+  Lua grammar for the tree-sitter parser - Rust source code
+
+[32mlibrust-typenum-dev[0m/stable,now 1.17.0-3 amd64 [installed,automatic]
+  Type-level numbers evaluated at     compile time - Rust source code
+
+[32mlibrust-valuable-derive-dev[0m/stable,now 0.1.0-1+b2 amd64 [installed,automatic]
+  Macros for the `valuable` crate - Rust source code
+
+[32mlibrust-valuable-dev[0m/stable,now 0.1.0-4+b2 amd64 [installed,automatic]
+  Object-safe value inspection, used to pass un-typed structured data across trait-object boundaries - Rust source code
+
+[32mlibrust-valuable-serde-dev[0m/stable 0.1.0-1+b2 amd64
+  `serde::Serialize` implementation for `Valuable` types - Rust source code
+
+[32mlibscalar-defer-perl[0m/stable 0.23-3 all
+  module providing lazy evaluation for Perl
+
+[32mlibsecondstring-java[0m/stable 0.1~dfsg-2 all
+  approximate string-matching routines
+
+[32mlibsimgrid-dev[0m/stable 4.0-1+b1 amd64
+  Development files for the SimGrid Toolkit
+
+[32mlibsimgrid4.0[0m/stable 4.0-1+b1 amd64
+  Toolkit for scalable simulation of distributed applications
+
+[32mlibsleef-dev[0m/stable 3.6.1-3 amd64
+  SLEEF Vectorized Math Library (development)
+
+[32mlibsleef3[0m/stable 3.6.1-3 amd64
+  SLEEF Vectorized Math Library (libraries)
+
+[32mlibtexlua-dev[0m/stable 2024.20240313.70630+ds-6 amd64
+  TeX Live: Lua 5.3, modified for use with LuaTeX (development part)
+
+[32mlibtexlua53[0m/stable 2024.20240313.70630+ds-6 all
+  transitional package (lib)
+
+[32mlibtexlua53-5[0m/stable 2024.20240313.70630+ds-6 amd64
+  TeX Live: Lua 5.3, modified for use with LuaTeX
+
+[32mlibtexlua53-dev[0m/stable 2024.20240313.70630+ds-6 all
+  transitional package (dev)
+
+[32mlibtexluajit-dev[0m/stable 2024.20240313.70630+ds-6 amd64
+  TeX Live: LuaJIT, modified for use with LuaJITTeX (development part)
+
+[32mlibtexluajit2[0m/stable 2024.20240313.70630+ds-6 amd64
+  TeX Live: LuaJIT, modified for use with LuaJITTeX
+
+[32mlibtext-template-perl[0m/stable 1.61-1 all
+  perl module to process text templates
+
+[32mlibtolua++5.1-dev[0m/stable 1.0.93-5 amd64
+  extended tool to integrate C/C++ code with Lua (devel)
+
+[32mlibtrilinos-phalanx-13.2[0m/stable 13.2.0-6+b4 amd64
+  local field evaluation kernel - runtime files
+
+[32mlibtrilinos-phalanx-dev[0m/stable 13.2.0-6+b4 amd64
+  local field evaluation kernel - development files
+
+[32mlibtrilinos-piro-13.2[0m/stable 13.2.0-6+b4 amd64
+  embedded nonlinear analysis package - runtime files
+
+[32mlibtrilinos-piro-dev[0m/stable 13.2.0-6+b4 amd64
+  embedded nonlinear analysis package - development files
+
+[32mlibxml-libxml-lazybuilder-perl[0m/stable 0.08-4 all
+  easy and lazy way to create XML documents for XML::LibXML
+
+[32mlibxxhash-dev[0m/stable 0.8.3-2 amd64
+  header files and a static library for libxxhash
+
+[32mlibxxhash0[0m/stable,now 0.8.3-2 amd64 [installed]
+  shared library for xxhash
+
+[32mlifeograph[0m/stable 3.0.1-1 amd64
+  Private digital diary
+
+[32mlighttpd-modules-lua[0m/stable 1.4.79-2 amd64
+  LUA-based modules for lighttpd
+
+[32mlmod[0m/stable 8.7.60-1 amd64
+  Lua based environment modules
+
+[32mlmod-doc[0m/stable 8.7.60-1 all
+  Lua based environment modules (documentation)
+
+[32mlooptools[0m/stable 2.16-1 amd64
+  Integral Evaluator of One-loop Feynman Diagram
+
+[32mlove[0m/stable,now 11.5-2 amd64 [installed]
+  2D game development framework based on Lua and OpenGL
+
+[32mlua-ansicolors[0m/stable 1.0.2-3 all
+  simple Lua function for printing to the console in color
+
+[32mlua-any[0m/stable,now 33 all [installed,automatic]
+  helper script for shebang lines in Lua scripts
+
+[32mlua-argparse[0m/stable 0.7.1-2 all
+  feature-rich command line parser for Lua language
+
+[32mlua-augeas[0m/stable 0.1.1-4 amd64
+  Lua binding to the Augeas C API
+
+[32mlua-basexx[0m/stable,now 0.3-2.1 all [installed]
+  baseXX encoding/decoding library for Lua
+
+[32mlua-binaryheap[0m/stable 0.4-2 all
+  Binary heap implementation in Lua
+
+[32mlua-bit32[0m/stable 5.3.0-6 amd64
+  Backport of the Lua 5.2 bit32 library to Lua 5.1
+
+[32mlua-bit32-dev[0m/stable 5.3.0-6 amd64
+  Development files for the bit32 library for Lua 5.1
+
+[32mlua-bitop[0m/stable 1.0.2-7+b2 amd64
+  fast bit manipulation library for the Lua language
+
+[32mlua-bitop-dev[0m/stable 1.0.2-7+b2 amd64
+  fast bit manipulation library devel files for the Lua language
+
+[32mlua-busted[0m/stable 2.2.0-1 all
+  Lua unit testing framework focused on ease of use
+
+[32mlua-cgi[0m/stable 5.2~alpha2-2 all
+  CGI library for the Lua language
+
+[32mlua-check[0m/stable 1.2.0-1 all
+  static analyzer and a linter for the Lua language
+
+[32mlua-cjson[0m/stable 2.1.0+dfsg-2.2+b2 amd64
+  JSON parser/encoder for Lua
+
+[32mlua-cjson-dev[0m/stable 2.1.0+dfsg-2.2+b2 amd64
+  JSON parser/encoder for Lua, development files
+
+[32mlua-cliargs[0m/stable 3.0.2-1 all
+  command-line argument parsing module for Lua
+
+[32mlua-cmsgpack[0m/stable 0.4.0~git20230328.57b1f90-2 amd64
+  MessagePack implementation and bindings for Lua
+
+[32mlua-cmsgpack-dev[0m/stable 0.4.0~git20230328.57b1f90-2 amd64
+  development files for lua-cmsgpack library
+
+[32mlua-compat53[0m/stable 0.7-2+b2 amd64
+  Lua-5.3-style APIs for Lua 5.2 and 5.1
+
+[32mlua-compat53-dev[0m/stable 0.7-2+b2 amd64
+  Lua-5.3-style APIs for Lua 5.2 and 5.1 (development files)
+
+[32mlua-copas[0m/stable,now 1.2.0-4 all [installed]
+  Copas is a dispatcher of concurrent TCP/IP requests
+
+[32mlua-cosmo[0m/stable 13.01.30-7 all
+  Template library for the Lua language
+
+[32mlua-coxpcall[0m/stable,now 1.17.0-3 all [installed,automatic]
+  Protected function calls across coroutines for Lua
+
+[32mlua-cqueues[0m/stable 20200726-2+b1 amd64
+  event loop for Lua
+
+[32mlua-cqueues-dev[0m/stable 20200726-2+b1 amd64
+  event loop for Lua (development package)
+
+[32mlua-curl[0m/stable 0.3.0-12+b3 amd64
+  libcURL bindings for the Lua language
+
+[32mlua-curl-dev[0m/stable 0.3.0-12+b3 amd64
+  libcURL development files for the Lua language
+
+[32mlua-curses[0m/stable 1:9.0.0-2+b2 amd64
+  curses library bindings for the Lua language
+
+[32mlua-curses-dev[0m/stable 1:9.0.0-2+b2 amd64
+  Development files for the lua-curses library
+
+[32mlua-cyrussasl[0m/stable 1.1.0-5+b2 amd64
+  Cyrus SASL library for the Lua language
+
+[32mlua-cyrussasl-dev[0m/stable 1.1.0-5+b2 amd64
+  Cyrus SASL development files for the Lua language
+
+[32mlua-dbi-common[0m/stable 0.7.4-1 all
+  DBI library for the Lua language, common files
+
+[32mlua-dbi-mysql[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, MySQL backend
+
+[32mlua-dbi-mysql-dev[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, MySQL development files
+
+[32mlua-dbi-postgresql[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, PostgreSQL backend
+
+[32mlua-dbi-postgresql-dev[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, PostgreSQL development files
+
+[32mlua-dbi-sqlite3[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, sqlite3 backend
+
+[32mlua-dbi-sqlite3-dev[0m/stable 0.7.4-1 amd64
+  DBI library for the Lua language, sqlite3 development files
+
+[32mlua-discount[0m/stable 2.1.8-4+b2 amd64
+  Discount library for the Lua language
+
+[32mlua-discount-dev[0m/stable 2.1.8-4+b2 amd64
+  discount development files for the Lua language
+
+[32mlua-dkjson[0m/stable 2.8-1 all
+  JSON module written in Lua
+
+[32mlua-doc[0m/stable 3.0.1+gitdb9e868-2 all
+  Documentation generator for lua
+
+[32mlua-event[0m/stable 0.4.6-2+b3 amd64
+  asynchronous event notification library for Lua
+
+[32mlua-event-dev[0m/stable 0.4.6-2+b3 amd64
+  libevent development files for the Lua language
+
+[32mlua-expat[0m/stable 1.5.2-1+b1 amd64
+  libexpat bindings for the Lua language
+
+[32mlua-expat-dev[0m/stable 1.5.2-1+b1 amd64
+  libexpat development files for the Lua language
+
+[32mlua-fifo[0m/stable 0.2-3.1 all
+  FIFO implementation for Lua
+
+[32mlua-filesystem[0m/stable 1.8.0-3+b2 amd64
+  luafilesystem library for the Lua language
+
+[32mlua-filesystem-dev[0m/stable 1.8.0-3+b2 amd64
+  luafilesystem development files for the Lua language
+
+[32mlua-geoip[0m/stable 0.2-3+b3 amd64
+  GeoIP library bindings for the Lua language
+
+[32mlua-geoip-dev[0m/stable 0.2-3+b3 amd64
+  Development files for lua-geoip library
+
+[32mlua-guestfs[0m/stable 1:1.54.1-2+b1 amd64
+  guest disk image management system - Lua bindings
+
+[32mlua-hamlib[0m/stable 4.6.2-1+b1 amd64
+  Run-time Lua library to control radio transceivers and receivers
+
+[32mlua-http[0m/stable 0.4-2 all
+  HTTP library for Lua
+
+[32mlua-iconv[0m/stable 7-3+b2 amd64
+  iconv bindings for the Lua programming language
+
+[32mlua-iconv-dev[0m/stable 7-3+b2 amd64
+  iconv bindings for Lua - development files
+
+[32mlua-inifile[0m/stable 1.1-1 all
+  simple, complete ini parser for Lua
+
+[32mlua-inotify[0m/stable 0.5-1+b2 amd64
+  inotify bindings for Lua
+
+[32mlua-inotify-dev[0m/stable 0.5-1+b2 amd64
+  inotify bindings for Lua (development files)
+
+[32mlua-inspect[0m/stable 3.1.1-2 all
+  Lua table visualizer, ideal for debugging
+
+[32mlua-json[0m/stable 1.3.4-3 all
+  JSON decoder/encoder for Lua
+
+[32mlua-ldap[0m/stable 1.4.0-1+b3 amd64
+  LDAP library for the Lua language
+
+[32mlua-ldap-dev[0m/stable 1.4.0-1+b3 amd64
+  LDAP development files for the Lua language
+
+[32mlua-ldoc[0m/stable 1.5.0-1 all
+  LuaDoc-compatible documentation generation system
+
+[32mlua-leg[0m/stable 0.1.3-2 all
+  Lua 5.1 grammar, with parsing and manipulation facilities
+
+[32mlua-leg-dev[0m/stable 0.1.3-2 all
+  Leg development files for the Lua language
+
+[32mlua-lemock[0m/stable 0.6-5 all
+  LeMock (Lua Easy Mock) for unit test
+
+[32mlua-lemock-dev[0m/stable 0.6-5 all
+  LeMock (Lua Easy Mock) for unit test
+
+[32mlua-lgi[0m/stable 0.9.2-4 amd64
+  Lua bridge to GObject based libraries
+
+[32mlua-lgi-dev[0m/stable 0.9.2-4 amd64
+  lgi development files for the Lua language
+
+[32mlua-ljsyscall[0m/stable 0.12-1.1 all
+  Unix system calls for LuaJIT
+
+[32mlua-location[0m/stable 0.9.18-3 amd64
+  IP geolocation query library (Lua bindings)
+
+[32mlua-logging[0m/stable,now 1.8.2-1 all [installed]
+  Logging library for the Lua language
+
+[32mlua-lpeg[0m/stable,now 1.1.0-2 amd64 [installed,automatic]
+  LPeg library for the Lua language
+
+[32mlua-lpeg-dev[0m/stable 1.1.0-2 amd64
+  LPeg development files for the Lua language
+
+[32mlua-lpeg-patterns[0m/stable 0.4-1.1 all
+  collection of LPEG patterns
+
+[32mlua-lpty[0m/stable 1.0.1-2+b2 amd64
+  PTY library for the Lua language
+
+[32mlua-lpty-dev[0m/stable 1.0.1-2+b2 amd64
+  PTY library for the Lua language - development files
+
+[32mlua-lsqlite3[0m/stable 0.9.6-1+b1 amd64
+  Lua wrapper for the SQLite3 library
+
+[32mlua-lsqlite3-dev[0m/stable 0.9.6-1+b1 amd64
+  Lua wrapper for the SQLite3 library - development files
+
+[32mlua-luacsnd6[0m/stable 1:6.18.1+dfsg-4 amd64
+  Lua bindings for the Csound API
+
+[32mlua-luaossl[0m/stable 20220711-2+b1 amd64
+  OpenSSL bindings for Lua
+
+[32mlua-luaossl-dev[0m/stable 20220711-2+b1 amd64
+  OpenSSL bindings for Lua (development package)
+
+[32mlua-luassert[0m/stable 1.9.0-1 all
+  Lua assertions extension
+
+[32mlua-luv[0m/stable,now 1.48.0-2-3 amd64 [installed,automatic]
+  libuv bindings for Lua
+
+[32mlua-luv-dev[0m/stable 1.48.0-2-3 amd64
+  libuv bindings for Lua (development files)
+
+[32mlua-lxc[0m/stable 1:3.0.2-4 amd64
+  Linux Containers userspace tools (Lua bindings)
+
+[32mlua-markdown[0m/stable 0.32-10 all
+  Pure Lua 5.1 implementation of the Markdown text-to-html markup
+
+[32mlua-md5[0m/stable 1.2+git+1+8d87fee-2+b2 amd64
+  MD5 library for the Lua language
+
+[32mlua-md5-dev[0m/stable 1.2+git+1+8d87fee-2+b2 amd64
+  MD5 library for the Lua language
+
+[32mlua-mediator[0m/stable 1.1.2-0-8 all
+  Mediator pattern implementation in Lua
+
+[32mlua-messagepack[0m/stable 0.5.2-1 all
+  pure Lua implementation of MessagePack
+
+[32mlua-mmdb[0m/stable 0.2-2 all
+  IP geolocation library for Lua
+
+[32mlua-moses[0m/stable 2.1.0-3 all
+  Utility library for functional programming in Lua
+
+[32mlua-mpack[0m/stable 1.0.7-2+b2 amd64
+  libmpack binding for the Lua language
+
+[32mlua-nginx-cookie[0m/stable 0.1.0-1.1 all
+  Pure Lua cookie parser for the nginx embedded Lua language
+
+[32mlua-nginx-dns[0m/stable 0.20-1 all
+  DNS resolver for the nginx embedded Lua language
+
+[32mlua-nginx-kafka[0m/stable 0.07-1 all
+  Pure Lua Kafka producer for the nginx embedded Lua language
+
+[32mlua-nginx-memcached[0m/stable 0.14-1.1 all
+  Pure Lua memcached client driver for the nginx embedded Lua language
+
+[32mlua-nginx-redis[0m/stable 0.27-1.1 all
+  Pure Lua redis client driver for the nginx embedded Lua language
+
+[32mlua-nginx-redis-connector[0m/stable 0.06-1 all
+  Connection utilities for lua-nginx-redis
+
+[32mlua-nginx-string[0m/stable 0.11-1 all
+  String utilities for the nginx embedded Lua language
+
+[32mlua-nginx-websocket[0m/stable 0.13-1 all
+  Lua websocket client driver for the nginx embedded Lua language
+
+[32mlua-orbit[0m/stable 2.2.1+dfsg-5 all
+  MVC web framework for Lua
+
+[32mlua-penlight[0m/stable 1.14.0-1 all
+  Collection of general purpose libraries for the Lua language
+
+[32mlua-penlight-dev[0m/stable 1.14.0-1 all
+  Collection of general purpose libraries for the Lua language
+
+[32mlua-posix[0m/stable 36.3-1 amd64
+  posix library for the Lua language
+
+[32mlua-posix-dev[0m/stable 36.3-1 amd64
+  posix development files for the Lua language
+
+[32mlua-proctitle[0m/stable 0.1-1+b1 amd64
+  set process name from Lua
+
+[32mlua-psl[0m/stable 0.3-1+b1 amd64
+  Lua bindings to libpsl, a C library that handles the Public Suffix List (PSL)
+
+[32mlua-psl-dev[0m/stable 0.3-1+b1 amd64
+  Lua bindings to libpsl (development package)
+
+[32mlua-readline[0m/stable 3.3-3+b3 amd64
+  readline library for the Lua language
+
+[32mlua-readline-dev[0m/stable 3.3-3+b3 amd64
+  readline development files for the Lua language
+
+[32mlua-redis[0m/stable 2.0.5~git20141117.880dda9-7 all
+  Redis client database library for the Lua language
+
+[32mlua-redis-dev[0m/stable 2.0.5~git20141117.880dda9-7 all
+  Redis client library for the Lua language, examples and tests
+
+[32mlua-resty-core[0m/stable 0.1.31-1 all
+  New FFI-based Lua API for NGINX Lua module
+
+[32mlua-resty-lrucache[0m/stable 0.15-2 all
+  Simple LRU cache for the ngx_lua module
+
+[32mlua-rex-doc[0m/stable 2.9.2-3 all
+  documentation of the rex library for the Lua language
+
+[32mlua-rex-gnu[0m/stable,now 2.9.2-3+b1 amd64 [installed,automatic]
+  GNU regular expressions library for the Lua language
+
+[32mlua-rex-gnu-dev[0m/stable,now 2.9.2-3+b1 amd64 [installed]
+  GNU development files for the Lua language
+
+[32mlua-rex-onig[0m/stable 2.9.2-3+b1 amd64
+  Onig regular expressions library for the Lua language
+
+[32mlua-rex-onig-dev[0m/stable 2.9.2-3+b1 amd64
+  Onig regex development files for the Lua language
+
+[32mlua-rex-pcre2[0m/stable,now 2.9.2-3+b1 amd64 [installed,automatic]
+  Perl regular expressions library (PCRE2) for the Lua language
+
+[32mlua-rex-pcre2-dev[0m/stable,now 2.9.2-3+b1 amd64 [installed]
+  PCRE2 development files for the Lua language
+
+[32mlua-rex-posix[0m/stable,now 2.9.2-3+b1 amd64 [installed,automatic]
+  POSIX regular expressions library for the Lua language
+
+[32mlua-rex-posix-dev[0m/stable,now 2.9.2-3+b1 amd64 [installed]
+  POSIX regex development files for the Lua language
+
+[32mlua-rex-tre[0m/stable 2.9.2-3+b1 amd64
+  TRE regular expressions library for the Lua language
+
+[32mlua-rex-tre-dev[0m/stable 2.9.2-3+b1 amd64
+  TRE development files for the Lua language
+
+[32mlua-rings[0m/stable 1.3.0-4+b2 amd64
+  Lua state creation and control library for the Lua language
+
+[32mlua-rings-dev[0m/stable 1.3.0-4+b2 amd64
+  Development files for the rings library for the Lua language
+
+[32mlua-rrd[0m/stable 1.7.2-4.2+b5 amd64
+  time-series data storage and display system (Lua interfaces)
+
+[32mlua-rrd-dev[0m/stable 1.7.2-4.2+b5 amd64
+  time-series data storage and display system (Lua development)
+
+[32mlua-say[0m/stable 1.4.1-2 all
+  Lua string hashing/indexing library
+
+[32mlua-sec[0m/stable,now 1.3.2-2+b2 amd64 [installed]
+  SSL socket library for the Lua language
+
+[32mlua-sec-dev[0m/stable 1.3.2-2+b2 amd64
+  SSL socket library devel files for the Lua language
+
+[32mlua-soap[0m/stable 3.0+git91419a7-2 all
+  SOAP library for the Lua language
+
+[32mlua-socket[0m/stable,now 3.1.0-1+b2 amd64 [installed]
+  TCP/UDP socket library for the Lua language
+
+[32mlua-socket-dev[0m/stable 3.1.0-1+b2 amd64
+  luasocket development files for the Lua language
+
+[32mlua-sql-doc[0m/stable 2.6.0-3 all
+  luasql documentation
+
+[32mlua-sql-mysql[0m/stable 2.6.0-3 amd64
+  luasql library for the Lua language
+
+[32mlua-sql-mysql-dev[0m/stable 2.6.0-3 amd64
+  luasql development files for the Lua language
+
+[32mlua-sql-odbc[0m/stable 2.6.0-3 amd64
+  luasql library for the Lua language
+
+[32mlua-sql-odbc-dev[0m/stable 2.6.0-3 amd64
+  luasql development files for the Lua language
+
+[32mlua-sql-postgres[0m/stable 2.6.0-3 amd64
+  luasql library for the Lua language
+
+[32mlua-sql-postgres-dev[0m/stable 2.6.0-3 amd64
+  luasql development files for the Lua language
+
+[32mlua-sql-sqlite3[0m/stable,now 2.6.0-3 amd64 [installed,automatic]
+  luasql library for the Lua language
+
+[32mlua-sql-sqlite3-dev[0m/stable 2.6.0-3 amd64
+  luasql development files for the Lua language
+
+[32mlua-struct[0m/stable 0.3-1+b1 amd64
+  library to convert Lua values to and from C structs
+
+[32mlua-struct-dev[0m/stable 0.3-1+b1 amd64
+  development files for lua-struct library
+
+[32mlua-svn[0m/stable 0.4.0-12 amd64
+  Subversion library for the Lua language
+
+[32mlua-svn-dev[0m/stable 0.4.0-12 amd64
+  Development files for the Subversion library for the Lua language
+
+[32mlua-swupdate[0m/stable 2024.12.1+dfsg-3+deb13u1 amd64
+  swupdate bindings for the Lua language
+
+[32mlua-system[0m/stable 0.5.1-1 amd64
+  platform independent system call library for Lua
+
+[32mlua-system-dev[0m/stable 0.5.1-1 amd64
+  development files for lua-system
+
+[32mlua-systemd[0m/stable 0~git20160517-2+b2 amd64
+  Systemd bindings for Lua
+
+[32mlua-systemd-dev[0m/stable 0~git20160517-2+b2 amd64
+  Development files for lua-systemd library
+
+[32mlua-term[0m/stable 0.07-1+b1 amd64
+  Lua module for manipulating a terminal
+
+[32mlua-term-dev[0m/stable 0.07-1+b1 amd64
+  Lua module for manipulating a terminal
+
+[32mlua-unbound[0m/stable 1.0.0-2+b2 amd64
+  Unbound bindings for the Lua language
+
+[32mlua-unbound-dev[0m/stable 1.0.0-2+b2 amd64
+  Development files for unbound bindings for the Lua language
+
+[32mlua-unit[0m/stable 3.4-2 all
+  Lua unit testing framework
+
+[32mlua-uri[0m/stable 0.1+20130926+git14fa255d-3 amd64
+  pure Lua library to normalize and validate URIs/URLs
+
+[32mlua-uri-dev[0m/stable 0.1+20130926+git14fa255d-3 amd64
+  examples and test files for lua-uri
+
+[32mlua-vips[0m/stable 1.1.12-2 amd64
+  Fast image processing library with low memory needs for Lua
+
+[32mlua-wsapi[0m/stable 1.6.1-3+deb13u1 all
+  Web server API abstraction layer for the Lua language
+
+[32mlua-wsapi-doc[0m/stable 1.6.1-3+deb13u1 all
+  wsapi documentation files for the Lua language
+
+[32mlua-xmlrpc[0m/stable 1.2.1-8 all
+  xmlrpc library for the Lua language
+
+[32mlua-yaml[0m/stable 6.2.8-2+b2 amd64
+  LibYAML binding for Lua
+
+[32mlua-yaml-dev[0m/stable 6.2.8-2+b2 amd64
+  docs and test files for lua-yaml
+
+[32mlua-zip[0m/stable 1.2.3-14+b3 amd64
+  zip library for the Lua language
+
+[32mlua-zip-dev[0m/stable 1.2.3-14+b3 amd64
+  zip development files for the Lua language
+
+[32mlua-zlib[0m/stable 1.3-1 amd64
+  zlib library for the Lua language
+
+[32mlua-zlib-dev[0m/stable 1.3-1 amd64
+  zlib development files for the Lua language
+
+[32mlua5.1[0m/stable,now 5.1.5-11 amd64 [installed]
+  Simple, extensible, embeddable programming language
+
+[32mlua5.1-doc[0m/stable 5.1.5-11 all
+  Documentation for the Lua language version 5.1
+
+[32mlua5.2[0m/stable 5.2.4-3+b3 amd64
+  Simple, extensible, embeddable programming language
+
+[32mlua5.2-doc[0m/stable 5.2.4-3 all
+  Documentation for the Lua language version 5.2
+
+[32mlua5.3[0m/stable 5.3.6-2+b4 amd64
+  Simple, extensible, embeddable programming language
+
+[32mlua5.4[0m/stable,now 5.4.7-1+b2 amd64 [installed]
+  Simple, extensible, embeddable programming language
+
+[32mluadoc[0m/stable 3.0.1+gitdb9e868-2 all
+  Documentation generation library for the Lua language
+
+[32mluajit[0m/stable 2.1.0+openresty20250117-2 amd64
+  OpenResty-maintained branch of LuaJIT (interpreter)
+
+[32mluakit[0m/stable 1:2.4.0-1 amd64
+  fast and small web browser extensible by Lua
+
+[32mluametatex[0m/stable 2.11.02+really2.11.01+ds-1+b1 amd64
+  Next generation ConTeXt processing engine
+
+[32mluanti[0m/stable 5.10.0+dfsg-5 amd64
+  Multiplayer infinite-world block sandbox
+
+[32mluanti-data[0m/stable 5.10.0+dfsg-5 all
+  Multiplayer infinite-world block sandbox (data files)
+
+[32mluanti-game-minetest[0m/stable 5.8.0.40.gc7be7c1-3 all
+  Minetest Game (sub)game for the Luanti engine
+
+[32mluanti-server[0m/stable 5.10.0+dfsg-5 amd64
+  Multiplayer infinite-world block sandbox (server)
+
+[32mluarocks[0m/stable,now 3.8.0+dfsg1-1 all [installed]
+  deployment and management system for Lua modules
+
+[32mlyx[0m/stable 2.4.3-1 amd64
+  document processor
+
+[32mmiltertest[0m/stable 2.11.0~beta2-9.1+b1 amd64
+  utility for testing milter applications
+
+[32mminetest[0m/stable 5.10.0+dfsg-5 all
+  transitional package
+
+[32mminetest-data[0m/stable 5.10.0+dfsg-5 all
+  transitional package
+
+[32mminetest-mod-basic-robot-csm[0m/stable 0.0~git20190703.e082c6a-2 all
+  Minetest mod - basic robot client side mod
+
+[32mminetest-mod-worldedit[0m/stable 1.3-1 all
+  Minetest mod - ingame world editor
+
+[32mminetest-server[0m/stable 5.10.0+dfsg-5 all
+  transitional package
+
+[32mminimap2[0m/stable 2.27+dfsg-1+b3 amd64
+  versatile pairwise aligner for genomic and spliced nucleotide sequences
+
+[32mminlog[0m/stable 4.0.99.20100221-7 all
+  Proof assistant based on first order natural deduction calculus
+
+[32mmom[0m/stable 0.6.4-0.1 all
+  Dynamically manage system resources on virtualization hosts
+
+[32mmono-csharp-shell[0m/stable 6.12.0.199+dfsg-6 all
+  interactive C# shell
+
+[32mmueval[0m/stable 0.9.4-1+b1 amd64
+  Safely evaluate pure Haskell expressions - executables
+
+[32mnageru[0m/stable 2.3.0-2 amd64
+  modern free software video mixer
+
+[32mnbdkit-plugin-lua[0m/stable 1.42.3-1 amd64
+  Lua plugin for nbdkit
+
+[32mneovim-lualine[0m/stable 0.0.6+git20250412-1 all
+  fast and light statusbar for neovim
+
+[32mnetsend[0m/stable 0.0~svnr250-1.5 amd64
+  a speedy filetransfer and network diagnostic program
+
+[32mnginx-extras[0m/stable 1.26.3-3+deb13u1 amd64
+  nginx web/proxy server (extended version)
+
+[32mnode-constantinople[0m/stable 4.0.1-5 all
+  determine if an expression evaluates to a constant - Node.js module
+
+[32mnode-d3-queue[0m/stable 3.0.7-13 all
+  Evaluate asynchronous tasks with configurable concurrency
+
+[32mnode-debug-fabulous[0m/stable 1.1.0-4 all
+  visionmedia debug extensions rolled into one
+
+[32mnode-define-lazy-prop[0m/stable 3.0.0-7 all
+  Define a lazily evaluated property on an object
+
+[32mnode-for-in[0m/stable 1.0.2-4 all
+  iterate over object
+
+[32mnode-for-own[0m/stable 1.0.0-3 all
+  Iterate over the own enumerable properties of an object
+
+[32mnode-lodash-reevaluate[0m/stable 3.0.0-3 all
+  modern build of lodash’s internal `reEvaluate` as a module
+
+[32mnode-redux-devtools-core[0m/stable 3.13.1~git20230831-2 all
+  Live-editing time travel environment for node-redux
+
+[32mnode-ripemd160[0m/stable 2.0.2+~2.0.0-1 all
+  Pure javascript implementation of ripemd160 hash function
+
+[32mnode-static-eval[0m/stable 2.1.0-3 all
+  evaluate statically-analyzable javascript expressions
+
+[32mnotion[0m/stable 4.0.3+dfsg-1 amd64
+  tiling tabbed window manager designed for keyboard users
+
+[32mnotus-scanner[0m/stable 22.6.5-1 all
+  vulnerable products detection (Python 3)
+
+[32mnthash[0m/stable 2.3.0+dfsg-4 amd64
+  Methods to evaluate runtime and uniformity tests for hashing methods
+
+[32mnwchem[0m/stable 7.2.3-10 all
+  High-performance computational chemistry software (default MPI)
+
+[32mnwchem-mpich[0m/stable 7.2.3-10 amd64
+  High-performance computational chemistry software (MPICH build)
+
+[32mnwchem-openmpi[0m/stable 7.2.3-10 amd64
+  High-performance computational chemistry software (OpenMPI build)
+
+[32moctave-fuzzy-logic-toolkit[0m/stable 0.6.1-1 all
+  fuzzy logic toolkit for Octave
+
+[32moctave-interval[0m/stable 3.2.1-6+b3 amd64
+  real-valued interval arithmetic for Octave
+
+[32moctave-interval-doc[0m/stable 3.2.1-6 all
+  real-valued interval arithmetic for Octave (arch-indep files)
+
+[32mopensubdiv-tools[0m/stable 3.6.0-3 amd64
+  high performance subdivision surface (subdiv) library - tools
+
+[32mpandoc[0m/stable 3.1.11.1+ds-2 amd64
+  general markup converter
+
+[32mpandoc-data[0m/stable 3.1.11.1-3 all
+  Conversion between markup formats
+
+[32mpandoc-filter-diagram[0m/stable 1.2.0-2 all
+  Pandoc filter to render diagrams in Markdown code sections
+
+[32mpbsim[0m/stable 1.0.3+git20180330.e014b1d+dfsg-3 amd64
+  simulator for PacBio sequencing reads
+
+[32mpd-iemutils[0m/stable 0.0.20240903-1 amd64
+  collection of general purpose objects for Pure Data
+
+[32mpd-lib-builder[0m/stable 0.7.0-1 all
+  common build system for Pure Data externals
+
+[32mpd-libdir[0m/stable 1.11-9 amd64
+  provides support for the libdir library format for Pd
+
+[32mpd-lua[0m/stable 0.12.23+ds-1 amd64
+  Lua bindings for Pure Data
+
+[32mpdns-backend-lua2[0m/stable 4.9.7-1 amd64
+  Lua2 backend for PowerDNS
+
+[32mpdns-recursor[0m/stable,stable-security 5.2.7-0+deb13u1 amd64
+  PowerDNS Recursor
+
+[32mperl-depends[0m/stable 2016.1029+git8f67695-3 all
+  rough indicator of Perl module dependencies
+
+[32mperlconsole[0m/stable 0.4-4.1 all
+  small program that lets you evaluate Perl code interactively
+
+[32mphp-datto-json-rpc[0m/stable 6.1.0-5 all
+  Fully unit-tested JSON-RPC 2.0 for PHP
+
+[32mphp-datto-json-rpc-http[0m/stable 5.0.6-4 all
+  HTTP client and server for JSON-RPC 2.0
+
+[32mphp-luasandbox[0m/stable 4.1.2-1+b1 amd64
+  PHP extension that provides a sandboxed Lua environment
+
+[32mphp-mcrypt[0m/stable 3:1.0.7-5 all
+  PHP bindings for the libmcrypt library
+
+[32mphp-mcrypt-all-dev[0m/stable 3:1.0.7-5 all
+  PHP bindings for the libmcrypt library
+
+[32mphp-symfony-expression-language[0m/stable 6.4.21+dfsg-2+deb13u1 all
+  compile and evaluate expressions
+
+[32mphp-xdebug[0m/stable 3.4.5-3 all
+  Xdebug Module for PHP
+
+[32mphp-xdebug-all-dev[0m/stable 3.4.5-3 all
+  Xdebug Module for PHP
+
+[32mphp-xmlrpc[0m/stable 3:1.0.0~rc3-10 all
+  XML-RPC servers and clients functions for PHP
+
+[32mphp-xmlrpc-all-dev[0m/stable 3:1.0.0~rc3-10 all
+  XML-RPC servers and clients functions for PHP
+
+[32mphp8.4-mcrypt[0m/stable 3:1.0.7-5 amd64
+  PHP bindings for the libmcrypt library
+
+[32mphp8.4-xdebug[0m/stable 3.4.5-3 amd64
+  Xdebug Module for PHP
+
+[32mphp8.4-xmlrpc[0m/stable 3:1.0.0~rc3-10 amd64
+  XML-RPC servers and clients functions for PHP
+
+[32mphyml[0m/stable 3:3.3.20220408-4+b1 amd64
+  Phylogenetic estimation using Maximum Likelihood
+
+[32mplink[0m/stable 1.07+dfsg-4+b1 amd64
+  whole-genome association analysis toolset
+
+[32mplink1.9[0m/stable 1.90~b7.7-241022-2 amd64
+  whole-genome association analysis toolset
+
+[32mplink2[0m/stable 2.00~a6.9-250129+dfsg-1+b1 amd64
+  whole-genome association analysis toolset
+
+[32mpostgresql-17-credcheck[0m/stable 3.0-2 amd64
+  PostgreSQL username/password checks
+
+[32mpostgresql-17-pg-qualstats[0m/stable 2.1.1-1 amd64
+  PostgreSQL extension to gather statistics about predicates.
+
+[32mpostgresql-17-pllua[0m/stable 1:2.0.12-5 amd64
+  Lua procedural language for PostgreSQL 17
+
+[32mprometheus[0m/stable 2.53.3+ds1-2 amd64
+  monitoring system and time series database
+
+[32mpuredata-extra[0m/stable 0.55.2+ds-2 amd64
+  realtime computer music and graphics system - extra files
+
+[32mpycorrfit[0m/stable 1.1.7+nopack-3 amd64
+  tool for fitting correlation curves on a logarithmic plot
+
+[32mpyscanfcs[0m/stable 0.3.6+ds-5 amd64
+  scientific tool for perpendicular line scanning FCS
+
+[32mpython-aodhclient-doc[0m/stable 3.7.1-2 all
+  OpenStack Alarming as a Service - client doc
+
+[32mpython-bumps-doc[0m/stable 1.0.0b2-2 all
+  data fitting and Bayesian uncertainty modeling for inverse problems (docs)
+
+[32mpython-ffcx-doc[0m/stable 1:0.9.0-2 all
+  next-gen compiler for finite element variational forms (docs)
+
+[32mpython-joblib-doc[0m/stable 1.4.2-4 all
+  tools to provide lightweight pipelining in Python -- docs
+
+[32mpython-nbsphinx-doc[0m/stable 0.9.5+ds-1 all
+  Jupyter Notebook Tools for Sphinx -- doc
+
+[32mpython-periodictable-doc[0m/stable 2.0.2-1 all
+  Extensible periodic table of the elements (common documentation)
+
+[32mpython-pointpats-doc[0m/stable 2.5.1-2 all
+  statistical analysis of planar point patterns (common documentation)
+
+[32mpython-pyluach-doc[0m/stable 2.2.0-1 all
+  Hebrew dates and Hebrew-Gregorian conversions (Documentation)
+
+[32mpython-sybil-doc[0m/stable 9.0.0-1 all
+  Automated testing for the examples in your documentation (documentation)
+
+[32mpython-uncertainties-doc[0m/stable 3.2.3-3 all
+  Python3 module for calculations with uncertainties: documentation
+
+[32mpython-vine-doc[0m/stable 5.1.0+dfsg-1 all
+  vine Python promises documentation
+
+[32mpython3-aiobafi6[0m/stable 0.9.0-2 all
+  Asynchronous Python library for controlling Big Ass Fans via the i6 protocol
+
+[32mpython3-aiopegelonline[0m/stable 0.1.1-1 all
+  library for accessing PEGELONLINE water data
+
+[32mpython3-aodhclient[0m/stable 3.7.1-2 all
+  OpenStack Alarming as a Service - Python 3.x client
+
+[32mpython3-asteval[0m/stable 1.0.6-2 all
+  minimalistic evaluator of Python 3 expression using ast module
+
+[32mpython3-bluetooth-sensor-state-data[0m/stable 1.9.0-3 all
+  Models for storing and converting Bluetooth Sensor State Data
+
+[32mpython3-bumps[0m/stable 1.0.0b2-2 all
+  data fitting and Bayesian uncertainty modeling for inverse problems (Python 3)
+
+[32mpython3-cognitive-complexity[0m/stable 1.2.0-4 all
+  Library to calculate Python functions cognitive complexity via code
+
+[32mpython3-cpuset[0m/stable 1.6.2-2 all
+  manipluation of cpusets and provides higher level fun - Python 3.x
+
+[32mpython3-cronsim[0m/stable 2.6-2 all
+  Cron expression parser and evaluator
+
+[32mpython3-dicteval[0m/stable 0.0.6-7 all
+  Library to evaluate expressions in dict/json objects
+
+[32mpython3-dolfin[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Base Python interface for DOLFIN (Python 3)
+
+[32mpython3-dolfin-real[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Python interface for DOLFIN
+
+[32mpython3-dolfin64-real[0m/stable 2019.2.0~legacy20240219.1c52e83-18+b2 amd64
+  Python interface for DOLFIN (with 64-bit PETSc integers)
+
+[32mpython3-dolfinx[0m/stable 1:0.9.0-7 amd64
+  Python interface for DOLFIN (Python 3)
+
+[32mpython3-dolfinx-complex[0m/stable 1:0.9.0-7 amd64
+  Python interface for DOLFIN (Python 3)
+
+[32mpython3-dolfinx-real[0m/stable 1:0.9.0-7 amd64
+  Python interface for DOLFIN (Python 3)
+
+[32mpython3-evalidate[0m/stable 2.0.5-1 all
+  Validation and secure evaluation of untrusted Python expressions
+
+[32mpython3-faiss[0m/stable 1.11.0-3 amd64
+  Python 3 module for efficient similarity search and clustering of dense vectors
+
+[32mpython3-ffc[0m/stable 2019.2.0~legacy20230509.35df986-4 all
+  compiler for finite element variational forms (Python 3)
+
+[32mpython3-ffcx[0m/stable 1:0.9.0-2 all
+  next-gen compiler for finite element variational forms (Python 3)
+
+[32mpython3-flake8-cognitive-complexity[0m/stable 0.1.0-4 all
+  Extension for flake8 that validates cognitive function complexity
+
+[32mpython3-flake8-mutable[0m/stable 1.2.0-2 all
+  use flake8 to catch functions with mutable default arguments
+
+[32mpython3-fluent-logger[0m/stable 0.11.1-1 all
+  Structured logger for Fluentd - Python
+
+[32mpython3-galpy[0m/stable 1.10.2-1 amd64
+  Python 3 package for Galactic Dynamics
+
+[32mpython3-gflanguages[0m/stable 0.7.2-3 all
+  API for evaluating language support in the Google Fonts collection
+
+[32mpython3-glyphsets[0m/stable 1.0.0-3 all
+  Python API for evaluating glyph sets in font projects
+
+[32mpython3-hamcrest[0m/stable 2.1.0-1 all
+  Hamcrest framework for matcher objects (Python 3)
+
+[32mpython3-jinja2[0m/stable 3.1.6-1 all
+  small but fast and easy to use stand-alone template engine
+
+[32mpython3-joblib[0m/stable 1.4.2-4 all
+  tools to provide lightweight pipelining in Python
+
+[32mpython3-kopeninghours[0m/stable 25.04.2-1 amd64
+  OSM opening hours expressions library - Python binding
+
+[32mpython3-lazy[0m/stable 1.5.1-1.1 all
+  Lazy attributes for Python objects (Python 3)
+
+[32mpython3-lazyarray[0m/stable 0.5.2-3 all
+  Python module providing a NumPy-compatible lazily-evaluated array
+
+[32mpython3-lesscpy[0m/stable 0.15.1-0.2 all
+  LessCss Compiler for Python 3.x
+
+[32mpython3-libipa-hbac[0m/stable 2.10.1-2+b1 amd64
+  Python3 bindings for the FreeIPA HBAC Evaluator library
+
+[32mpython3-loguru[0m/stable 0.7.3-1 all
+  enjoyable loggin' for Python
+
+[32mpython3-loki-ecmwf[0m/stable 0.3.1-1 all
+  Source-to-source translation for Fortran
+
+[32mpython3-luftdaten[0m/stable 0.7.4-2 all
+  Python API for accessing air quality data from Sensor.Community
+
+[32mpython3-lupa[0m/stable 2.4+dfsg-1+b1 amd64
+  Python wrapper around LuaJIT or Lua (Python3 version)
+
+[32mpython3-mpv[0m/stable 1.0.7-3 all
+  Python interface to the awesome mpv media player
+
+[32mpython3-nbsphinx[0m/stable 0.9.5+ds-1 all
+  Jupyter Notebook Tools for Sphinx -- Python 3
+
+[32mpython3-numexpr[0m/stable 2.10.2-1+b2 amd64
+  Fast numerical array expression evaluator for Python 3 and NumPy
+
+[32mpython3-onnx[0m/stable 1.17.0-3+b1 amd64
+  Open Neural Network Exchange (ONNX) (Python)
+
+[32mpython3-opem[0m/stable 1.4+dfsg-1 all
+  Open-Source PEMFC Simulation Tool
+
+[32mpython3-parsley[0m/stable 1.3-3 all
+  Pattern-Matching Language Based on OMeta and Python
+
+[32mpython3-periodictable[0m/stable 2.0.2-1 all
+  Extensible periodic table of the elements (Python 3)
+
+[32mpython3-pointpats[0m/stable 2.5.1-2 all
+  statistical analysis of planar point patterns
+
+[32mpython3-pure-eval[0m/stable 0.2.3-1 all
+  Safely evaluate Python AST nodes without side effects
+
+[32mpython3-pycm[0m/stable 4.3-1 all
+  Multi-class confusion matrix library
+
+[32mpython3-pyluach[0m/stable 2.2.0-1 all
+  Hebrew dates and Hebrew-Gregorian conversions (Python3 version)
+
+[32mpython3-pyws66i[0m/stable 1.1-4 all
+  Python interface for controlling the Soundavo WS66i 6-zone amplifier
+
+[32mpython3-scifem[0m/stable 0.6.0-2 amd64
+  Scientific Computing Tools for Finite Element Methods (Python 3)
+
+[32mpython3-simgrid[0m/stable 4.0-1+b1 amd64
+  Python3 bindings for the SimGrid Toolkit
+
+[32mpython3-simpleeval[0m/stable 1.0.3-1 all
+  Simple, safe single expression evaluator library (Python 3)
+
+[32mpython3-smartleia[0m/stable 1.0.1-2 all
+  LEIA Smartcard reader Python library
+
+[32mpython3-speaklater[0m/stable 1.3-6 all
+  lazy string useful for translations for Python 3
+
+[32mpython3-sybil[0m/stable 9.0.0-1 all
+  Automated testing for the examples in your documentation (Python 3)
+
+[32mpython3-torch-ignite[0m/stable 0.5.1-1 all
+  High-level library to help with training and evaluating in PyTorch
+
+[32mpython3-uncertainties[0m/stable 3.2.3-3 all
+  Python3 module for calculations with uncertainties
+
+[32mpython3-vine[0m/stable 5.1.0+dfsg-1 all
+  Python promises (Python 3 version)
+
+[32mpython3-xxhash[0m/stable 3.2.0-1+b5 amd64
+  Bindings for the xxHash library (Python 3)
+
+[32mpython3-yte[0m/stable 1.5.4-1 all
+  YAML template engine with Python expressions
+
+[32mpython3-zamg[0m/stable 0.3.6-2 all
+  Library for accessing weather data from GeoSphere Austria
+
+[32mpythonpy[0m/stable 0.4.11b-4 all
+  'python -c', with tab completion and shorthand
+
+[32mqml6-module-org-kde-kopeninghours[0m/stable 25.04.2-1 amd64
+  OSM opening hours expressions - QML module
+
+[32mr-bioc-biocparallel[0m/stable 1.40.0-2 amd64
+  BioConductor facilities for parallel evaluation
+
+[32mr-bioc-biomart[0m/stable 2.62.1+dfsg-1 all
+  GNU R Interface to BioMart databases (Ensembl, COSMIC, Wormbase and Gramene)
+
+[32mr-bioc-bluster[0m/stable 1.16.0+dfsg-2 amd64
+  Clustering Algorithms for Bioconductor
+
+[32mr-bioc-gsva[0m/stable 2.0.5+ds-1 amd64
+  Gene Set Variation Analysis for microarray and RNA-seq data
+
+[32mr-bioc-noiseq[0m/stable 2.50.0-2 all
+  Exploratory analysis and differential expression for RNA-seq data
+
+[32mr-bioc-qusage[0m/stable 2.40.0-2 all
+  qusage: Quantitative Set Analysis for Gene Expression
+
+[32mr-cran-bit[0m/stable 4.6.0+dfsg-1 amd64
+  GNU R class for vectors of 1-bit booleans
+
+[32mr-cran-cmdfun[0m/stable 1.0.2-2 all
+  GNI R framework for building interfaces to shell commands
+
+[32mr-cran-contfrac[0m/stable 1.1-12-2 amd64
+  GNU R package providing various utilities for evaluating continued fractions
+
+[32mr-cran-cutpointr[0m/stable 1.2.0-1 amd64
+  GNU R determine and evaluate optimal cutpoints in binary
+
+[32mr-cran-diagnosismed[0m/stable 0.2.3-7 all
+  medical diagnostic test accuracy analysis toolkit
+
+[32mr-cran-evaluate[0m/stable 1.0.3-1 all
+  GNU R parsing and evaluation tools
+
+[32mr-cran-foreach[0m/stable 1.5.2-1 all
+  GNU R foreach looping support
+
+[32mr-cran-future[0m/stable 1.34.0+dfsg-1 all
+  R package: A Future API for R
+
+[32mr-cran-lazyeval[0m/stable 0.2.2-1+b1 amd64
+  GNU R lazy (non-standard) evaluation
+
+[32mr-cran-mcmc[0m/stable 0.9-8-1 amd64
+  GNU R package for Markov Chain Monte Carlo simulations
+
+[32mr-cran-mediana[0m/stable 1.0.8-3 all
+  clinical trial simulations
+
+[32mr-cran-metrics[0m/stable 0.1.4-2 all
+  GNU R evaluation metrics for machine learning
+
+[32mr-cran-mlmetrics[0m/stable 1.1.3-1 all
+  GNU R machine learning evaluation metrics
+
+[32mr-cran-modelmetrics[0m/stable 1.2.2.2-1+b1 amd64
+  GNU R Rapid Calculation of Model Metrics
+
+[32mr-cran-mpoly[0m/stable 1.1.1-2 all
+  symbolic computing with multivariate polynomials in R
+
+[32mr-cran-mvnfast[0m/stable 0.2.8+dfsg-1 amd64
+  GNU R fast multivariate normal and student's t methods
+
+[32mr-cran-pander[0m/stable 0.6.6+dfsg-1 amd64
+  GNU R 'Pandoc' writer
+
+[32mr-cran-paramhelpers[0m/stable 1.14.2-1 amd64
+  GNU R helpers for parameters in black-box optimization and tuning
+
+[32mr-cran-profilemodel[0m/stable 0.6.1-1 all
+  GNU R tools for profiling inference functions
+
+[32mr-cran-rcdk[0m/stable 3.8.1+dfsg-1 all
+  GNU R interface to the 'CDK' libraries
+
+[32mr-cran-rcpparmadillo[0m/stable 14.4.2-1-1 amd64
+  GNU R package for Armadillo C++ linear algebra library
+
+[32mr-cran-rdpack[0m/stable 2.6.3-1 all
+  GNU R update and manipulate Rd documentation objects
+
+[32mr-cran-rlang[0m/stable 1.1.5-3 amd64
+  Functions for Base Types and Core R and 'Tidyverse' Features
+
+[32mr-cran-rose[0m/stable 0.0-4-2 all
+  GNU R random over-sampling examples
+
+[32mr-cran-rstan[0m/stable 2.32.7-1 amd64
+  GNU R interface to Stan
+
+[32mr-cran-selectr[0m/stable 0.4-2-2 all
+  Translate CSS Selectors to XPath Expressions
+
+[32mr-cran-spc[0m/stable 1:0.7.1-1 amd64
+  GNU R Statistical Process Control
+
+[32mr-cran-sys[0m/stable 3.4.3-1 amd64
+  Powerful and Reliable Tools for Running System Commands in GNU R
+
+[32mr-cran-truncdist[0m/stable 1.0-2-4 all
+  GNU R functions for truncated random variables
+
+[32mr-cran-warp[0m/stable 0.2.1-1 amd64
+  GNU R tool to group dates
+
+[32mr-cran-whatif[0m/stable 1.5-10-1 all
+  GNU R evaluate counterfactuals
+
+[32mraku-json-fast[0m/stable 0.19-3 amd64
+  fast json parser and serializer
+
+[32mraritan-json-rpc-doc[0m/stable 4.3.0+ds-1 all
+  Documentation for Raritan Xerus™ JSON-RPC SDK
+
+[32mraven[0m/stable 1.1.0-1 all
+  Python tool that extends the capabilities of the http.server Python module
+
+[32mreapr[0m/stable 1.0.18+dfsg-7 amd64
+  universal tool for genome assembly evaluation
+
+[32mresfinder[0m/stable 4.4.2-2 all
+  identify acquired antimicrobial resistance genes
+
+[32mresfinder-db[0m/stable 0.0+git20220524.fa32d9a-1 all
+  ResFinder database is a curated database of acquired resistance genes
+
+[32mresfinder-example[0m/stable 4.4.2-2 all
+  identify acquired antimicrobial resistance genes (example data)
+
+[32mrspamd[0m/stable 3.12.1-1 amd64
+  Rapid spam filtering system
+
+[32mruby-declarative-option[0m/stable 0.1.0-2 all
+  Dynamic options for declarative to evaluate at runtime
+
+[32mruby-dirty-memoize[0m/stable 0.0.4-1.1 all
+  Similar to ruby-memoize, but for mutable and parameterizable objects
+
+[32mruby-distribution[0m/stable 0.8.0+dfsg-1 all
+  Ruby library to work with probability distributions
+
+[32mruby-ejs[0m/stable 1.1.1-2.1 all
+  EJS (Embedded JavaScript) template compiler
+
+[32mruby-jekyll-data[0m/stable 1.1.1-2 all
+  read and add data files within Jekyll theme-gems to site hash
+
+[32mruby-loofah[0m/stable 2.24.0-1 all
+  manipulation and transformation of HTML/XML documents and fragments
+
+[32mruby-morpher[0m/stable 0.2.6-2 all
+  Data transformation algebra with optional tracked evaluation.
+
+[32mscreenfetch[0m/stable 3.9.1+20210523-2 all
+  Bash Screenshot Information Tool
+
+[32msepia[0m/stable 0.992-8 all
+  Simple Emacs-Perl InterAction
+
+[32mseqsero[0m/stable 1.0.1+dfsg-6 amd64
+  Salmonella serotyping from genome sequencing data
+
+[32mshake[0m/stable 1.0.2-5 all
+  Testing engine for the Lua language version 5.1
+
+[32msimgrid-java[0m/stable 4.0-1+b1 amd64
+  Java bindings for the SimGrid Toolkit
+
+[32mspectrwm[0m/stable 3.6.0-1 amd64
+  dynamic tiling window manager
+
+[32mspigot[0m/stable 0.2017-01-15.gdad1bbc6-1+b1 amd64
+  Exact real calculator
+
+[32msploitscan[0m/stable 0.10.5-1 all
+  Search for CVE information
+
+[32msqlsmith[0m/stable 1.4-1+b4 amd64
+  random SQL query generator
+
+[32mssg-applications[0m/stable 0.1.76-1 all
+  SCAP Guides and benchmarks targeting userspace applications
+
+[32mssg-base[0m/stable 0.1.76-1 all
+  SCAP Security guide base content and documentation
+
+[32mssg-debderived[0m/stable 0.1.76-1 all
+  SCAP Guides and benchmarks targeting Debian-based OS
+
+[32mssg-debian[0m/stable 0.1.76-1 all
+  SCAP Guides and benchmarks targeting Debian releases
+
+[32mssg-nondebian[0m/stable 0.1.76-1 all
+  SCAP Guides and benchmarks targeting other GNU/Linux OS
+
+[32mstda[0m/stable 1.3.1-2.1 all
+  simple tools for data analysis (stda)
+
+[32mstress[0m/stable 1.0.7-1 amd64
+  tool to impose load on and stress test a computer system
+
+[32msugar-calculate-activity[0m/stable 47-1 all
+  Sugar Learning Platform - calculation activity
+
+[32msurpyvor[0m/stable 0.5-2 all
+  modification of VCF files with SURVIVOR
+
+[32msurvivor[0m/stable 1.0.7-4 amd64
+  tool set for simulating/evaluating SVs
+
+[32mswig[0m/stable 4.3.0-1 amd64
+  Generate scripting interfaces to C/C++ code
+
+[32msysbench[0m/stable 1.0.20+ds-7 amd64
+  multi-threaded benchmark tool for database systems
+
+[32mtarantool[0m/stable 2.6.0-1.4+b1 amd64
+  In-memory database with a Lua application server
+
+[32mtarantool-common[0m/stable 2.6.0-1.4 all
+  Tarantool in-memory database - common files
+
+[32mtarantool-dev[0m/stable 2.6.0-1.4+b1 amd64
+  Tarantool in-memory database - development headers
+
+[32mtcl-thread[0m/stable 1:2.8.11-2 amd64
+  Tcl extension implementing script level access to Tcl threading capabilities
+
+[32mtcl9.0-thread[0m/stable 3.0.1-2+b1 amd64
+  Tcl extension implementing script level access to Tcl threading (for Tcl 9)
+
+[32mtcllib[0m/stable 2.0+dfsg-4 all
+  Standard Tcl Library
+
+[32mtclxml[0m/stable 1:3.2.7-9 amd64
+  Tcl library for XML parsing
+
+[32mtclxml-dev[0m/stable 1:3.2.7-9 amd64
+  Tcl library for XML parsing - development files
+
+[32mtdiary-contrib[0m/stable 5.3.0-2 all
+  Plugins of tDiary to add functionalities
+
+[32mtermit[0m/stable 3.1-3+b1 amd64
+  Simple terminal emulator based on vte library, embedded Lua
+
+[32mtexlive-base[0m/stable 2024.20250309-1 all
+  TeX Live: Essential programs and files
+
+[32mtexlive-bibtex-extra[0m/stable 2024.20250309-2 all
+  TeX Live: BibTeX additional styles
+
+[32mtexlive-binaries-sse2[0m/stable 2024.20240313.70630+ds-6 amd64
+  Binaries for TeX Live (the JIT part)
+
+[32mtexlive-extra-utils[0m/stable 2024.20250309-2 all
+  TeX Live: TeX auxiliary programs
+
+[32mtexlive-font-utils[0m/stable 2024.20250309-2 all
+  TeX Live: Graphics and font utilities
+
+[32mtexlive-fonts-extra[0m/stable 2024.20250309-2 all
+  TeX Live: Additional fonts
+
+[32mtexlive-lang-arabic[0m/stable 2024.20250309-1 all
+  TeX Live: Arabic
+
+[32mtexlive-lang-cyrillic[0m/stable 2024.20250309-1 all
+  TeX Live: Cyrillic
+
+[32mtexlive-lang-german[0m/stable 2024.20250309-1 all
+  TeX Live: German
+
+[32mtexlive-lang-greek[0m/stable 2024.20250309-1 all
+  TeX Live: Greek
+
+[32mtexlive-lang-japanese[0m/stable 2024.20250309-1 all
+  TeX Live: Japanese
+
+[32mtexlive-lang-other[0m/stable 2024.20250309-1 all
+  TeX Live: Other languages
+
+[32mtexlive-latex-base[0m/stable 2024.20250309-1 all
+  TeX Live: LaTeX fundamental packages
+
+[32mtexlive-latex-extra[0m/stable 2024.20250309-2 all
+  TeX Live: LaTeX additional packages
+
+[32mtexlive-latex-recommended[0m/stable 2024.20250309-1 all
+  TeX Live: LaTeX recommended packages
+
+[32mtexlive-luatex[0m/stable 2024.20250309-1 all
+  TeX Live: LuaTeX packages
+
+[32mtexlive-music[0m/stable 2024.20250309-2 all
+  TeX Live: Music packages
+
+[32mtexlive-pictures[0m/stable 2024.20250309-1 all
+  TeX Live: Graphics, pictures, diagrams
+
+[32mtexlive-plain-generic[0m/stable 2024.20250309-2 all
+  TeX Live: Plain (La)TeX packages
+
+[32mtexlive-pstricks[0m/stable 2024.20250309-2 all
+  TeX Live: PSTricks
+
+[32mtexlive-publishers[0m/stable 2024.20250309-2 all
+  TeX Live: Publisher styles, theses, etc.
+
+[32mtexlive-science[0m/stable 2024.20250309-2 all
+  TeX Live: Mathematics, natural sciences, computer science packages
+
+[32mtexworks-scripting-lua[0m/stable 0.6.10+ds-1 amd64
+  Plugin to bring Lua scripting to TeXworks
+
+[32mth-scheme-utilities[0m/stable 6.1.0-1 amd64
+  TH Scheme Utilities library
+
+[32mthonny[0m/stable 4.1.7-1 all
+  Python IDE for beginners
+
+[32mtinyscheme[0m/stable 1.42.svn.2020.06.04-2 amd64
+  Very small scheme implementation
+
+[32mtio[0m/stable 3.9-1 amd64
+  simple TTY terminal I/O application
+
+[32mtowncrier[0m/stable 24.8.0-2 all
+  compiler for project news file
+
+[32mtravis[0m/stable 220729-1 amd64
+  trajectory analyzer and visualizer
+
+[32mtree-sitter-lua-src[0m/now 0.4.0-3~bpo13+1 all [installed,local]
+  Lua parser for Tree-sitter (source files)
+
+[32mtryton-modules-account-stock-anglo-saxon[0m/stable 7.0.1-3 all
+  Tryton application platform - account stock anglo-saxon module
+
+[32mtryton-modules-account-stock-continental[0m/stable 7.0.2-3 all
+  Tryton application platform - account stock continental module
+
+[32mtryton-modules-marketing-automation[0m/stable 7.0.1-1 all
+  Tryton application platform - marketing automation module
+
+[32mtvc[0m/stable 5.0.3+git20151221.80e144e+dfsg-5+b3 amd64
+  genetic variant caller for Ion Torrent sequencing platforms
+
+[32muwsgi-plugin-lua5.1[0m/stable 2.0.28+8+0.0.2 amd64
+  Lua WSAPI plugin for uWSGI (Lua 5.1)
+
+[32muwsgi-plugin-luajit[0m/stable 2.0.28+1+0.0.8+b5 amd64
+  Lua WSAPI plugin for uWSGI (LuaJIT)
+
+[32mvarnish-redis[0m/stable 21.0-1 amd64
+  access Redis servers from VCL
+
+[32mvcfanno[0m/stable 0.3.5+ds-2+b9 amd64
+  annotate a VCF with other VCFs/BEDs/tabixed files
+
+[32mvim-gtk3[0m/stable,now 2:9.1.1230-2 amd64 [installed]
+  Vi IMproved - enhanced vi editor - with GTK3 GUI
+
+[32mvim-motif[0m/stable 2:9.1.1230-2 amd64
+  Vi IMproved - enhanced vi editor - with Motif GUI
+
+[32mvim-nox[0m/stable 2:9.1.1230-2 amd64
+  Vi IMproved - enhanced vi editor - with scripting languages support
+
+[32mvim-syntastic[0m/stable 3.10.0-3 all
+  Syntax checking hacks for vim
+
+[32mvis[0m/stable 0.9-1 amd64
+  Modern, legacy free, simple yet efficient vim-like editor
+
+[32mvlc-data[0m/stable-security 3.0.23-0+deb13u1 all
+  common data for VLC
+
+[32mvoronota[0m/stable 1.29.4307+ds-2 amd64
+  Voronoi diagram-based tool to find atom contacts
+
+[32mvspline-dev[0m/stable 1.1.7-1 all
+  header-only C++ template library for b-spline processing
+
+[32mwcalc[0m/stable 2.5-3+b2 amd64
+  Flexible command-line scientific calculator
+
+[32mwebsocketd[0m/stable 0.4.1-1+b23 amd64
+  Turn any program that uses STDIN/STDOUT into a WebSocket server
+
+[32mweechat[0m/stable 4.6.3-1 all
+  Fast, light and extensible chat client (metapackage)
+
+[32mweechat-curses[0m/stable 4.6.3-1 amd64
+  Fast, light and extensible chat client - console client
+
+[32mweechat-headless[0m/stable 4.6.3-1 amd64
+  Fast, light and extensible chat client - headless client
+
+[32mweechat-lua[0m/stable 4.6.3-1 amd64
+  Fast, light and extensible chat client - Lua plugin
+
+[32mwireshark-doc[0m/stable 4.4.7-1 all
+  network traffic analyzer - documentation
+
+[32mwmnut[0m/stable 0.70-2 amd64
+  WindowMaker dock app that displays UPS statistics from NUT's upsd
+
+[32mwrk[0m/stable 4.1.0-4+b1 amd64
+  HTTP benchmarking tool
+
+[32mwxformbuilder[0m/stable 4.2.1-1+b1 amd64
+  GUI designer for the wxWidgets toolkit
+
+[32mxinput-calibrator[0m/stable 0.8.0-1 amd64
+  Generic touchscreen calibration program for X.Org
+
+[32mxmake[0m/stable 2.9.9+ds-1 amd64
+  cross-platform build utility based on Lua
+
+[32mxmake-data[0m/stable 2.9.9+ds-1 all
+  Data for xmake
+
+[32mxorriso-dd-target[0m/stable 1.5.6-1.2 all
+  Device evaluator and disk image copier for GNU/Linux
+
+[32mxournalpp[0m/stable 1.2.6-1 amd64
+  Xournal++ - Open source hand note-taking program
+
+[32mxxhash[0m/stable 0.8.3-2 amd64
+  Extremely fast hash algorithm
+
+[32mzoem[0m/stable 21-341-1 amd64
+  general-purpose macro/programming language for transforming text
+
+[32mzsnapd[0m/stable 0.8.13c-3 all
+  ZFS Snapshot Daemon written in python
+
