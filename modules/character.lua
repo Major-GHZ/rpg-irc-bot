@@ -1,56 +1,42 @@
 local Character = {}
 Character.__index = Character
 
+-- Charger les classes de personnages
+local CharacterClasses = require("character_classes")
+
 function Character.new()
     return setmetatable({}, Character)
 end
 
 -- Crée un personnage par défaut
 function Character:newCharacter()
+    local default_class = CharacterClasses.getClass("humain")
     return {
         name = "Hero",
-        class = "Guerrier",
+        class = default_class.name,
         level = 1,
-        attributes = {
-            intelligence = 8,
-            strength = 8,
-            dexterity = 7,
-            endurance = 7,
-            magic = 0
-        },
-        spells = {"Coup puissant", "Cri de guerre", "Défense solide"},
-        energy = 120,
-        energieMax = 120
+        attributes = default_class.base_attributes,
+        spells = default_class.base_spells,
+        energy = default_class.base_energy,
+        energieMax = default_class.base_energy_max
     }
 end
 
 -- Crée un personnage avec des attributs personnalisés
 function Character:createCharacterWithAttributes(name, class, level, attributes)
+    local character_class = CharacterClasses.getClass(class)
+    if not character_class then
+        character_class = CharacterClasses.getClass("humain")
+    end
+
     local character = {}
     character.name = name
-    character.class = class
+    character.class = character_class.name
     character.level = level or 1
-    character.attributes = attributes
-    character.spells = {}
-
-    -- Sorts par défaut selon la classe
-    if class == "guerrier" then
-        character.spells = {"Coup puissant", "Cri de guerre", "Défense solide"}
-        character.energy = 120
-        character.energieMax = 120
-    elseif class == "mage" then
-        character.spells = {"Boule de feu", "Soin", "Bouclier magique"}
-        character.energy = 80
-        character.energieMax = 80
-    elseif class == "voleur" then
-        character.spells = {"Attaque furtive", "Piège", "Évasion"}
-        character.energy = 90
-        character.energieMax = 90
-    else  -- aventurier
-        character.spells = {"Attaque basique", "Soin léger"}
-        character.energy = 100
-        character.energieMax = 100
-    end
+    character.attributes = attributes or character_class.base_attributes
+    character.spells = character_class.base_spells
+    character.energy = character_class.base_energy
+    character.energieMax = character_class.base_energy_max
 
     return character
 end

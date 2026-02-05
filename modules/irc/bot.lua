@@ -3,6 +3,8 @@ package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
 
 -- Modules de jeu
 local Character = require("character")
+local CharacterClasses = require("character_classes")
+local Dice = require("dice")
 local xml = require("character_xml")
 
 -- Modules IRC
@@ -15,6 +17,16 @@ local mod_channel = require("irce.modules.channel")
 -- État pour la création de personnage via IRC
 local character_creation_state = {}
 local characters = {}
+
+-- Fonction pour recharger les personnages depuis les fichiers XML
+local function retrieve_characters()
+    characters = {}
+    local chars = xml.getAllCharactersFromXML()
+    for username, char in pairs(chars) do
+        characters[username] = char
+    end
+    return #chars
+end
 
 -- Configuration IRC
 local irc_server = "irc.oftc.net"
@@ -88,11 +100,16 @@ local function handle_character_creation(irc, sender_nick, channel, msg)
 
     if state.step == 1 then
         state.character.name = msg
-        irc:PRIVMSG(channel, sender_nick .. ", choisissez une classe (Guerrier/Mage/Voleur/Aventurier) :")
+        irc:PRIVMSG(channel, sender_nick .. ", choisissez une classe (" .. table.concat(CharacterClasses.getAvailableClasses(), "/") .. ") :")
         state.step = 2
     elseif state.step == 2 then
         state.character.class = msg:lower()
-        state.character.attributes = {}
+        local character_class = CharacterClasses.getClass(state.character.class)
+        if not character_class then
+            irc:PRIVMSG(channel, sender_nick .. ", classe invalide. Classes disponibles : " .. table.concat(CharacterClasses.getAvailableClasses(), ", ") .. ". Réessayez :")
+            return true
+        end
+        state.character.attributes = character_class.base_attributes
         state.points_restants = 30
         irc:PRIVMSG(channel, sender_nick .. ", vous avez 30 points à répartir entre vos attributs.")
         ask_for_attribute(irc, sender_nick, channel, "intelligence", state)
@@ -177,18 +194,56 @@ local function start_character_creation(irc, sender_nick, channel)
     irc:PRIVMSG(channel, sender_nick .. ", entrez le nom de votre personnage :")
 end
 
+-- Fonction pour lister tous les personnages
+local function list_all_characters(irc, sender_nick, channel)
+    local characters = xml.getAllCharactersFromXML()
+    local response = "Liste des personnages créés : "
+    
+    for username, char in pairs(characters) do
+        response = response .. username .. " (" .. char.class .. ", Niveau " .. char.level .. "), "
+    end
+    
+    if response == "Liste des personnages créés : " then
+        irc:PRIVMSG(channel, "Aucun personnage n'a été créé pour le moment.")
+    else
+        irc:PRIVMSG(channel, response:sub(1, -3)) -- Supprimer la dernière virgule et espace
+    end
+end
+
+-- Fonction pour gérer les jets de dés
+local function handle_roll_command(irc, sender_nick, channel, msg)
+    local num_dice = tonumber(msg:match("^!roll (%d+)")) or 1
+    if num_dice < 1 then
+        num_dice = 1
+    elseif num_dice > 10 then
+        num_dice = 10
+    end
+    
+    local results, total = Dice.roll_dice(num_dice)
+    local response = sender_nick .. ", vous avez lancé " .. num_dice .. " dés : " .. Dice.format_dice_roll(results, total)
+    irc:PRIVMSG(channel, response)
+end
+
 -- Gestion des commandes IRC
 local function handle_irc_command(irc, sender_nick, channel, msg)
     if msg:lower():match("^!create") then
         start_character_creation(irc, sender_nick, channel)
     elseif msg:lower():match("^!recap") then
         show_character_recap(irc, sender_nick, channel)
+    elseif msg:lower():match("^!listcharacters") then
+        list_all_characters(irc, sender_nick, channel)
+    elseif msg:lower():match("^!retrieve") then
+        local count = retrieve_characters()
+        irc:PRIVMSG(channel, sender_nick .. ", " .. count .. " personnages ont été rechargés en mémoire.")
+    elseif msg:lower():match("^!roll") then
+        handle_roll_command(irc, sender_nick, channel, msg)
     elseif msg:lower():match("^!ping") then
         irc:PRIVMSG(channel, "Pong!")
     elseif msg:lower():match("^!salut") then
         irc:PRIVMSG(channel, "Salut, " .. sender_nick .. " !")
     elseif msg:lower():match("^!help") then
-        irc:PRIVMSG(channel, "Commandes disponibles : !create, !recap, !ping, !salut, !help")
+        irc:PRIVMSG(channel, "Commandes disponibles : !create, !recap, !listcharacters, !retrieve, !roll, !ping, !salut, !help")
+        irc:PRIVMSG(channel, "Classes disponibles : " .. table.concat(CharacterClasses.getAvailableClasses(), ", "))
     elseif character_creation_state[sender_nick] then
         handle_character_creation(irc, sender_nick, channel, msg)
     end
