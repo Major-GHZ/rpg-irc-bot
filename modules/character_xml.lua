@@ -72,6 +72,12 @@ local function readCharacterXML(filePath)
     return character
 end
 
+-- Fonction pour récupérer un personnage spécifique depuis un fichier XML
+function xml.getCharacterFromXML(player_name)
+    local safe_filename = player_name:gsub("[^%w_]", "_")
+    return readCharacterXML("saves/" .. safe_filename .. ".xml")
+end
+
 -- Fonction pour récupérer tous les personnages depuis les fichiers XML
 function xml.getAllCharactersFromXML()
     local characters = {}

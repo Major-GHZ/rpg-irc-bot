@@ -1,12 +1,12 @@
--- Ajoute le chemin des modules Lua
+-- Add Lua modules path
 package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
 
--- Charge les modules nécessaires
+-- Load required modules
 local Character = require("character")
 local xml = require("character_xml")
 local bot = require("irc.bot")
 
--- Crée un dossier pour les sauvegardes XML si nécessaire
+-- Ensure saves directory exists
 local function ensure_saves_directory_exists()
     local lfs = require("lfs")
     local path = "saves"
@@ -15,44 +15,44 @@ local function ensure_saves_directory_exists()
     end
 end
 
--- Teste la création de personnage localement
+-- Test character creation locally
 local function test_character_creation()
-    print("=== Test de création de personnage local ===")
+    print("=== Local Character Creation Test ===")
 
-    -- Crée un personnage personnalisé
+    -- Create a custom character
     local customCharacter = Character:createCharacterWithAttributes(
         "Narwen",
         "mage",
         5,
         {intelligence = 20, strength = 0, dexterity = 0, endurance = 0, magic = 10}
     )
-    print("\nPersonnage personnalisé :")
-    print("Nom : " .. customCharacter.name)
-    print("Classe : " .. customCharacter.class)
-    print("Niveau : " .. customCharacter.level)
-    print("Attributs :")
-    print("- Intelligence : " .. customCharacter.attributes.intelligence)
-    print("- Force : " .. customCharacter.attributes.strength)
-    print("- Dextérité : " .. customCharacter.attributes.dexterity)
-    print("- Endurance : " .. customCharacter.attributes.endurance)
-    print("- Magie : " .. customCharacter.attributes.magic)
-    print("Sorts : " .. table.concat(customCharacter.spells, ", "))
-    print("Énergie : " .. customCharacter.energy .. "/" .. customCharacter.energieMax)
+    print("\nCustom Character:")
+    print("Name: " .. customCharacter.name)
+    print("Class: " .. customCharacter.class)
+    print("Level: " .. customCharacter.level)
+    print("Attributes:")
+    print("- Intelligence: " .. customCharacter.attributes.intelligence)
+    print("- Strength: " .. customCharacter.attributes.strength)
+    print("- Dexterity: " .. customCharacter.attributes.dexterity)
+    print("- Endurance: " .. customCharacter.attributes.endurance)
+    print("- Magic: " .. customCharacter.attributes.magic)
+    print("Spells: " .. table.concat(customCharacter.spells, ", "))
+    print("Energy: " .. customCharacter.energy .. "/" .. customCharacter.energieMax)
 
-    -- Sauvegarde le personnage personnalisé
+    -- Save the custom character
     xml.sauvegarder_personnage(customCharacter)
-    print("\nPersonnage sauvegardé en XML.")
+    print("\nCharacter saved to XML.")
 end
 
--- Fonction principale
+-- Main function
 local function main()
     ensure_saves_directory_exists()
     test_character_creation()
 
-    -- Lance le bot IRC
-    print("\n=== Lancement du bot IRC ===")
+    -- Launch IRC bot
+    print("\n=== IRC Bot Launch ===")
     bot.run_irc_bot()
 end
 
--- Exécute la fonction principale
+-- Execute main function
 main()
