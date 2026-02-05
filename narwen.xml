@@ -1,0 +1,16 @@
+<personnage>
+    <nom>narwen</nom>
+    <niveau>1</niveau>
+    <classe>mage</classe>
+    <attributs>
+        <intelligence>7</intelligence>
+        <strength>1</strength>
+        <dexterity>1</dexterity>
+        <endurance>1</endurance>
+    </attributs>
+    <sorts>
+        <sort>fireball</sort>
+        <sort>lightning</sort>
+        <sort>ice storm</sort>
+    </sorts>
+</personnage>
