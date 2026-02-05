@@ -1,4 +1,6 @@
 -- File: modules/character_classes.lua
+local config = require("config")
+
 local M = {}
 
 -- Definition of character classes
@@ -15,8 +17,8 @@ local classes = {
             magic = 10
         },
         base_spells = {"Fireball", "Lightning", "Magic Shield"},
-        base_energy = 100,
-        base_energy_max = 100
+        base_energy = config.game.starting_energy,
+        base_energy_max = config.game.starting_energy
     },
     
     -- Human

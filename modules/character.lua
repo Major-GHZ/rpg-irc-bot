@@ -1,7 +1,9 @@
+local config = require("config")
+
 local Character = {}
 Character.__index = Character
 
--- Charger les classes de personnages
+-- Load character classes
 local CharacterClasses = require("character_classes")
 
 function Character.new()

@@ -1,6 +1,9 @@
 -- Add Lua modules path
 package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
 
+-- Load configuration
+local config = require("config")
+
 -- Load game modules
 local Character = require("character")
 local CharacterClasses = require("character_classes")
@@ -29,14 +32,14 @@ local function retrieve_characters()
     return #chars
 end
 
--- IRC Configuration
-local irc_server = "irc.oftc.net"
-local irc_port = 6667
-local nickname = "lua_bot_" .. os.time()
-local default_channel = "#monbot"
-local reconnect_delay = 10
-local connection_timeout = 30
-local receive_timeout = 5
+-- IRC Configuration from config file
+local irc_server = config.irc.server
+local irc_port = config.irc.port
+local nickname = config.irc.nickname .. os.time()
+local default_channel = config.irc.default_channel
+local reconnect_delay = config.irc.reconnect_delay
+local connection_timeout = config.irc.connection_timeout
+local receive_timeout = config.irc.receive_timeout
 local current_channel = default_channel
 
 -- Logging function
@@ -213,8 +216,8 @@ local function handle_roll_command(irc, sender_nick, channel, msg)
     local num_dice = tonumber(msg:match("^!roll (%d+)")) or 1
     if num_dice < 1 then
         num_dice = 1
-    elseif num_dice > 10 then
-        num_dice = 10
+    elseif num_dice > config.game.max_dice_roll then
+        num_dice = config.game.max_dice_roll
     end
     
     local results, total = Dice.roll_dice(num_dice)

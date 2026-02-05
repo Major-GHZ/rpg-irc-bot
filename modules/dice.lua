@@ -1,4 +1,6 @@
--- Fichier : modules/dice.lua
+-- File: modules/dice.lua
+local config = require("config")
+
 local M = {}
 
 -- Fonction pour simuler un jet de dé à 6 faces

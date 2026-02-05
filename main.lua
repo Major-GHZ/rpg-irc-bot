@@ -1,6 +1,9 @@
 -- Add Lua modules path
 package.path = package.path .. ";./modules/?.lua;./modules/irc/?.lua"
 
+-- Load configuration
+local config = require("config")
+
 -- Load required modules
 local Character = require("character")
 local xml = require("character_xml")
@@ -9,9 +12,15 @@ local bot = require("irc.bot")
 -- Ensure saves directory exists
 local function ensure_saves_directory_exists()
     local lfs = require("lfs")
-    local path = "saves"
+    local path = config.game.character_save_dir
     if not lfs.attributes(path) then
         os.execute("mkdir -p " .. path)
+    end
+    
+    -- Also ensure monster save directory exists
+    local monster_path = config.game.monster_save_dir
+    if not lfs.attributes(monster_path) then
+        os.execute("mkdir -p " .. monster_path)
     end
 end
 

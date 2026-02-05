@@ -1,6 +1,8 @@
 -- File: modules/monster_creation.lua
 -- Complete module for creating and managing heroic fantasy monsters
 
+local config = require("config")
+
 local M = {}
 
 -- Definition of monster classes directly in the module
@@ -139,8 +141,8 @@ local function validateMonsterName(name)
     if not name or type(name) ~= "string" or name:match("^%s*$") then
         return nil, "Monster name cannot be empty"
     end
-    if #name > 50 then
-        return nil, "Monster name cannot exceed 50 characters"
+    if #name > config.game.max_monster_name_length then
+        return nil, "Monster name cannot exceed " .. config.game.max_monster_name_length .. " characters"
     end
     -- Simplified check for invalid characters
     if name:find("<") or name:find(">") or name:find("|") or name:find("\\") or name:find("/") then
@@ -153,8 +155,8 @@ end
 local function validateLevel(level)
     if not level then return nil, "Level is required" end
     level = tonumber(level)
-    if not level or level < 1 or level > 100 then
-        return nil, "Level must be a number between 1 and 100"
+    if not level or level < 1 or level > config.game.max_level then
+        return nil, "Level must be a number between 1 and " .. config.game.max_level
     end
     return level
 end
