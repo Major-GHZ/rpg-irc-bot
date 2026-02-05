@@ -1,14 +1,14 @@
--- Fichier : modules/monster_creation.lua
--- Module complet pour la création et gestion des monstres d'heroic fantasy
+-- File: modules/monster_creation.lua
+-- Complete module for creating and managing heroic fantasy monsters
 
 local M = {}
 
--- Définition des classes de monstres directement dans le module
+-- Definition of monster classes directly in the module
 M.monster_classes = {
-    -- Loup-garou
+    -- Werewolf
     loup_garou = {
-        name = "Loup-garou",
-        description = "Un monstre rapide et puissant, capable de se transformer.",
+        name = "Werewolf",
+        description = "A fast and powerful monster, capable of transforming.",
         base_attributes = {
             intelligence = 4,
             strength = 8,
@@ -16,7 +16,7 @@ M.monster_classes = {
             endurance = 6,
             magic = 3
         },
-        base_spells = {"Griffes acérées", "Hurlement terrifiant", "Transformation"},
+        base_spells = {"Sharp Claws", "Terrifying Howl", "Transformation"},
         base_health = 60,
         base_health_max = 60,
         base_damage = 10,
@@ -26,7 +26,7 @@ M.monster_classes = {
     -- Vampire
     vampire = {
         name = "Vampire",
-        description = "Un monstre immortel avec des capacités de régénération.",
+        description = "An immortal monster with regeneration abilities.",
         base_attributes = {
             intelligence = 7,
             strength = 6,
@@ -44,7 +44,7 @@ M.monster_classes = {
     -- Licorne
     licorne = {
         name = "Licorne",
-        description = "Un monstre magique avec des capacités de guérison.",
+        description = "A magical monster with healing abilities.",
         base_attributes = {
             intelligence = 6,
             strength = 5,
@@ -52,7 +52,7 @@ M.monster_classes = {
             endurance = 6,
             magic = 8
         },
-        base_spells = {"Corne de guérison", "Bénédiction", "Purification"},
+        base_spells = {"Healing Horn", "Blessing", "Purification"},
         base_health = 80,
         base_health_max = 80,
         base_damage = 8,
@@ -62,7 +62,7 @@ M.monster_classes = {
     -- Minotaure
     minotaure = {
         name = "Minotaure",
-        description = "Un monstre puissant et résistant.",
+        description = "A powerful and resistant monster.",
         base_attributes = {
             intelligence = 3,
             strength = 9,
@@ -70,7 +70,7 @@ M.monster_classes = {
             endurance = 8,
             magic = 2
         },
-        base_spells = {"Charge puissante", "Résistance", "Coup de corne"},
+        base_spells = {"Powerful Charge", "Resistance", "Horn Strike"},
         base_health = 90,
         base_health_max = 90,
         base_damage = 12,
@@ -80,7 +80,7 @@ M.monster_classes = {
     -- Phénix
     phenix = {
         name = "Phénix",
-        description = "Un monstre magique capable de renaître de ses cendres.",
+        description = "A magical monster capable of rebirth from its ashes.",
         base_attributes = {
             intelligence = 8,
             strength = 6,
@@ -98,7 +98,7 @@ M.monster_classes = {
     -- Kraken
     kraken = {
         name = "Kraken",
-        description = "Un monstre marin géant avec des tentacules puissants.",
+        description = "A giant sea monster with powerful tentacles.",
         base_attributes = {
             intelligence = 5,
             strength = 10,
@@ -106,7 +106,7 @@ M.monster_classes = {
             endurance = 9,
             magic = 4
         },
-        base_spells = {"Étouffement", "Vague géante", "Résistance aquatique"},
+        base_spells = {"Suffocation", "Giant Wave", "Water Resistance"},
         base_health = 120,
         base_health_max = 120,
         base_damage = 14,
@@ -114,18 +114,18 @@ M.monster_classes = {
     }
 }
 
--- Fonction pour obtenir une classe de monstre par son nom
+-- Function to get a monster class by name
 function M.getMonsterClass(monster_class_name)
     if not monster_class_name or type(monster_class_name) ~= "string" then
         return nil
     end
     
-    -- Essayer de trouver la classe (insensible à la casse)
+    -- Try to find the class (case insensitive)
     local class_name = monster_class_name:lower()
     return M.monster_classes[class_name]
 end
 
--- Fonction pour obtenir la liste des classes de monstres disponibles
+-- Function to get the list of available monster classes
 function M.getAvailableMonsterClasses()
     local class_list = {}
     for class_name, class_info in pairs(M.monster_classes) do
@@ -134,32 +134,32 @@ function M.getAvailableMonsterClasses()
     return class_list
 end
 
--- Fonction pour valider un nom de monstre
+-- Function to validate a monster name
 local function validateMonsterName(name)
     if not name or type(name) ~= "string" or name:match("^%s*$") then
-        return nil, "Le nom du monstre ne peut pas être vide"
+        return nil, "Monster name cannot be empty"
     end
     if #name > 50 then
-        return nil, "Le nom du monstre ne peut pas dépasser 50 caractères"
+        return nil, "Monster name cannot exceed 50 characters"
     end
-    -- Vérification simplifiée des caractères invalides
+    -- Simplified check for invalid characters
     if name:find("<") or name:find(">") or name:find("|") or name:find("\\") or name:find("/") then
-        return nil, "Le nom du monstre contient des caractères invalides"
+        return nil, "Monster name contains invalid characters"
     end
     return true
 end
 
--- Fonction pour valider un niveau
+-- Function to validate a level
 local function validateLevel(level)
-    if not level then return nil, "Le niveau est requis" end
+    if not level then return nil, "Level is required" end
     level = tonumber(level)
     if not level or level < 1 or level > 100 then
-        return nil, "Le niveau doit être un nombre entre 1 et 100"
+        return nil, "Level must be a number between 1 and 100"
     end
     return level
 end
 
--- Fonction pour créer un monstre avec une classe spécifique
+-- Function to create a monster with a specific class
 function M.createMonster(monster_name, monster_class_name, level)
     -- Validation des paramètres d'entrée
     local valid_name, name_err = validateMonsterName(monster_name)
@@ -168,7 +168,7 @@ function M.createMonster(monster_name, monster_class_name, level)
     end
     
     if not monster_class_name or type(monster_class_name) ~= "string" then
-        return nil, "La classe de monstre est requise"
+        return nil, "Monster class is required"
     end
     
     local validated_level, level_err = validateLevel(level)
@@ -178,14 +178,14 @@ function M.createMonster(monster_name, monster_class_name, level)
     
     local monster_class = M.getMonsterClass(monster_class_name)
     if not monster_class then
-        return nil, "Classe de monstre invalide. Classes disponibles : " .. table.concat(M.getAvailableMonsterClasses(), ", ")
+        return nil, "Invalid monster class. Available classes: " .. table.concat(M.getAvailableMonsterClasses(), ", ")
     end
 
-    -- Vérification que la classe de monstre a toutes les propriétés requises
+    -- Check that the monster class has all required properties
     if not monster_class.base_attributes or not monster_class.base_spells or
        not monster_class.base_health or not monster_class.base_damage or
        not monster_class.base_armor then
-        return nil, "La classe de monstre " .. monster_class_name .. " est mal configurée"
+        return nil, "Monster class " .. monster_class_name .. " is misconfigured"
     end
 
     local monster = {}
@@ -199,7 +199,7 @@ function M.createMonster(monster_name, monster_class_name, level)
     monster.damage = (monster_class.base_damage or 0) * monster.level
     monster.armor = (monster_class.base_armor or 0) * monster.level
 
-    -- Appliquer les attributs de base de la classe avec validation
+    -- Apply the class's base attributes with validation
     for attribute, value in pairs(monster_class.base_attributes) do
         if type(value) == "number" and value > 0 then
             monster.attributes[attribute] = value * monster.level
@@ -208,29 +208,29 @@ function M.createMonster(monster_name, monster_class_name, level)
         end
     end
 
-    -- Vérification finale que le monstre est valide
+    -- Final check that the monster is valid
     if not monster.name or not monster.class or not monster.level or
        not monster.health or not monster.damage then
-        return nil, "Erreur lors de la création du monstre"
+        return nil, "Error creating monster"
     end
 
     return monster
 end
 
--- Fonction pour créer un répertoire si nécessaire
+-- Function to create a directory if needed
 local function ensureDirectoryExists(path)
     local success, err = os.execute("mkdir -p " .. path)
     if not success then
         -- Essayer une approche alternative pour Windows
         local ok, err2 = os.execute("mkdir " .. path .. " 2>nul")
         if not ok then
-            return false, "Impossible de créer le répertoire: " .. path .. " (" .. tostring(err) .. ", " .. tostring(err2) .. ")"
+            return false, "Unable to create directory: " .. path .. " (" .. tostring(err) .. ", " .. tostring(err2) .. ")"
         end
     end
     return true
 end
 
--- Fonction pour échapper les caractères XML
+-- Function to escape XML characters
 local function escapeXml(text)
     if not text then return "" end
     return tostring(text)
@@ -241,21 +241,21 @@ local function escapeXml(text)
         :gsub("\"", "&quot;")
 end
 
--- Fonction pour sauvegarder un monstre dans un fichier XML
+-- Function to save a monster to an XML file
 function M.saveMonster(monster)
-    -- Validation du monstre
+    -- Monster validation
     if not monster or type(monster) ~= "table" then
-        return false, "Monstre invalide"
+        return false, "Invalid monster"
     end
     
     if not monster.name or not monster.class or not monster.level then
-        return false, "Monstre incomplet - informations manquantes"
+        return false, "Incomplete monster - missing information"
     end
     
     -- Créer le répertoire si nécessaire
     local dir_success, dir_err = ensureDirectoryExists("saves/monster")
     if not dir_success then
-        return false, "Erreur de répertoire: " .. dir_err
+        return false, "Directory error: " .. dir_err
     end
     
     -- Préparer les sorts
@@ -312,7 +312,7 @@ function M.saveMonster(monster)
     -- Générer un nom de fichier sûr
     local safe_filename = monster.name:gsub("[^%w_]", "_")
     if #safe_filename == 0 then
-        safe_filename = "monstre_inconnu"
+        safe_filename = "unknown_monster"
     end
     
     local filename = "saves/monster/" .. safe_filename .. ".xml"
@@ -320,7 +320,7 @@ function M.saveMonster(monster)
     -- Sauvegarder le fichier
     local file, open_err = io.open(filename, "w")
     if not file then
-        return false, "Impossible d'ouvrir le fichier pour écriture: " .. tostring(open_err)
+        return false, "Unable to open file for writing: " .. tostring(open_err)
     end
     
     local write_success, write_err = pcall(function()
@@ -330,13 +330,13 @@ function M.saveMonster(monster)
     
     if not write_success then
         file:close()
-        return false, "Erreur lors de l'écriture du fichier: " .. tostring(write_err)
+        return false, "Error writing to file: " .. tostring(write_err)
     end
     
     return true
 end
 
--- Fonction pour lister les fichiers d'un répertoire (multiplateforme)
+-- Function to list files in a directory (cross-platform)
 local function listDirectoryFiles(dir_path)
     local files = {}
     
@@ -375,7 +375,7 @@ local function listDirectoryFiles(dir_path)
     return files
 end
 
--- Fonction pour charger un monstre depuis un fichier XML
+-- Function to load a monster from an XML file
 function M.loadMonster(filePath)
     if not filePath or type(filePath) ~= "string" then
         return nil, "Chemin de fichier invalide"
@@ -383,19 +383,19 @@ function M.loadMonster(filePath)
 
     local file, open_err = io.open(filePath, "r")
     if not file then
-        return nil, "Impossible d'ouvrir le fichier: " .. tostring(open_err)
+        return nil, "Unable to open file: " .. tostring(open_err)
     end
 
     local content, read_err = file:read("*a")
     file:close()
     
     if not content then
-        return nil, "Impossible de lire le fichier: " .. tostring(read_err)
+        return nil, "Unable to read file: " .. tostring(read_err)
     end
 
     -- Vérifier que le contenu ressemble à du XML
     if not content:match("^%s*<monster>") then
-        return nil, "Fichier XML invalide - format incorrect"
+        return nil, "Invalid XML file - incorrect format"
     end
 
     local monster = {
@@ -426,30 +426,30 @@ function M.loadMonster(filePath)
     end)
     
     if not success then
-        return nil, "Erreur lors du chargement des sorts: " .. tostring(err)
+        return nil, "Error loading spells: " .. tostring(err)
     end
 
     -- Validation finale
     if not monster.name or not monster.class or not monster.level then
-        return nil, "Fichier XML corrompu - informations manquantes"
+        return nil, "Corrupted XML file - missing information"
     end
 
     return monster
 end
 
--- Fonction pour lister tous les monstres sauvegardés
+-- Function to list all saved monsters
 function M.listMonsters()
     local monsters = {}
     
     -- Vérifier que le répertoire existe
     local dir_success, dir_err = ensureDirectoryExists("saves/monster")
     if not dir_success then
-        return monsters, "Avertissement: " .. dir_err
+        return monsters, "Warning: " .. dir_err
     end
     
     local files, list_err = listDirectoryFiles("saves/monster")
     if not files then
-        return monsters, "Erreur lors de la lecture du répertoire: " .. tostring(list_err)
+        return monsters, "Error reading directory: " .. tostring(list_err)
     end
 
     for _, file in ipairs(files) do
@@ -459,12 +459,12 @@ function M.listMonsters()
                 table.insert(monsters, monster)
             else
                 -- Journaliser l'erreur mais continuer
-                print("Avertissement: Impossible de charger " .. file .. ": " .. tostring(load_err))
+                print("Warning: Unable to load " .. file .. ": " .. tostring(load_err))
             end
         end
     end
 
-    -- Trier les monstres par nom
+    -- Sort monsters by name
     table.sort(monsters, function(a, b)
         return a.name:lower() < b.name:lower()
     end)
@@ -472,11 +472,11 @@ function M.listMonsters()
     return monsters
 end
 
--- Fonction pour obtenir des informations sur une classe de monstre
+-- Function to get information about a monster class
 function M.getMonsterClassInfo(class_name)
     local class = M.getMonsterClass(class_name)
     if not class then
-        return nil, "Classe de monstre invalide"
+        return nil, "Invalid monster class"
     end
     
     return {
@@ -490,7 +490,7 @@ function M.getMonsterClassInfo(class_name)
     }
 end
 
--- Fonction pour obtenir la liste complète des classes avec détails
+-- Function to get the complete list of classes with details
 function M.getAllMonsterClassesWithDetails()
     local classes = {}
     for class_name, class_info in pairs(M.monster_classes) do

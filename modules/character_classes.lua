@@ -1,12 +1,12 @@
--- Fichier : modules/character_classes.lua
+-- File: modules/character_classes.lua
 local M = {}
 
--- Définition des classes de personnages
+-- Definition of character classes
 local classes = {
-    -- Magicien
+    -- Mage
     magicien = {
-        name = "Magicien",
-        description = "Un utilisateur de magie puissante.",
+        name = "Mage",
+        description = "A powerful magic user.",
         base_attributes = {
             intelligence = 8,
             strength = 2,
@@ -14,15 +14,15 @@ local classes = {
             endurance = 3,
             magic = 10
         },
-        base_spells = {"Boule de feu", "Éclair", "Bouclier magique"},
+        base_spells = {"Fireball", "Lightning", "Magic Shield"},
         base_energy = 100,
         base_energy_max = 100
     },
     
-    -- Humain
+    -- Human
     humain = {
-        name = "Humain",
-        description = "Un personnage polyvalent.",
+        name = "Human",
+        description = "A versatile character.",
         base_attributes = {
             intelligence = 5,
             strength = 5,
@@ -30,15 +30,15 @@ local classes = {
             endurance = 5,
             magic = 5
         },
-        base_spells = {"Coup d'épée", "Bouclier"},
+        base_spells = {"Sword Strike", "Shield"},
         base_energy = 80,
         base_energy_max = 80
     },
     
-    -- Hobbite
+    -- Hobbit
     hobbite = {
-        name = "Hobbite",
-        description = "Un personnage agile et discret.",
+        name = "Hobbit",
+        description = "An agile and stealthy character.",
         base_attributes = {
             intelligence = 4,
             strength = 2,
@@ -46,15 +46,15 @@ local classes = {
             endurance = 3,
             magic = 3
         },
-        base_spells = {"Disparition", "Coup rapide"},
+        base_spells = {"Vanish", "Quick Strike"},
         base_energy = 60,
         base_energy_max = 60
     },
     
-    -- Elfe
+    -- Elf
     elfe = {
-        name = "Elfe",
-        description = "Un personnage rapide et précis.",
+        name = "Elf",
+        description = "A fast and precise character.",
         base_attributes = {
             intelligence = 6,
             strength = 3,
@@ -62,15 +62,15 @@ local classes = {
             endurance = 4,
             magic = 6
         },
-        base_spells = {"Tir précis", "Fléche magique"},
+        base_spells = {"Precise Shot", "Magic Arrow"},
         base_energy = 70,
         base_energy_max = 70
     },
     
-    -- Nain
+    -- Dwarf
     nain = {
-        name = "Nain",
-        description = "Un personnage robuste et résistant.",
+        name = "Dwarf",
+        description = "A robust and resistant character.",
         base_attributes = {
             intelligence = 3,
             strength = 8,
@@ -78,7 +78,7 @@ local classes = {
             endurance = 8,
             magic = 3
         },
-        base_spells = {"Coup de hache", "Résistance"},
+        base_spells = {"Axe Strike", "Resistance"},
         base_energy = 90,
         base_energy_max = 90
     },
@@ -86,7 +86,7 @@ local classes = {
     -- Troll
     troll = {
         name = "Troll",
-        description = "Un personnage puissant mais lent.",
+        description = "A powerful but slow character.",
         base_attributes = {
             intelligence = 2,
             strength = 10,
@@ -94,7 +94,7 @@ local classes = {
             endurance = 9,
             magic = 2
         },
-        base_spells = {"Coup puissant", "Régénération"},
+        base_spells = {"Powerful Strike", "Regeneration"},
         base_energy = 110,
         base_energy_max = 110
     },
@@ -102,7 +102,7 @@ local classes = {
     -- Orc
     orc = {
         name = "Orc",
-        description = "Un personnage brutal et résistant.",
+        description = "A brutal and resistant character.",
         base_attributes = {
             intelligence = 3,
             strength = 7,
@@ -110,18 +110,18 @@ local classes = {
             endurance = 7,
             magic = 4
         },
-        base_spells = {"Coup brutal", "Cri de guerre"},
+        base_spells = {"Brutal Strike", "War Cry"},
         base_energy = 85,
         base_energy_max = 85
     }
 }
 
--- Fonction pour obtenir une classe par son nom
+-- Function to get a class by name
 function M.getClass(class_name)
     return classes[class_name:lower()]
 end
 
--- Fonction pour obtenir la liste des classes disponibles
+-- Function to get the list of available classes
 function M.getAvailableClasses()
     local class_list = {}
     for class_name, class_info in pairs(classes) do

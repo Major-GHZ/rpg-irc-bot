@@ -1,0 +1,18 @@
+<character>
+    <name>Narwen</name>
+    <class>Human</class>
+    <level>5</level>
+    <attributes>
+        <intelligence>20</intelligence>
+        <strength>0</strength>
+        <dexterity>0</dexterity>
+        <endurance>0</endurance>
+        <magic>10</magic>
+    </attributes>
+    <spells>
+        <spell>Sword Strike</spell>
+        <spell>Shield</spell>    </spells>
+    <energy>80</energy>
+    <energyMax>80</energyMax>
+</character>
+    

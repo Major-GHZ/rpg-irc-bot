@@ -60,8 +60,8 @@ local function connect_to_irc()
     return client
 end
 
--- Show character recap
-local function show_character_recap(irc, sender_nick, channel)
+-- Show character statistics
+local function show_character_stats(irc, sender_nick, channel)
     if characters[sender_nick] then
         local character = characters[sender_nick]
         local recap = string.format(
@@ -178,7 +178,8 @@ local function handle_character_creation(irc, sender_nick, channel, msg)
             table.concat(character.spells, ", ")
         )
         irc:PRIVMSG(channel, recap)
-        xml.sauvegarder_personnage(character)
+        irc:PRIVMSG(channel, sender_nick .. ", use !stats to see your character information at any time.")
+        xml.saveCharacter(character)
         characters[sender_nick] = character
         character_creation_state[sender_nick] = nil
     end
@@ -186,28 +187,28 @@ local function handle_character_creation(irc, sender_nick, channel, msg)
     return true
 end
 
--- Démarre la création de personnage
+-- Start character creation
 local function start_character_creation(irc, sender_nick, channel)
     character_creation_state[sender_nick] = {
         step = 1,
         character = {}
     }
     
-    -- Afficher une aide complète pour la création de personnages
+    -- Display complete help for character creation
     irc:PRIVMSG(channel, "===== CHARACTER CREATION =====")
-    irc:PRIVMSG(channel, sender_nick .. ", you will create a character with !createjoueur.")
+    irc:PRIVMSG(channel, sender_nick .. ", you will create a character with !createplayer.")
     irc:PRIVMSG(channel, "Characters have different statistics than monsters!")
     irc:PRIVMSG(channel, "Use !createmonster to create enemies.")
     irc:PRIVMSG(channel, "")
-    irc:PRIVMSG(channel, "ETAPE 1/7 : Nom du personnage")
-    irc:PRIVMSG(channel, sender_nick .. ", entrez le nom de votre personnage :")
-    irc:PRIVMSG(channel, "Exemple : Gandalf, Aragorn, Legolas")
+    irc:PRIVMSG(channel, "STEP 1/7: Character name")
+    irc:PRIVMSG(channel, sender_nick .. ", enter your character's name:")
+    irc:PRIVMSG(channel, "Example: Gandalf, Aragorn, Legolas")
 end
 
--- Fonction pour lister tous les personnages
+-- Function to list all characters
 
 
--- Fonction pour gérer les jets de dés
+-- Function to handle dice rolls
 local function handle_roll_command(irc, sender_nick, channel, msg)
     local num_dice = tonumber(msg:match("^!roll (%d+)")) or 1
     if num_dice < 1 then
@@ -217,38 +218,38 @@ local function handle_roll_command(irc, sender_nick, channel, msg)
     end
     
     local results, total = Dice.roll_dice(num_dice)
-    local response = sender_nick .. ", vous avez lancé " .. num_dice .. " dés : " .. Dice.format_dice_roll(results, total)
+    local response = sender_nick .. ", you rolled " .. num_dice .. " dice: " .. Dice.format_dice_roll(results, total)
     irc:PRIVMSG(channel, response)
 end
 
 
 
--- Fonction pour gérer la création de monstres
+-- Function to handle monster creation
 local function handle_create_monster_command(irc, sender_nick, channel, msg)
     local monster_name, monster_class_name, level = msg:match("^!createmonster (%S+) (%S+) (%d+)")
     
-    -- Si aucun paramètre n'est fourni, afficher une aide complète et distincte
+    -- If no parameters are provided, display complete and distinct help
     if not monster_name or not monster_class_name then
-        irc:PRIVMSG(channel, "===== CREATION DE MONSTRES D'HEROIC FANTASY =====")
-        irc:PRIVMSG(channel, sender_nick .. ", pour créer un MONSTRE, utilisez :")
-        irc:PRIVMSG(channel, "!createmonster <nom> <classe> <niveau>")
+        irc:PRIVMSG(channel, "===== HEROIC FANTASY MONSTER CREATION =====")
+        irc:PRIVMSG(channel, sender_nick .. ", to create a MONSTER, use:")
+        irc:PRIVMSG(channel, "!createmonster <name> <class> <level>")
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "CLASSES DE MONSTRES DISPONIBLES :")
+        irc:PRIVMSG(channel, "AVAILABLE MONSTER CLASSES:")
         
-        -- Afficher les classes avec leurs descriptions
+        -- Display classes with their descriptions
         local classes = MonsterCreation.getAllMonsterClassesWithDetails()
         for _, class in ipairs(classes) do
             irc:PRIVMSG(channel, "• " .. class.display_name .. " : " .. class.description)
         end
         
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "EXEMPLES :")
-        irc:PRIVMSG(channel, "!createmonster DragonNoir phenix 10")
-        irc:PRIVMSG(channel, "!createmonster VampireAncien vampire 15")
-        irc:PRIVMSG(channel, "!createmonster KrakenGéant kraken 20")
+        irc:PRIVMSG(channel, "EXAMPLES:")
+        irc:PRIVMSG(channel, "!createmonster BlackDragon phenix 10")
+        irc:PRIVMSG(channel, "!createmonster AncientVampire vampire 15")
+        irc:PRIVMSG(channel, "!createmonster GiantKraken kraken 20")
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "CONSEIL : Les monstres ont des statistiques différentes des personnages !")
-        irc:PRIVMSG(channel, "Ils utilisent Santé/Dégâts/Armure au lieu d'Énergie.")
+        irc:PRIVMSG(channel, "TIP: Monsters have different statistics than characters!")
+        irc:PRIVMSG(channel, "They use Health/Damage/Armor instead of Energy.")
         return
     end
     
@@ -261,111 +262,111 @@ local function handle_create_monster_command(irc, sender_nick, channel, msg)
     
     local success, save_err = MonsterCreation.saveMonster(monster)
     if success then
-        irc:PRIVMSG(channel, "===== MONSTRE CREE AVEC SUCCES =====")
-        irc:PRIVMSG(channel, sender_nick .. ", votre monstre est pret pour le combat !")
+        irc:PRIVMSG(channel, "===== MONSTER CREATED SUCCESSFULLY =====")
+        irc:PRIVMSG(channel, sender_nick .. ", your monster is ready for combat!")
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "INFORMATIONS DU MONSTRE :")
-        irc:PRIVMSG(channel, "Nom : " .. monster.name .. " (" .. monster.class .. ")")
-        irc:PRIVMSG(channel, "Niveau : " .. monster.level)
-        irc:PRIVMSG(channel, "Sante : " .. monster.health .. "/" .. monster.health_max)
-        irc:PRIVMSG(channel, "Degats : " .. monster.damage)
-        irc:PRIVMSG(channel, "Armure : " .. monster.armor)
+        irc:PRIVMSG(channel, "MONSTER INFORMATION:")
+        irc:PRIVMSG(channel, "Name: " .. monster.name .. " (" .. monster.class .. ")")
+        irc:PRIVMSG(channel, "Level: " .. monster.level)
+        irc:PRIVMSG(channel, "Health: " .. monster.health .. "/" .. monster.health_max)
+        irc:PRIVMSG(channel, "Damage: " .. monster.damage)
+        irc:PRIVMSG(channel, "Armor: " .. monster.armor)
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "ATTRIBUTS :")
-        irc:PRIVMSG(channel, "Intelligence : " .. monster.attributes.intelligence)
-        irc:PRIVMSG(channel, "Force : " .. monster.attributes.strength)
-        irc:PRIVMSG(channel, "Dexterite : " .. monster.attributes.dexterity)
-        irc:PRIVMSG(channel, "Endurance : " .. monster.attributes.endurance)
-        irc:PRIVMSG(channel, "Magie : " .. monster.attributes.magic)
+        irc:PRIVMSG(channel, "ATTRIBUTES:")
+        irc:PRIVMSG(channel, "Intelligence: " .. monster.attributes.intelligence)
+        irc:PRIVMSG(channel, "Strength: " .. monster.attributes.strength)
+        irc:PRIVMSG(channel, "Dexterity: " .. monster.attributes.dexterity)
+        irc:PRIVMSG(channel, "Endurance: " .. monster.attributes.endurance)
+        irc:PRIVMSG(channel, "Magic: " .. monster.attributes.magic)
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "SORTS SPECIAUX :")
+        irc:PRIVMSG(channel, "SPECIAL SPELLS:")
         irc:PRIVMSG(channel, table.concat(monster.spells, ", "))
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "Le monstre a ete sauvegarde avec succes !")
+        irc:PRIVMSG(channel, "The monster has been saved successfully!")
     else
-        irc:PRIVMSG(channel, sender_nick .. ", Erreur lors de la sauvegarde : " .. tostring(save_err))
-        irc:PRIVMSG(channel, "Le monstre a ete cree en memoire mais n'a pas pu etre sauvegarde.")
+        irc:PRIVMSG(channel, sender_nick .. ", Error during save: " .. tostring(save_err))
+        irc:PRIVMSG(channel, "The monster was created in memory but could not be saved.")
     end
 end
 
--- Fonction pour lister tous les monstres
+-- Function to list all monsters
 local function handle_list_monsters_command(irc, sender_nick, channel)
     local monsters, list_err = MonsterCreation.listMonsters()
     
     if list_err then
-        irc:PRIVMSG(channel, sender_nick .. ", ✗ Erreur lors de la lecture des monstres : " .. list_err)
+        irc:PRIVMSG(channel, sender_nick .. ", ✗ Error reading monsters: " .. list_err)
         return
     end
     
     if #monsters == 0 then
-        irc:PRIVMSG(channel, sender_nick .. ", aucun monstre n'a été créé pour le moment.")
+        irc:PRIVMSG(channel, sender_nick .. ", no monsters have been created yet.")
         return
     end
     
-    local response = "Liste des monstres créés (" .. #monsters .. ") : "
+    local response = "List of created monsters (" .. #monsters .. ") : "
     
     for _, monster in ipairs(monsters) do
-        response = response .. monster.name .. " (" .. monster.class .. ", Niv. " .. monster.level .. "), "
+        response = response .. monster.name .. " (" .. monster.class .. ", Lvl. " .. monster.level .. "), "
     end
     
-    -- Supprimer la dernière virgule et espace
+    -- Remove the last comma and space
     irc:PRIVMSG(channel, response:sub(1, -3))
 end
 
--- Gestion des commandes IRC
+-- IRC command handling
 local function handle_irc_command(irc, sender_nick, channel, msg)
-    if msg:lower():match("^!createjoueur") then
+    if msg:lower():match("^!createplayer") or msg:lower():match("^!createjoueur") then
         start_character_creation(irc, sender_nick, channel)
-    elseif msg:lower():match("^!recap") then
-        show_character_recap(irc, sender_nick, channel)
-    elseif msg:lower():match("^!listjoueur") then
-        -- Lister tous les personnages sauvegardés
+    elseif msg:lower():match("^!stats") or msg:lower():match("^!recap") then
+        show_character_stats(irc, sender_nick, channel)
+    elseif msg:lower():match("^!listplayer") or msg:lower():match("^!listjoueur") then
+        -- List all saved characters
         local characters = xml.getAllCharactersFromXML()
         
         if next(characters) == nil then
-            irc:PRIVMSG(channel, sender_nick .. ", aucun personnage n'a été trouvé dans les fichiers sauvegardés.")
-            irc:PRIVMSG(channel, "Utilisez !createjoueur pour créer un nouveau personnage.")
+            irc:PRIVMSG(channel, sender_nick .. ", no characters found in saved files.")
+            irc:PRIVMSG(channel, "Use !createplayer to create a new character.")
         else
-            irc:PRIVMSG(channel, sender_nick .. ", voici la liste des personnages sauvegardés (" .. #characters .. "):")
+            irc:PRIVMSG(channel, sender_nick .. ", here is the list of saved characters (" .. #characters .. "):")
             
             for name, char in pairs(characters) do
-                irc:PRIVMSG(channel, "• " .. name .. " (" .. char.class .. ", Niveau " .. char.level .. ") - Énergie: " .. char.energy .. "/" .. char.energieMax .. ")")
+                irc:PRIVMSG(channel, "• " .. name .. " (" .. char.class .. ", Level " .. char.level .. ") - Energy: " .. char.energy .. "/" .. char.energieMax .. ")")
             end
             
-            irc:PRIVMSG(channel, "Utilisez !getjoueur <nom> pour charger un personnage spécifique.")
+            irc:PRIVMSG(channel, "Use !getplayer <name> to load a specific character.")
         end
-    elseif msg:lower():match("^!getjoueur") then
-        -- Extraire le nom du personnage à charger
-        local player_name = msg:match("^!getjoueur (%S+)")
+    elseif msg:lower():match("^!getplayer") or msg:lower():match("^!getjoueur") then
+        -- Extract the character name to load
+        local player_name = msg:match("^!getplayer (%S+)") or msg:match("^!getjoueur (%S+)")
         if not player_name then
-            irc:PRIVMSG(channel, sender_nick .. ", utilisation : !getjoueur <nom>")
-            irc:PRIVMSG(channel, "Exemple : !getjoueur Gandalf")
+            irc:PRIVMSG(channel, sender_nick .. ", usage: !getplayer <name>")
+            irc:PRIVMSG(channel, "Example: !getplayer Gandalf")
             return
         end
         
-        -- Charger le personnage spécifique (insensible à la casse)
+        -- Load the specific character (case insensitive)
         local character = xml.getCharacterFromXML(player_name)
         
-        -- Si pas trouvé, essayer avec la première lettre en majuscule
+        -- If not found, try with first letter capitalized
         if not character then
             local capitalized_name = player_name:sub(1, 1):upper() .. player_name:sub(2)
             character = xml.getCharacterFromXML(capitalized_name)
         end
         
-        -- Si toujours pas trouvé, essayer en minuscules
+        -- If still not found, try in lowercase
         if not character then
             local lowercase_name = player_name:lower()
             character = xml.getCharacterFromXML(lowercase_name)
         end
         
         if character then
-            -- Ajouter le personnage à la liste des personnages actifs
+            -- Add the character to the list of active characters
             characters[sender_nick] = character
-            irc:PRIVMSG(channel, sender_nick .. ", le personnage '" .. character.name .. "' a été chargé avec succès !")
-            irc:PRIVMSG(channel, "Utilisez !recap pour voir ses informations.")
+            irc:PRIVMSG(channel, sender_nick .. ", the character '" .. character.name .. "' has been loaded successfully!")
+            irc:PRIVMSG(channel, "Use !stats to see its information.")
         else
-            irc:PRIVMSG(channel, sender_nick .. ", le personnage '" .. player_name .. "' n'a pas été trouvé.")
-            irc:PRIVMSG(channel, "Utilisez !listjoueur pour voir les personnages disponibles.")
+            irc:PRIVMSG(channel, sender_nick .. ", the character '" .. player_name .. "' was not found.")
+            irc:PRIVMSG(channel, "Use !listplayer to see available characters.")
         end
     elseif msg:lower():match("^!roll") then
         handle_roll_command(irc, sender_nick, channel, msg)
@@ -375,61 +376,61 @@ local function handle_irc_command(irc, sender_nick, channel, msg)
         handle_list_monsters_command(irc, sender_nick, channel)
     elseif msg:lower():match("^!ping") then
         irc:PRIVMSG(channel, "Pong!")
-    elseif msg:lower():match("^!salut") then
-        irc:PRIVMSG(channel, "Salut, " .. sender_nick .. " !")
+    elseif msg:lower():match("^!hello") or msg:lower():match("^!salut") then
+        irc:PRIVMSG(channel, "Hello, " .. sender_nick .. "!")
     elseif msg:lower():match("^!help") then
-        irc:PRIVMSG(channel, "===== AIDE DU BOT RPG =====")
-        irc:PRIVMSG(channel, sender_nick .. ", voici les commandes disponibles :")
+        irc:PRIVMSG(channel, "===== RPG BOT HELP =====")
+        irc:PRIVMSG(channel, sender_nick .. ", here are the available commands:")
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "CREATION DE PERSONNAGES (pour les joueurs) :")
-        irc:PRIVMSG(channel, "!createjoueur - Demarre la creation d'un personnage joueur")
-        irc:PRIVMSG(channel, "Classes disponibles : " .. table.concat(CharacterClasses.getAvailableClasses(), ", "))
+        irc:PRIVMSG(channel, "CHARACTER CREATION (for players):")
+        irc:PRIVMSG(channel, "!createplayer - Start creating a player character")
+        irc:PRIVMSG(channel, "Available classes: " .. table.concat(CharacterClasses.getAvailableClasses(), ", "))
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "CREATION DE MONSTRES (pour les ennemis) :")
-        irc:PRIVMSG(channel, "!createmonster <nom> <classe> <niveau> - Cree un monstre d'heroic fantasy")
-        irc:PRIVMSG(channel, "Classes disponibles : " .. table.concat(MonsterCreation.getAvailableMonsterClasses(), ", "))
+        irc:PRIVMSG(channel, "MONSTER CREATION (for enemies):")
+        irc:PRIVMSG(channel, "!createmonster <name> <class> <level> - Create a heroic fantasy monster")
+        irc:PRIVMSG(channel, "Available classes: " .. table.concat(MonsterCreation.getAvailableMonsterClasses(), ", "))
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "AUTRES COMMANDES :")
-        irc:PRIVMSG(channel, "!recap - Affiche le recapitulatif de votre personnage")
+        irc:PRIVMSG(channel, "OTHER COMMANDS:")
+        irc:PRIVMSG(channel, "!stats - Show your character statistics")
 
-        irc:PRIVMSG(channel, "!listmonsters - Liste tous les monstres crees")
-        irc:PRIVMSG(channel, "!listjoueur - Liste tous les personnages sauvegardés")
-        irc:PRIVMSG(channel, "!getjoueur <nom> - Charge un personnage spécifique")
-        irc:PRIVMSG(channel, "!roll <nombre> - Lance des des (ex: !roll 2)")
-        irc:PRIVMSG(channel, "!ping - Test la connexion au bot")
-        irc:PRIVMSG(channel, "!salut - Dit bonjour au bot")
-        irc:PRIVMSG(channel, "!help - Affiche cette aide")
+        irc:PRIVMSG(channel, "!listmonsters - List all created monsters")
+        irc:PRIVMSG(channel, "!listplayer - List all saved characters")
+        irc:PRIVMSG(channel, "!getplayer <name> - Load a specific character")
+        irc:PRIVMSG(channel, "!roll <number> - Roll dice (ex: !roll 2)")
+        irc:PRIVMSG(channel, "!ping - Test connection to the bot")
+        irc:PRIVMSG(channel, "!hello - Say hello to the bot")
+        irc:PRIVMSG(channel, "!help - Show this help")
         irc:PRIVMSG(channel, "")
-        irc:PRIVMSG(channel, "DIFFERENCES ENTRE PERSONNAGES ET MONSTRES :")
-        irc:PRIVMSG(channel, "• Personnages : Utilisent Energie, ont des classes de joueurs")
-        irc:PRIVMSG(channel, "• Monstres : Utilisent Sante/Degats/Armure, ont des classes de creatures")
-        irc:PRIVMSG(channel, "• Utilisez !createjoueur pour les heros, !createmonster pour les ennemis !")
+        irc:PRIVMSG(channel, "DIFFERENCES BETWEEN CHARACTERS AND MONSTERS:")
+        irc:PRIVMSG(channel, "• Characters: Use Energy, have player classes")
+        irc:PRIVMSG(channel, "• Monsters: Use Health/Damage/Armor, have creature classes")
+        irc:PRIVMSG(channel, "• Use !createplayer for heroes, !createmonster for enemies!")
     elseif character_creation_state[sender_nick] then
-        -- Vérifier si la commande actuelle devrait annuler la création de personnage
+        -- Check if the current command should cancel character creation
         if msg:lower():match("^!createmonster") then
             character_creation_state[sender_nick] = nil
-            irc:PRIVMSG(channel, sender_nick .. ", création de personnage annulée.")
+            irc:PRIVMSG(channel, sender_nick .. ", character creation cancelled.")
             handle_create_monster_command(irc, sender_nick, channel, msg)
         elseif msg:lower():match("^!help") then
             character_creation_state[sender_nick] = nil
-            irc:PRIVMSG(channel, sender_nick .. ", creation de personnage annulee.")
-            irc:PRIVMSG(channel, "===== AIDE DU BOT RPG =====")
-            irc:PRIVMSG(channel, sender_nick .. ", voici les commandes disponibles :")
+            irc:PRIVMSG(channel, sender_nick .. ", character creation cancelled.")
+            irc:PRIVMSG(channel, "===== RPG BOT HELP =====")
+            irc:PRIVMSG(channel, sender_nick .. ", here are the available commands:")
             irc:PRIVMSG(channel, "")
-            irc:PRIVMSG(channel, "CREATION DE PERSONNAGES (pour les joueurs) :")
-            irc:PRIVMSG(channel, "!createjoueur - Demarre la creation d'un personnage joueur")
-            irc:PRIVMSG(channel, "Classes disponibles : " .. table.concat(CharacterClasses.getAvailableClasses(), ", "))
+            irc:PRIVMSG(channel, "CHARACTER CREATION (for players):")
+            irc:PRIVMSG(channel, "!createplayer - Start creating a player character")
+            irc:PRIVMSG(channel, "Available classes: " .. table.concat(CharacterClasses.getAvailableClasses(), ", "))
             irc:PRIVMSG(channel, "")
-            irc:PRIVMSG(channel, "CREATION DE MONSTRES (pour les ennemis) :")
-            irc:PRIVMSG(channel, "!createmonster <nom> <classe> <niveau> - Cree un monstre d'heroic fantasy")
-            irc:PRIVMSG(channel, "Classes disponibles : " .. table.concat(MonsterCreation.getAvailableMonsterClasses(), ", "))
+            irc:PRIVMSG(channel, "MONSTER CREATION (for enemies):")
+            irc:PRIVMSG(channel, "!createmonster <name> <class> <level> - Create a heroic fantasy monster")
+            irc:PRIVMSG(channel, "Available classes: " .. table.concat(MonsterCreation.getAvailableMonsterClasses(), ", "))
         elseif msg:lower():match("^!listmonsters") then
             character_creation_state[sender_nick] = nil
-            irc:PRIVMSG(channel, sender_nick .. ", création de personnage annulée.")
+            irc:PRIVMSG(channel, sender_nick .. ", character creation cancelled.")
             handle_list_monsters_command(irc, sender_nick, channel)
         elseif msg:lower():match("^!roll") then
             character_creation_state[sender_nick] = nil
-            irc:PRIVMSG(channel, sender_nick .. ", création de personnage annulée.")
+            irc:PRIVMSG(channel, sender_nick .. ", character creation cancelled.")
             handle_roll_command(irc, sender_nick, channel, msg)
         else
             handle_character_creation(irc, sender_nick, channel, msg)
@@ -437,12 +438,12 @@ local function handle_irc_command(irc, sender_nick, channel, msg)
     end
 end
 
--- Lancement du bot IRC
+-- Launch the IRC bot
 local function run_irc_bot()
     while true do
         local irc_client = connect_to_irc()
         if not irc_client then
-            log("Échec de la connexion. Nouvelle tentative dans " .. reconnect_delay .. " secondes...")
+            log("Connection failed. Retrying in " .. reconnect_delay .. " seconds...")
             socket.sleep(reconnect_delay)
         else
             local irc = IRCe.new()
@@ -471,20 +472,20 @@ local function run_irc_bot()
             end)
 
             irc:set_callback("ERROR", function(_, err)
-                log("Erreur IRC: " .. tostring(err))
+                log("IRC error: " .. tostring(err))
             end)
 
             irc:NICK(nickname)
             irc:USER(nickname, "0", "*", ":Lua Bot")
             irc:JOIN(default_channel)
-            log("Bot IRC prêt et connecté à " .. default_channel)
+            log("IRC bot ready and connected to " .. default_channel)
 
             local last_ping_time = socket.gettime()
             while true do
                 local line, err = irc_client:receive()
                 if not line then
                     if err ~= "timeout" then
-                        log("Déconnecté du serveur IRC: " .. (err or "unknown"))
+                        log("Disconnected from IRC server: " .. (err or "unknown"))
                         irc_client:close()
                         break
                     end

@@ -40,7 +40,7 @@ local function test_character_creation()
     print("Energy: " .. customCharacter.energy .. "/" .. customCharacter.energieMax)
 
     -- Save the custom character
-    xml.sauvegarder_personnage(customCharacter)
+    xml.saveCharacter(customCharacter)
     print("\nCharacter saved to XML.")
 end
 

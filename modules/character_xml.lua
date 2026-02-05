@@ -1,30 +1,30 @@
 local xml = {}
 
-function xml.sauvegarder_personnage(character)
+function xml.saveCharacter(character)
     local spells_xml = {}
     for _, spell in ipairs(character.spells) do
-        table.insert(spells_xml, "<sort>" .. spell .. "</sort>")
+        table.insert(spells_xml, "<spell>" .. spell .. "</spell>")
     end
     local spells_str = table.concat(spells_xml, "\n        ")
 
     local xmlContent = [[
-<personnage>
-    <nom>]] .. character.name .. [[</nom>
-    <classe>]] .. character.class .. [[</classe>
-    <niveau>]] .. character.level .. [[</niveau>
-    <attributs>
+<character>
+    <name>]] .. character.name .. [[</name>
+    <class>]] .. character.class .. [[</class>
+    <level>]] .. character.level .. [[</level>
+    <attributes>
         <intelligence>]] .. character.attributes.intelligence .. [[</intelligence>
         <strength>]] .. character.attributes.strength .. [[</strength>
         <dexterity>]] .. character.attributes.dexterity .. [[</dexterity>
         <endurance>]] .. character.attributes.endurance .. [[</endurance>
         <magic>]] .. character.attributes.magic .. [[</magic>
-    </attributs>
-    <sorts>
+    </attributes>
+    <spells>
         ]] .. spells_str .. [[
-    </sorts>
-    <energie>]] .. character.energy .. [[</energie>
-    <energieMax>]] .. character.energieMax .. [[</energieMax>
-</personnage>
+    </spells>
+    <energy>]] .. character.energy .. [[</energy>
+    <energyMax>]] .. character.energieMax .. [[</energyMax>
+</character>
     ]]
 
     local filename = "saves/" .. character.name:gsub("[^%w_]", "_") .. ".xml"
@@ -33,11 +33,11 @@ function xml.sauvegarder_personnage(character)
         file:write(xmlContent)
         file:close()
     else
-        print("Erreur: Impossible de sauvegarder le personnage dans un fichier.")
+        print("Error: Unable to save character to file.")
     end
 end
 
--- Fonction pour lire un fichier XML et extraire les informations du personnage
+-- Function to read an XML file and extract character information
 local function readCharacterXML(filePath)
     local file = io.open(filePath, "r")
     if not file then
@@ -49,9 +49,9 @@ local function readCharacterXML(filePath)
 
     local character = {
         name = filePath:match("saves/(.-)%.xml$"),
-        level = tonumber(content:match("<niveau>(.-)</niveau>")) or 1,
+        level = tonumber(content:match("<level>(.-)</level>")) or 1,
         experience = tonumber(content:match("<experience>(.-)</experience>")) or 0,
-        class = content:match("<classe>(.-)</classe>") or "Inconnu",
+        class = content:match("<class>(.-)</class>") or "Unknown",
         attributes = {
             intelligence = tonumber(content:match("<intelligence>(.-)</intelligence>")) or 0,
             strength = tonumber(content:match("<strength>(.-)</strength>")) or 0,
@@ -59,26 +59,26 @@ local function readCharacterXML(filePath)
             endurance = tonumber(content:match("<endurance>(.-)</endurance>")) or 0,
             magic = tonumber(content:match("<magic>(.-)</magic>")) or 0
         },
-        energy = tonumber(content:match("<energie>(.-)</energie>")) or 0,
-        energieMax = tonumber(content:match("<energieMax>(.-)</energieMax>")) or 0,
+        energy = tonumber(content:match("<energy>(.-)</energy>")) or 0,
+        energieMax = tonumber(content:match("<energyMax>(.-)</energyMax>")) or 0,
         spells = {}
     }
 
-    -- Extraire les sorts
-    for spell in content:gmatch("<sort>(.-)</sort>") do
+    -- Extract spells
+    for spell in content:gmatch("<spell>(.-)</spell>") do
         table.insert(character.spells, spell)
     end
 
     return character
 end
 
--- Fonction pour récupérer un personnage spécifique depuis un fichier XML
+-- Function to retrieve a specific character from an XML file
 function xml.getCharacterFromXML(player_name)
     local safe_filename = player_name:gsub("[^%w_]", "_")
     return readCharacterXML("saves/" .. safe_filename .. ".xml")
 end
 
--- Fonction pour récupérer tous les personnages depuis les fichiers XML
+-- Function to retrieve all characters from XML files
 function xml.getAllCharactersFromXML()
     local characters = {}
     local files = io.popen("ls saves/"):lines()
