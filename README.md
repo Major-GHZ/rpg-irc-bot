@@ -56,7 +56,14 @@ RPG IRC Bot is a powerful IRC bot that brings tabletop RPG mechanics to your fav
 The project includes these libraries in the repository:
 
 - **Lua IRC Engine** (`lua-irc-engine/`) - IRC protocol implementation
+  - Official Repository: [https://github.com/mirrexagon/lua-irc-engine](https://github.com/mirrexagon/lua-irc-engine)
+  - License: MIT
+  - Already bundled, no separate installation needed
+
 - **LuaSocket** (`luasocket/`) - Networking and socket operations
+  - Official Repository: [https://github.com/diegonehab/luasocket](https://github.com/diegonehab/luasocket)
+  - License: MIT
+  - Included for convenience, can also install via luarocks
 
 ### Setup
 
@@ -70,6 +77,10 @@ cd rpg-irc-bot
 ```bash
 # Install LuaSocket (required)
 luarocks install luasocket
+
+# Install Lua IRC Engine (required, included in repo)
+# Official repository: https://github.com/mirrexagon/lua-irc-engine
+# Already included in lua-irc-engine/ directory
 
 # Install LuaFileSystem (optional but recommended)
 luarocks install luafilesystem
