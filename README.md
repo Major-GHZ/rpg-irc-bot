@@ -47,8 +47,16 @@ RPG IRC Bot is a powerful IRC bot that brings tabletop RPG mechanics to your fav
 ### Prerequisites
 - Lua 5.1 or later
 - LuaSocket library
+- Lua IRC Engine (included in `lua-irc-engine/` directory)
 - LuaFileSystem (optional, for better file handling)
 - IRC server connection
+
+### Included Libraries
+
+The project includes these libraries in the repository:
+
+- **Lua IRC Engine** (`lua-irc-engine/`) - IRC protocol implementation
+- **LuaSocket** (`luasocket/`) - Networking and socket operations
 
 ### Setup
 
@@ -261,6 +269,13 @@ Example:
 - Comprehensive input validation
 - User-friendly error messages
 - Graceful error recovery
+
+### IRC Engine Details
+- **Lua IRC Engine** - Full IRC protocol implementation
+- **Module System** - Modular IRC functionality (base, message, channel)
+- **Event Handling** - Callback-based event system
+- **Reconnection Logic** - Automatic reconnection with configurable delays
+- **Ping/Pong** - Keep-alive mechanism to maintain connections
 
 ### Multiplatform Support
 - Works on Windows, Linux, and macOS
