@@ -1,56 +1,113 @@
-# Version 1.2.0 - RPG IRC Bot
+# RPG IRC Bot - Version History
 
-## Release Notes
+## Version 0.3.0 (Current)
+**Release Date:** 2024
 
-### New Features
-- **Character Creation**: Players can now create characters with `!createjoueur` command
-- **Monster Creation**: Monsters can be created with `!createmonster` command
-- **Dice Rolling**: Added `!roll` command for dice rolling
-- **Character Listing**: `!listjoueur` lists all saved characters
-- **Monster Listing**: `!listmonsters` lists all created monsters
+### 🚀 Major Features
+- **Complete Anglification** - All code, messages, and comments translated to English
+- **Command Renaming** - All commands now use English names only
+- **Configuration System** - Centralized config.lua for all bot parameters
+- **Improved Structure** - Cleaner code organization and better separation of concerns
 
-### Improvements
-- **English Comments**: All code is now commented in English
-- **Error Handling**: Improved error messages and validation
-- **Code Cleanup**: Removed unused files and test files
-- **Documentation**: Added detailed comments for all functions
+### 📋 New Features
+- **!createplayer** - Create player characters with interactive 7-step process
+- **!listplayer** - List all saved player characters
+- **!getplayer <name>** - Load specific character by name
+- **!stats** - Show character statistics and information
+- **!createmonster** - Create monsters with Health/Damage/Armor system
+- **!listmonsters** - List all created monsters
+- **!roll <number>** - Roll dice (1-10 dice)
+- **!hello** - Friendly greeting command
+- **!help** - Comprehensive help system
+- **!ping** - Connection test
 
-### Bug Fixes
-- Fixed character creation flow
-- Fixed monster creation with proper classes
-- Fixed dice rolling command
-- Fixed character listing command
+### 🔧 Technical Improvements
+- **Centralized Configuration** - All settings in config.lua
+- **XML Persistence** - Characters and monsters saved to XML files
+- **Error Handling** - Comprehensive validation and user-friendly error messages
+- **Multiplatform Support** - Works on Windows, Linux, and macOS
+- **IRC Protocol** - Full IRC protocol implementation with reconnection logic
+- **Logging System** - Configurable logging with different levels
 
-### Issues Resolved
-- Character creation now works properly
-- Monster creation uses correct classes
-- Dice rolling command works as expected
-- Character listing shows proper details
+### 🎭 Game Systems
 
-### Files Modified
-- `main.lua`: Entry point with character creation test
-- `modules/irc/bot.lua`: Main IRC bot logic
-- `modules/character.lua`: Character management
-- `modules/monster_creation.lua`: Monster creation
-- Removed unused test files and backups
+#### Character System (Players)
+- **Energy System** - Characters use energy for abilities
+- **7 Classes** - Human, Mage, Elf, Dwarf, Orc, Troll, Hobbit
+- **Attribute Distribution** - 30 points to distribute among Intelligence, Strength, Dexterity, Endurance, Magic
+- **Level System** - Characters can level up to 100
+- **Spell System** - Each class has unique spells
 
-### How to Use
-1. Launch the bot: `lua main.lua`
-2. Connect to IRC server
-3. Use commands:
-   - `!createjoueur` to create a player character
-   - `!createmonster <name> <class> <level>` to create a monster
-   - `!roll <number>` to roll dice
-   - `!listjoueur` to list characters
-   - `!listmonsters` to list monsters
+#### Monster System (Enemies)
+- **Health/Damage/Armor System** - Combat-focused statistics
+- **6 Classes** - Werewolf, Vampire, Unicorn, Minotaur, Phoenix, Kraken
+- **Instant Creation** - Single command monster creation
+- **Special Abilities** - Each monster has unique spells and attributes
 
-### Next Steps
-- Add more monster classes
-- Add more character classes
-- Add combat system
-- Add quest system
+### 📁 File Structure
+```
+/
+├── config.lua              # Configuration file
+├── main.lua                # Entry point
+├── VERSION.md              # Version history
+├── modules/
+│   ├── character.lua       # Character class
+│   ├── character_classes.lua # Character class definitions
+│   ├── character_xml.lua   # XML serialization
+│   ├── dice.lua            # Dice rolling
+│   ├── monster_creation.lua # Monster creation
+│   └── irc/
+│       └── bot.lua         # IRC bot logic
+├── saves/                  # Character saves
+└── saves/monster/          # Monster saves
+```
 
-## Version History
-- 1.0.0: Initial release
-- 1.1.0: Added monster creation
-- 1.2.0: Current version with full English comments and cleanup
+### 🔄 Breaking Changes from Previous Versions
+- **Removed French commands** - Only English commands work now
+- **Removed old command names** - !listjoueur, !getjoueur, !createjoueur, !recap, !salut no longer work
+- **Configuration required** - config.lua must be present with valid settings
+
+### 🐛 Bug Fixes
+- Fixed character creation state management
+- Fixed monster creation validation
+- Fixed XML parsing and saving
+- Fixed IRC reconnection logic
+- Fixed multiplatform directory handling
+
+### 📈 Performance Improvements
+- Faster character loading
+- Optimized XML parsing
+- Reduced memory usage
+- Better error recovery
+
+### 🎯 Future Roadmap
+- **Version 0.4.0** - Combat system and PVP
+- **Version 0.5.0** - Quest system and NPCs
+- **Version 0.6.0** - Guild system and parties
+- **Version 1.0.0** - Full RPG game with persistence
+
+## Version 0.2.0
+**Release Date:** 2024
+
+### Features
+- Basic character creation
+- Monster creation
+- IRC bot framework
+- XML saving/loading
+- French/English mixed interface
+
+## Version 0.1.0
+**Release Date:** 2024
+
+### Features
+- Initial prototype
+- Basic IRC connectivity
+- Character class structure
+- French interface
+
+---
+
+**RPG IRC Bot** - Bring your tabletop RPG adventures to IRC!
+**License:** MIT
+**Author:** Major-GHZ
+**Repository:** https://github.com/Major-GHZ/rpg-irc-bot
